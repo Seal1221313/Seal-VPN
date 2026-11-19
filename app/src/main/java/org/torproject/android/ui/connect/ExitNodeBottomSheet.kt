@@ -57,7 +57,7 @@ class ExitNodeBottomSheet : OrbotBottomSheetDialogFragment() {
         }
 
         sortedCountries.forEach { (name, locale) ->
-            val display = Regionalization.getFlagEmojiForCountryCode(locale.country) + " " + name
+            val display = Regionalization.getCountryTag(locale.country) + " " + name
             items.add(locale.country to display)
         }
 

@@ -111,7 +111,7 @@ public class OrbotRawEventListener implements RawEventListener, TorControlComman
                         node.ipAddress = networkStatus[6];
                         var countryCode = mService.conn.getInfo("ip-to-country/" + node.ipAddress).toUpperCase(Locale.getDefault());
                         if (!countryCode.equals(TOR_CONTROLLER_COUNTRY_CODE_UNKNOWN)) {
-                            var emoji = Regionalization.getFlagEmojiForCountryCode(countryCode);
+                            var emoji = Regionalization.getCountryTag(countryCode);
                             node.country = emoji + " " + Regionalization.getLocalizedNameForCountryCode(countryCode);
                         } else node.country = "";
                         mService.setNotificationSubtext(node.toString());

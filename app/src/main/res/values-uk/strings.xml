@@ -115,10 +115,10 @@
     <string name="license">Ліцензія:</string>
     <string name="bridge_snowflake_amp">Підʼєднатися через інших користувачів Tor за допомогою Snowflake (Метод 2 - AMP)</string>
     <string name="strict_nodes_description">Вважайте налаштування «Виключити вузли» обов’язковою умовою для побудови всіх ланцюгів. Якщо через це налаштування неможливо побудувати жодного ланцюга, це може призвести до порушення функціональності.</string>
-    <string name="secure_your_connection_title">Не підключено</string>
-    <string name="secure_your_connection_subtitle">Пустіть трафік через мережу Tor одним дотиком. Без акаунта й оренди сервера.</string>
+    <string name="secure_your_connection_title">Відключено</string>
+    <string name="secure_your_connection_subtitle">Трафік пристрою йде через Tor. Без акаунта, без сервера.</string>
     <string name="connected_title">Підключено</string>
-    <string name="trying_to_connect_title">Під\'єднання…</string>
+    <string name="trying_to_connect_title">Підключення</string>
     <string name="btn_change_exit">Змінити розташування</string>
     <string name="btn_refresh">Нова особистість</string>
     <string name="btn_configure">Протокол і мости</string>
@@ -286,8 +286,8 @@
     <string name="approved">Погоджено</string>
     <string name="not_approved">Не погоджено</string>
     <string name="btn_disconnect">Відключити</string>
-    <string name="location_label">Розташування</string>
-    <string name="location_automatic">Автоматично (найкраще)</string>
+    <string name="location_label">Вихід</string>
+    <string name="location_automatic">авто</string>
     <string name="btn_kill_switch">Kill switch</string>
     <string name="kill_switch_hint">Відкриває системні налаштування VPN: увімкніть «Постійний VPN» і «Блокувати з\'єднання без VPN»</string>
     <string name="bridge_webtunnel">WebTunnel</string>

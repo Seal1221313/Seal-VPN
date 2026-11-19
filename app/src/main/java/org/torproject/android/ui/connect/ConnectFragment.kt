@@ -13,7 +13,6 @@ import android.provider.Settings
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.CompoundButton
 import android.widget.Toast
@@ -176,8 +175,8 @@ class ConnectFragment : Fragment(),
 
     private fun updateLocationCard() {
         val code = Prefs.exitNodes?.trim('{', '}')?.takeIf { it.length == 2 }
-        binding.tvLocation.text = if (code == null) "\uD83C\uDF10 ${getString(R.string.location_automatic)}"
-        else "${Regionalization.getFlagEmojiForCountryCode(code)} ${Regionalization.getLocalizedNameForCountryCode(code)}"
+        binding.tvLocation.text = if (code == null) getString(R.string.location_automatic)
+        else "${Regionalization.getCountryTag(code)} ${Regionalization.getLocalizedNameForCountryCode(code)}"
     }
 
     private fun openVpnSettings() {
@@ -259,7 +258,6 @@ class ConnectFragment : Fragment(),
 
     private fun stopAnimations() {
         binding.ivStatus.clearAnimation()
-        binding.ivShadow.clearAnimation()
     }
 
     private fun sendNewnymSignal() {
@@ -385,7 +383,7 @@ class ConnectFragment : Fragment(),
 
     private fun doLayoutNoInternet() {
 
-        binding.ivStatus.setImageResource(R.drawable.orbiesleeping)
+        binding.ivStatus.setImageResource(R.drawable.status_off)
         binding.ivStatus.setOnClickListener(null)
         stopAnimations()
         stopSessionTimer()
@@ -406,7 +404,7 @@ class ConnectFragment : Fragment(),
             Prefs.smartConnect = false
             refreshMenuList(context)
         }
-        binding.ivStatus.setImageResource(R.drawable.orbieon)
+        binding.ivStatus.setImageResource(R.drawable.status_on)
         startSessionTimer()
         updateButtonText()
         binding.tvSubtitle.visibility = View.VISIBLE
@@ -423,7 +421,7 @@ class ConnectFragment : Fragment(),
 
     private fun doLayoutOff() {
         viewModel.updateSubtitleState()
-        binding.ivStatus.setImageResource(R.drawable.orbiesleeping)
+        binding.ivStatus.setImageResource(R.drawable.status_off)
         stopSessionTimer()
         binding.switchConnect.setText(R.string.connect)
         refreshMenuList(requireContext())
@@ -447,16 +445,8 @@ class ConnectFragment : Fragment(),
         }
 
 
-        binding.ivStatus.setImageResource(R.drawable.orbie_stuck)
-        val animHover = AnimationUtils.loadAnimation(context, R.anim.hover)
-        animHover.repeatMode = Animation.REVERSE
-        binding.ivStatus.animation = animHover
-        animHover.start()
-
-        val animShadow = AnimationUtils.loadAnimation(context, R.anim.shadow)
-        animShadow.repeatMode = Animation.REVERSE
-        binding.ivShadow.animation = animShadow
-        animShadow.start()
+        binding.ivStatus.setImageResource(R.drawable.status_connecting)
+        binding.ivStatus.startAnimation(AnimationUtils.loadAnimation(context, R.anim.blink))
         binding.tvTitle.text = context.getString(R.string.trying_to_connect_title)
         binding.tvSubtitle.setOnClickListener {
             LogBottomSheet.show(parentFragmentManager)

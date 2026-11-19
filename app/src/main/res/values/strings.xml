@@ -139,15 +139,15 @@
 
     <string name="bridge_snowflake_amp">Connect through other Tor users using Snowflake (Method 2 - AMP)</string>
     <string name="bridge_snowflake_sqs">Connect through other Tor users using Snowflake (Method 3 - SQS)</string>
-    <string name="secure_your_connection_title">Not connected</string>
-    <string name="secure_your_connection_subtitle">Send your traffic through the Tor network with one tap. No account, no server to rent.</string>
+    <string name="secure_your_connection_title">Disconnected</string>
+    <string name="secure_your_connection_subtitle">Routes device traffic through Tor. No account, no server.</string>
     <string name="connected_title">Connected</string>
     <string name="btn_configure">Protocol &amp; bridges</string>
-    <string name="trying_to_connect_title">Connecting…</string>
+    <string name="trying_to_connect_title">Connecting</string>
     <string name="btn_choose_apps">Split tunneling</string>
     <string name="btn_change_exit">Change location</string>
     <string name="btn_refresh">New identity</string>
-    <string name="globe" translatable="false">🌎</string>
+    <string name="globe" translatable="false">[--]</string>
 
     <string name="smart_connect">Smart Connect</string>
     <string name="direct_connect">Direct Connection</string>
@@ -321,8 +321,8 @@
     <string name="approved">Approved</string>
     <string name="not_approved">Not Approved</string>
     <string name="btn_disconnect">Disconnect</string>
-    <string name="location_label">Location</string>
-    <string name="location_automatic">Automatic (best available)</string>
+    <string name="location_label">Exit</string>
+    <string name="location_automatic">auto</string>
     <string name="btn_kill_switch">Kill switch</string>
     <string name="kill_switch_hint">Opens system VPN settings: turn on Always-on VPN and Block connections without VPN</string>
     <string name="bridge_webtunnel">WebTunnel</string>

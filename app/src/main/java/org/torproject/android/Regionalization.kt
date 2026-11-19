@@ -12,14 +12,7 @@ object Regionalization {
 
 
     @JvmStatic
-    fun getFlagEmojiForCountryCode(countryCode: String): String {
-        val uppercaseCC = countryCode.uppercase(Locale.getDefault())
-        val flagOffset = 0x1F1E6
-        val asciiOffset = 0x41
-        val firstChar = Character.codePointAt(uppercaseCC, 0) - asciiOffset + flagOffset
-        val secondChar = Character.codePointAt(uppercaseCC, 1) - asciiOffset + flagOffset
-        return String(Character.toChars(firstChar)) + String(Character.toChars(secondChar))
-    }
+    fun getCountryTag(countryCode: String): String = "[" + countryCode.uppercase(Locale.US) + "]"
 
     val countriesForExitNodeUi: List<String> = listOf(
         GERMANY, AUSTRIA, SWEDEN,

@@ -55,7 +55,7 @@ class ConnectMenuActionAdapter(context: Context, list: ArrayList<OrbotMenuAction
                     imgView.visibility = View.GONE
                     val currentExit = Prefs.exitNodes?.replace("{", "")?.replace("}", "") ?: ""
                     if (currentExit.length == 2) tvAction.text =
-                        Regionalization.getFlagEmojiForCountryCode(currentExit)
+                        Regionalization.getCountryTag(currentExit)
                     else tvAction.text = context.getString(R.string.globe)
                     emojiContainer.visibility = View.VISIBLE
                 }

@@ -48,7 +48,7 @@ class ConfigConnectionBottomSheet :
     private val countryMap by lazy {
         Locale.getISOCountries().associateBy { code ->
             val countryName = Regionalization.getLocalizedNameForCountryCode(code)
-            val emoji = Regionalization.getFlagEmojiForCountryCode(code)
+            val emoji = Regionalization.getCountryTag(code)
             "$emoji $countryName"
         }
     }

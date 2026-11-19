@@ -8,84 +8,98 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/new_background">
+        android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/ivStatus"
-            android:layout_width="120dp"
-            android:layout_height="136dp"
-            android:layout_marginTop="12dp"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/orbiesleeping"
-            app:layout_constraintEnd_toEndOf="parent"
+        <TextView
+            android:id="@+id/tvBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="monospace"
+            android:letterSpacing="0.2"
+            android:text="@string/app_name"
+            android:textAllCaps="true"
+            android:textColor="@color/muted"
+            android:textSize="12sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/ivShadow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
+            android:id="@+id/ivStatus"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
             android:contentDescription="@null"
-            android:src="@drawable/orbieshadow"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/status_off"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ivStatus"
-            tools:ignore="ImageContrastCheck" />
+            app:layout_constraintTop_toBottomOf="@+id/tvBrand" />
 
-        <TextView
-            android:id="@+id/tvTitle"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:fontFamily="sans-serif-black"
-            android:text="@string/secure_your_connection_title"
-            android:textAppearance="@style/TextAppearance.Material3.HeadlineMedium"
-            android:textColor="@android:color/white"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/ivStatus"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ivShadow" />
+            app:layout_constraintStart_toEndOf="@+id/ivStatus"
+            app:layout_constraintTop_toTopOf="@+id/ivStatus">
 
-        <TextView
-            android:id="@+id/tvTimer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="monospace"
-            android:textColor="@color/progress_bar_purple"
-            android:textSize="20sp"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
-            tools:text="00:12:34"
-            tools:visibility="visible" />
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.08"
+                android:text="@string/secure_your_connection_title"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:textColor="@color/accent"
+                android:textSize="13sp"
+                android:visibility="gone"
+                tools:text="00:12:34"
+                tools:visibility="visible" />
+        </LinearLayout>
 
         <ProgressBar
             android:id="@+id/progressBar"
             style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:progressTint="@color/progress_bar_purple"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            android:progressBackgroundTint="@color/line"
+            android:progressTint="@color/accent"
             android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvTimer"
+            app:layout_constraintTop_toBottomOf="@+id/ivStatus"
             tools:progress="33"
             tools:visibility="visible" />
 
         <TextView
             android:id="@+id/tvSubtitle"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:gravity="center_horizontal"
-            android:paddingStart="@dimen/alert_dialog_margin"
-            android:paddingEnd="@dimen/alert_dialog_margin"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="monospace"
             android:text="@string/secure_your_connection_subtitle"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
-            android:textColor="#9FB1BF"
+            android:textAlignment="viewStart"
+            android:textColor="@color/muted"
+            android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/progressBar"
@@ -93,20 +107,20 @@
 
         <androidx.appcompat.widget.AppCompatCheckBox
             android:id="@+id/switchConnect"
-            android:layout_width="132dp"
-            android:layout_height="132dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
             android:background="@drawable/btn_power"
             android:button="@null"
-            android:drawablePadding="2dp"
-            android:drawableTint="@android:color/white"
-            android:drawableTop="@drawable/ic_power"
+            android:fontFamily="monospace"
             android:gravity="center"
-            android:paddingTop="30dp"
-            android:paddingBottom="20dp"
+            android:letterSpacing="0.1"
             android:text="@string/connect"
-            android:textColor="@android:color/white"
-            android:textSize="13sp"
+            android:textAllCaps="true"
+            android:textColor="@color/btn_connect_text"
+            android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -114,10 +128,10 @@
 
         <LinearLayout
             android:id="@+id/cardLocation"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
             android:background="@drawable/bg_location_card"
             android:clickable="true"
@@ -125,51 +139,47 @@
             android:foreground="?attr/selectableItemBackground"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:padding="16dp"
+            android:padding="14dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/switchConnect">
 
-            <LinearLayout
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="@string/location_label"
+                android:textAllCaps="true"
+                android:textColor="@color/muted"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvLocation"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/location_label"
-                    android:textColor="#9FB1BF"
-                    android:textSize="12sp" />
-
-                <TextView
-                    android:id="@+id/tvLocation"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
-                    android:textColor="@android:color/white"
-                    android:textSize="17sp"
-                    android:textStyle="bold"
-                    tools:text="🇩🇪 Germany" />
-            </LinearLayout>
+                android:fontFamily="monospace"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                tools:text="[DE] Germany" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="›"
-                android:textColor="#5CE1D3"
-                android:textSize="28sp"
-                tools:ignore="HardcodedText" />
+                android:fontFamily="monospace"
+                android:text="&gt;"
+                android:textColor="@color/muted"
+                android:textSize="14sp" />
         </LinearLayout>
 
         <ListView
             android:id="@+id/lvConnected"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="220dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
+            android:divider="@color/line"
             android:dividerHeight="1dp"
             android:drawSelectorOnTop="true"
             app:layout_constraintEnd_toEndOf="parent"
@@ -182,9 +192,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="2dp"
+            android:fontFamily="monospace"
             android:maxLines="2"
             android:paddingBottom="@dimen/button_horizontal_small_margin"
             android:textAlignment="center"
+            android:textColor="@color/muted"
+            android:textSize="12sp"
             android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
