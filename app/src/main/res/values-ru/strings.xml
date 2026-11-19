@@ -113,15 +113,15 @@
     <string name="v3_hosted_services">Размещённые Onion-службы</string>
     <string name="bridge_snowflake_amp">Использовать Snowflake (AMP)</string>
     <string name="connected_title">Подключено</string>
-    <string name="btn_configure">Настроить подключение</string>
+    <string name="btn_configure">Протокол и мосты</string>
     <string name="trying_to_connect_title">Подключение…</string>
-    <string name="btn_choose_apps">Выбор приложений</string>
-    <string name="btn_change_exit">Сменить выходной узел</string>
-    <string name="btn_refresh">Обновить подключение</string>
+    <string name="btn_choose_apps">Раздельное туннелирование</string>
+    <string name="btn_change_exit">Сменить расположение</string>
+    <string name="btn_refresh">Новая личность</string>
     <string name="version">Версия:</string>
     <string name="license">Лицензия:</string>
-    <string name="secure_your_connection_title">Готово к подключению</string>
-    <string name="secure_your_connection_subtitle">Скрывайте приложения от отслеживания в сети и получайте доступ, когда он заблокирован.</string>
+    <string name="secure_your_connection_title">Не подключено</string>
+    <string name="secure_your_connection_subtitle">Пустите трафик через сеть Tor одним касанием. Без аккаунта и аренды сервера.</string>
     <string name="strict_nodes_description">Рассматривать настройки исключённых узлов как требование для построения всех цепочек. Это может нарушить функциональность, если ни одна цепочка не сможет быть создана с вашими настройками.</string>
     <string name="snowflake">Snowflake</string>
     <string name="connect">Подключить</string>
@@ -206,7 +206,7 @@
     <string name="mebibyte_per_second">MiB/s</string>
     <string name="log_notice_unable_to_update_onions">не получилось загрузить onion имена</string>
     <string name="log_notice_updating_torrc">Обновление пользовательских настроек torrc…</string>
-    <string name="set_transport">Настроить транспорт</string>
+    <string name="set_transport">Протокол</string>
     <string name="app_icon_dialog_title" formatted="true">Сменить на %1$s</string>
     <string name="app_icon_dialog_msg" formatted="true">Смена на %1$s перезапустит приложение</string>
     <string name="note_snowflake_doesn_t_support_proxies">ЗАМЕТКА: Snowflake не поддерживает прокси. Настройки прокси будут игнорированы с мостами Snowflake.</string>
@@ -243,4 +243,10 @@
     <string name="dns_tunnel_usage_description">DNS-туннели приоритизируют доступ над скоростью и могут ощущаться медленнее. Мы рекомендуем включать их только для ключевых приложений. Просмотр видео не рекомандован.</string>
     <string name="loading">Загрузка…</string>
     <string name="http_port">Порт HTTP</string>
+    <string name="btn_disconnect">Отключить</string>
+    <string name="location_label">Расположение</string>
+    <string name="location_automatic">Автоматически (лучшее)</string>
+    <string name="btn_kill_switch">Kill switch</string>
+    <string name="kill_switch_hint">Открывает системные настройки VPN: включите «Постоянный VPN» и «Блокировать соединения без VPN»</string>
+    <string name="bridge_webtunnel">WebTunnel</string>
 </resources>

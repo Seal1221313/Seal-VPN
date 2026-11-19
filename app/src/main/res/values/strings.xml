@@ -139,14 +139,14 @@
 
     <string name="bridge_snowflake_amp">Connect through other Tor users using Snowflake (Method 2 - AMP)</string>
     <string name="bridge_snowflake_sqs">Connect through other Tor users using Snowflake (Method 3 - SQS)</string>
-    <string name="secure_your_connection_title">Ready to connect</string>
-    <string name="secure_your_connection_subtitle">Hide apps from network monitoring and get access when they are blocked.</string>
+    <string name="secure_your_connection_title">Not connected</string>
+    <string name="secure_your_connection_subtitle">Send your traffic through the Tor network with one tap. No account, no server to rent.</string>
     <string name="connected_title">Connected</string>
-    <string name="btn_configure">Choose How To Connect</string>
+    <string name="btn_configure">Protocol &amp; bridges</string>
     <string name="trying_to_connect_title">Connecting…</string>
-    <string name="btn_choose_apps">Choose apps</string>
-    <string name="btn_change_exit">Change exit</string>
-    <string name="btn_refresh">Refresh Connection</string>
+    <string name="btn_choose_apps">Split tunneling</string>
+    <string name="btn_change_exit">Change location</string>
+    <string name="btn_refresh">New identity</string>
     <string name="globe" translatable="false">🌎</string>
 
     <string name="smart_connect">Smart Connect</string>
@@ -278,7 +278,7 @@
     <string name="status_loading_status">Loading network status</string>
     <string name="status_requesting_descriptors">Requesting network server information</string>
     <string name="status_loading_descriptors">Loading network server information</string>
-    <string name="set_transport">Set Transport</string>
+    <string name="set_transport">Protocol</string>
     <string name="loading">Loading…</string>
     <string name="http_port">HTTP Port</string>
     <string name="socks_port">SOCKS Port</string>
@@ -320,4 +320,10 @@
     <string name="stop_test">Stop Test</string>
     <string name="approved">Approved</string>
     <string name="not_approved">Not Approved</string>
+    <string name="btn_disconnect">Disconnect</string>
+    <string name="location_label">Location</string>
+    <string name="location_automatic">Automatic (best available)</string>
+    <string name="btn_kill_switch">Kill switch</string>
+    <string name="kill_switch_hint">Opens system VPN settings: turn on Always-on VPN and Block connections without VPN</string>
+    <string name="bridge_webtunnel">WebTunnel</string>
 </resources>

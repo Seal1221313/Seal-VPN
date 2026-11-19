@@ -2,11 +2,14 @@ package org.torproject.android.ui.connect
 
 import android.annotation.SuppressLint
 import android.app.AlarmManager
+import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
 import android.graphics.Paint
 import android.os.Build
 import android.os.Bundle
+import android.os.SystemClock
+import android.provider.Settings
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -24,9 +27,12 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.isActive
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import org.torproject.android.R
+import org.torproject.android.Regionalization
 import org.torproject.android.databinding.FragmentConnectBinding
 import org.torproject.android.service.OrbotConstants
 import org.torproject.android.service.OrbotService
@@ -38,9 +44,15 @@ import org.torproject.android.util.NetworkUtils
 import org.torproject.android.util.Prefs
 import org.torproject.android.util.sendIntentToService
 import org.torproject.jni.TorService
+import java.util.Locale
 import kotlin.time.Duration.Companion.milliseconds
 
 private const val DEFAULT_THROTTLE_INTERVAL = 4000L
+
+object SessionClock {
+    @Volatile
+    var startedAt = 0L
+}
 
 class ConnectFragment : Fragment(),
     ExitNodeBottomSheet.ExitNodeSelectedCallback {
@@ -115,11 +127,65 @@ class ConnectFragment : Fragment(),
             it.postDelayed({
                 it.isEnabled = true
                 it.alpha = 1f
-                binding.switchConnect.text = context?.getString(R.string.connect)
+                if (isAdded) updateButtonText()
             }, DEFAULT_THROTTLE_INTERVAL)
         }
         binding.switchConnect.setOnCheckedChangeListener(onCheckChanged)
+        binding.cardLocation.setOnClickListener {
+            ExitNodeBottomSheet().show(
+                requireActivity().supportFragmentManager,
+                "ExitNodeBottomSheet"
+            )
+        }
         refreshMenuList(requireContext())
+    }
+
+    private var timerJob: Job? = null
+
+    private fun startSessionTimer() {
+        if (SessionClock.startedAt == 0L) SessionClock.startedAt = SystemClock.elapsedRealtime()
+        timerJob?.cancel()
+        binding.tvTimer.visibility = View.VISIBLE
+        timerJob = viewLifecycleOwner.lifecycleScope.launch {
+            while (isActive) {
+                val sec = (SystemClock.elapsedRealtime() - SessionClock.startedAt) / 1000
+                binding.tvTimer.text = String.format(
+                    Locale.US, "%02d:%02d:%02d", sec / 3600, (sec % 3600) / 60, sec % 60
+                )
+                delay(1000)
+            }
+        }
+    }
+
+    private fun stopSessionTimer() {
+        timerJob?.cancel()
+        timerJob = null
+        SessionClock.startedAt = 0L
+        binding.tvTimer.visibility = View.GONE
+    }
+
+    private fun updateButtonText() {
+        binding.switchConnect.setText(
+            when (viewModel.uiState.value) {
+                is ConnectUiState.On -> R.string.btn_disconnect
+                is ConnectUiState.Starting -> R.string.trying_to_connect_title
+                else -> R.string.connect
+            }
+        )
+    }
+
+    private fun updateLocationCard() {
+        val code = Prefs.exitNodes?.trim('{', '}')?.takeIf { it.length == 2 }
+        binding.tvLocation.text = if (code == null) "\uD83C\uDF10 ${getString(R.string.location_automatic)}"
+        else "${Regionalization.getFlagEmojiForCountryCode(code)} ${Regionalization.getLocalizedNameForCountryCode(code)}"
+    }
+
+    private fun openVpnSettings() {
+        try {
+            startActivity(Intent(Settings.ACTION_VPN_SETTINGS))
+        } catch (_: ActivityNotFoundException) {
+            Toast.makeText(requireContext(), R.string.kill_switch_hint, Toast.LENGTH_LONG).show()
+        }
     }
 
     private val onCheckChanged: CompoundButton.OnCheckedChangeListener = { _, value ->
@@ -277,6 +343,7 @@ class ConnectFragment : Fragment(),
     }
 
     fun refreshMenuList(context: Context) {
+        updateLocationCard()
 
         val connectStr =
             if (Prefs.smartConnect) R.string.smart_connect else when (Prefs.transport) {
@@ -286,7 +353,7 @@ class ConnectFragment : Fragment(),
                 Transport.SNOWFLAKE -> R.string.snowflake
                 Transport.SNOWFLAKE_AMP -> R.string.snowflake_amp
                 Transport.SNOWFLAKE_SQS -> R.string.snowflake_sqs
-                Transport.WEBTUNNEL -> TODO()
+                Transport.WEBTUNNEL -> R.string.bridge_webtunnel
                 Transport.DNSTT -> R.string.bridge_dnstt
                 Transport.CUSTOM -> R.string.custom_bridges
             }
@@ -301,13 +368,12 @@ class ConnectFragment : Fragment(),
                     R.drawable.ic_settings_gear,
                     statusString = connectStrLabel
                 ) { openConfigureTorConnection() },
-                OrbotMenuAction(R.string.btn_change_exit, 0) {
-                    ExitNodeBottomSheet().show(
-                        requireActivity().supportFragmentManager,
-                        "ExitNodeBottomSheet"
-                    )
-                },
-                OrbotMenuAction(R.string.btn_refresh, R.drawable.ic_refresh) { sendNewnymSignal() })
+                OrbotMenuAction(R.string.btn_refresh, R.drawable.ic_refresh) { sendNewnymSignal() },
+                OrbotMenuAction(
+                    R.string.btn_kill_switch,
+                    R.drawable.lock_24px,
+                    statusString = context.getString(R.string.kill_switch_hint)
+                ) { openVpnSettings() })
         if (!Prefs.isPowerUserMode) listItems.add(
             0,
             OrbotMenuAction(R.string.btn_choose_apps, R.drawable.ic_choose_apps) {
@@ -322,6 +388,8 @@ class ConnectFragment : Fragment(),
         binding.ivStatus.setImageResource(R.drawable.orbiesleeping)
         binding.ivStatus.setOnClickListener(null)
         stopAnimations()
+        stopSessionTimer()
+        updateButtonText()
 
         binding.tvSubtitle.visibility = View.VISIBLE
 
@@ -339,6 +407,8 @@ class ConnectFragment : Fragment(),
             refreshMenuList(context)
         }
         binding.ivStatus.setImageResource(R.drawable.orbieon)
+        startSessionTimer()
+        updateButtonText()
         binding.tvSubtitle.visibility = View.VISIBLE
         binding.progressBar.visibility = View.INVISIBLE
         binding.tvTitle.text = context.getString(R.string.connected_title)
@@ -354,6 +424,8 @@ class ConnectFragment : Fragment(),
     private fun doLayoutOff() {
         viewModel.updateSubtitleState()
         binding.ivStatus.setImageResource(R.drawable.orbiesleeping)
+        stopSessionTimer()
+        binding.switchConnect.setText(R.string.connect)
         refreshMenuList(requireContext())
         stopAnimations()
         binding.tvSubtitle.visibility = View.VISIBLE
@@ -365,6 +437,8 @@ class ConnectFragment : Fragment(),
     }
 
     private fun doLayoutStarting(context: Context) {
+        stopSessionTimer()
+        updateButtonText()
         binding.tvSubtitle.visibility = View.VISIBLE
         binding.tvSubtitle.text = viewModel.subtitleState.value
         with(binding.progressBar) {

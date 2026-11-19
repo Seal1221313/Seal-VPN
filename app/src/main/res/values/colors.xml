@@ -1,18 +1,18 @@
 <resources>
-        <color name="panel_background_main">#efefef</color>
-        <color name="bright_green">#ccff2a</color>
-        <color name="dark_purple">#3f2b4f</color>
-        <color name="progress_bar_purple">#CB50FF</color>
-        <color name="orbot_btn_enabled_purple">#7424CF</color>
-        <color name="orbot_btn_disable_grey">#332B3B</color>
-        <color name="light_grey">#AAA9AA</color>
-        <color name="menu_header">#A06DDF</color>
-        <color name="new_background">#1C1425</color>
-        <color name="text_purple">#A06DDF</color>
-        <color name="panel_widget_background">#272030</color>
-        <color name="panel_card_image">#CAADED</color>
+        <color name="panel_background_main">#eef3f6</color>
+        <color name="bright_green">#7dffb2</color>
+        <color name="dark_purple">#12212E</color>
+        <color name="progress_bar_purple">#2BD9C5</color>
+        <color name="orbot_btn_enabled_purple">#00B8A9</color>
+        <color name="orbot_btn_disable_grey">#1E2D3A</color>
+        <color name="light_grey">#9FB1BF</color>
+        <color name="menu_header">#5CE1D3</color>
+        <color name="new_background">#0B1620</color>
+        <color name="text_purple">#5CE1D3</color>
+        <color name="panel_widget_background">#12212E</color>
+        <color name="panel_card_image">#9FE9E0</color>
 
-        <color name="bg_gradient_start">#33bc79f0</color>
+        <color name="bg_gradient_start">#3300B8A9</color>
         <color name="bg_gradient_center">@color/bg_gradient_start</color>
-        <color name="bg_gradient_end">#33c3fe37</color>
+        <color name="bg_gradient_end">#3329B6F6</color>
 </resources>
