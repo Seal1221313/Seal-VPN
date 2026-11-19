@@ -4,10 +4,6 @@
         android:icon="@drawable/ic_onion"
         android:title="@string/connect" />
     <item
-        android:id="@+id/kindnessFragment"
-        android:icon="@drawable/ic_heart"
-        android:title="@string/menu_kindness" />
-    <item
         android:id="@+id/moreFragment"
         android:icon="@drawable/ic_more"
         android:title="@string/menu_more" />

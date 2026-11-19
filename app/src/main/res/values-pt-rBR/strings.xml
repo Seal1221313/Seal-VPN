@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot é um aplicativo de proxy livre que permite que outros aplicativos acessem a internet com mais segurança. Orbot usa o Tor para criptografar seu tráfego na internet e então o esconde \"pulando\" entre uma série de computadores ao redor do mundo. Tor é um software livre e de rede aberta que ajuda você a se defender de certas formas de vigilância que ameaçam privacidade e liberdade pessoais, atividades e relações comerciais confidenciais e segurança estatal conhecida como análise de tráfego.</string>
-    <string name="menu_settings">Configurações do Orbot</string>
+    <string name="app_name">Seal-VPN</string>
+    <string name="app_description">Seal-VPN é um aplicativo de proxy livre que permite que outros aplicativos acessem a internet com mais segurança. Seal-VPN usa o Tor para criptografar seu tráfego na internet e então o esconde \"pulando\" entre uma série de computadores ao redor do mundo. Tor é um software livre e de rede aberta que ajuda você a se defender de certas formas de vigilância que ameaçam privacidade e liberdade pessoais, atividades e relações comerciais confidenciais e segurança estatal conhecida como análise de tráfego.</string>
+    <string name="menu_settings">Configurações do Seal-VPN</string>
     <string name="menu_log">Registro</string>
     <string name="menu_about">Sobre</string>
     <string name="menu_exit">Sair</string>
     <!--Welcome Wizard strings (DJH)-->
-    <string name="wizard_details_msg">O Orbot é um aplicativo de código aberto que inclui Tor, IPtProxy (Lyrebird, Meek, Snowflake), hev-socks5-tunnel e LibEvent. Ele fornece um túnel VPN, um proxy HTTP Connect local (somente HTTPS na porta 8118) e um proxy SOCKS (9050) para a rede Tor.</string>
+    <string name="wizard_details_msg">O Seal-VPN é um aplicativo de código aberto que inclui Tor, IPtProxy (Lyrebird, Meek, Snowflake), hev-socks5-tunnel e LibEvent. Ele fornece um túnel VPN, um proxy HTTP Connect local (somente HTTPS na porta 8118) e um proxy SOCKS (9050) para a rede Tor.</string>
     <!--END Welcome Wizard strings (DJH)-->
     <string name="pref_general_group">Geral</string>
-    <string name="pref_start_boot_title">Iniciar o Orbot durante o Boot</string>
-    <string name="pref_start_boot_summary">Iniciar o Orbot automaticamente e conectar o Tor durante a inicialização do seu aparelho Android</string>
+    <string name="pref_start_boot_title">Iniciar o Seal-VPN durante o Boot</string>
+    <string name="pref_start_boot_summary">Iniciar o Seal-VPN automaticamente e conectar o Tor durante a inicialização do seu aparelho Android</string>
     <!--New Wizard Strings-->
     <!--Title Screen-->
     <!--Warning screen-->
@@ -78,7 +78,7 @@
     <string name="restore_backup">Restaurar Backup</string>
     <string name="confirm_service_deletion">Confirmar a remoção do serviço</string>
     <string name="service_type">Tipo do Serviço</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Por favor, reinicie o Orbot para habilitar as mudanças</string>
+    <string name="please_restart_Seal-VPN_to_enable_the_changes">Por favor, reinicie o Seal-VPN para habilitar as mudanças</string>
     <string name="disable">Desabilitar</string>
     <string name="enable">Ativar</string>
     <string name="full_device_vpn">VPN PARA TODO O DISPOSITIVO</string>
@@ -122,14 +122,11 @@
     <string name="version">Versão:</string>
     <string name="license">Licença:</string>
     <string name="bridge_snowflake_amp">Conecte-se através de outros usuários do Tor usando snowflake (Método 2 - AMP)</string>
-    <string name="snowflake_proxy_msg_title">Mostrar notificação da conexão</string>
-    <string name="snowflake_proxy_msg_description">Mostre uma mensagem quando você ajudar alguém a contornar a censura</string>
     <string name="strict_nodes_description">Trate as configurações de exclusão dos nós como um requisito para a construção de todos os circuitos. Isso pode quebrar a funcionalidade caso nenhum circuito seja capaz de ser gerado com as configurações de exclusão dos nós.</string>
     <string name="secure_your_connection_title">Pronto para conectar</string>
     <string name="connected_title">Conectado</string>
     <string name="secure_your_connection_subtitle">Oculte os aplicativos do monitoramento da rede e obtenha acesso quando eles estiverem bloqueados.</string>
     <string name="btn_configure">Escolha como se conectar</string>
-    <string name="volunteer_mode">Modo Bondade</string>
     <string name="trying_to_connect_title">Conectando…</string>
     <string name="btn_change_exit">Altere a saída</string>
     <string name="btn_choose_apps">Escolha os aplicativos</string>
@@ -141,20 +138,19 @@
     <string name="smart_connect">Conexão Inteligente</string>
     <string name="direct_connect_subtitle">A melhor maneira de se conectar ao Tor. Use caso o Tor não esteja bloqueado.</string>
     <string name="snowflake_subtitle">Conecta-se através de voluntários do Tor. Contorna alguns bloqueios do Tor.</string>
-    <string name="power_user_description">Para usuários familiarizados com o Tor. Permite que você inicie o Orbot sem a configuração VPN e mostra as portas SOCKS e HTTP que estejam abertas</string>
-    <string name="app_suggested_subtitle">O Orbot funciona melhor com aplicativos de mensagens e mídias sociais.</string>
+    <string name="power_user_description">Para usuários familiarizados com o Tor. Permite que você inicie o Seal-VPN sem a configuração VPN e mostra as portas SOCKS e HTTP que estejam abertas</string>
+    <string name="app_suggested_subtitle">O Seal-VPN funciona melhor com aplicativos de mensagens e mídias sociais.</string>
     <string name="apps_suggested_title">Sugestões de aplicativos</string>
     <string name="apps_other_apps">Outros aplicativos</string>
     <string name="power_user_mode">Modo de usuário avançado</string>
     <string name="log_copied">Registro log copiado</string>
     <string name="snowflake_amp">Snowflake AMP</string>
     <string name="not_sure">Não tem certeza?</string>
-    <string name="kindness_config_detail">Configure como e quando o seu dispositivo pode atuar como um proxy Snowflake para outros usuários do Tor.</string>
     <string name="many_ways">Existem muitas maneiras de chegar ao Tor. Alguns podem funcionar melhor do que outros para você.</string>
     <string name="ask_tor">Pergunte ao Tor</string>
     <string name="asking">PEDINDO…</string>
     <string name="no_internet_title">Conectar à internet</string>
-    <string name="no_internet_subtitle">Você precisa de uma conexão com a Internet para usar o Orbot.</string>
+    <string name="no_internet_subtitle">Você precisa de uma conexão com a Internet para usar o Seal-VPN.</string>
     <string name="pref_isolate_protocol">Isole os protocolos do cliente</string>
     <string name="pref_isolate_port_summary">Utilize um circuito diferente para cada porta de destino</string>
     <string name="pref_isolate_port">Isole as portas de destino</string>
@@ -163,15 +159,14 @@
     <string name="setting_debug">Depurar</string>
     <string name="option_only_on_wifi">Apenas no Wi-Fi</string>
     <string name="option_only_when_charging">Apenas ao carregar</string>
-    <string name="menu_kindness">Bondade</string>
     <string name="setting_padding">Preenchimento</string>
     <string name="menu_more">Mais</string>
-    <string name="root_warning">O Orbot detectou que o seu dispositivo tem root, isso pode causar sérios problemas de segurança.</string>
+    <string name="root_warning">O Seal-VPN detectou que o seu dispositivo tem root, isso pode causar sérios problemas de segurança.</string>
     <string name="pref_detect_root_summary">Avisar durante a inicialização se as permissões root estão ativadas neste dispositivo</string>
     <string name="pref_detect_root_title">Detecção root</string>
-    <string name="status_starting_up">O Orbot está iniciando…</string>
+    <string name="status_starting_up">O Seal-VPN está iniciando…</string>
     <string name="status_activated">Conectado à rede Tor</string>
-    <string name="status_disabled">O Orbot está desativado</string>
+    <string name="status_disabled">O Seal-VPN está desativado</string>
     <string name="couldn_t_start_tor_process_">Não foi possível iniciar o processo Tor: </string>
     <string name="unable_to_start_tor">Não é possível iniciar o Tor:</string>
     <string name="mebibyte_per_second">MiB/s</string>
@@ -181,13 +176,6 @@
     <string name="pref_isolate_keep_alive">Mantenha os circuitos isolados ativos</string>
     <string name="pref_isolate_keep_alive_summary">Mantenha ativos os circuitos isolados que tenham pelo menos um fluxo com autenticação SOCKS ativa</string>
     <string name="bridge_snowflake_sqs">Conecte-se através de outros usuários do Tor usando o Snowflake (Método 3 - SQS)</string>
-    <string name="kindness_mode_is_running">O Modo Bondade está ativado</string>
-    <string name="kindness_mode_active_message" formatted="true">Você ajudou %1$d pessoas a contornar a censura</string>
-    <string name="kindness_mode_disabled">O Modo Bondade está desativado</string>
-    <string name="kindness_mode_starting">Iniciando…</string>
-    <string name="kindness_mode_disabled_internet">Conecte-se à internet para ajudar as pessoas a contornar a censura</string>
-    <string name="kindness_mode_disabled_wifi">Conecte-se ao Wi-Fi para ajudar as pessoas a contornar a censura</string>
-    <string name="kindness_mode_disabled_power">Conecte seu dispositivo à energia para ajudar as pessoas a contornar a censura</string>
     <string name="snowflake_sqs">Snowflake SQS</string>
     <string name="bridges_via_telegram">Pontes de Tor (obfs4) via Telegram</string>
     <string name="bridges_via_telegram_subtitle">Provavelmente manterá você conectado caso o Tor esteja severamente bloqueado. Usar este método iniciará o canal do Telegram do Tor Bot. Toque em \'Iniciar\' ou digite \'%1$s\' no chat para obter os endereços da ponte.</string>
@@ -205,15 +193,15 @@
     <string name="app_icon_chooser_label_birdie">Passarinho</string>
     <string name="app_icon_dialog_title" formatted="true">Mude para %1$s</string>
     <string name="app_icon_dialog_msg" formatted="true">A mudança para %1$s reiniciará o aplicativo</string>
-    <string name="camo_samsung_instructions">No seu dispositivo Samsung Galaxy, as notificações do Orbot só terão seus ícones alterados se você acessar Configurações -&gt; Notificações -&gt; Configurações avançadas e desativar a opção \"Mostrar ícone do aplicativo nas notificações\". Clique aqui para abrir as Configurações de Notificação.</string>
+    <string name="camo_samsung_instructions">No seu dispositivo Samsung Galaxy, as notificações do Seal-VPN só terão seus ícones alterados se você acessar Configurações -&gt; Notificações -&gt; Configurações avançadas e desativar a opção \"Mostrar ícone do aplicativo nas notificações\". Clique aqui para abrir as Configurações de Notificação.</string>
     <string name="power_user_mode_permission">Alarmes e lembretes: Permissão necessária para o Modo de usuário avançado</string>
-    <string name="power_user_mode_permission_msg">Por favor, permita que o Orbot defina alarmes e lembretes para usar o modo de usuário avançado. Isso não definirá nenhum alarme no seu dispositivo. Essa permissão é necessária para que o sistema mantenha o OrbotService em execução quando o Orbot não estiver sendo usado como VPN em todo o sistema.</string>
-    <string name="request_notification_permission">Por favor, ative as notificações para o Orbot</string>
-    <string name="request_notification_permission_msg">Sem ativar as notificações, o Orbot não pode funcionar como uma VPN Tor nem usar o Modo Bondade.\n\nQuando ativadas, exibimos apenas uma notificação quando o Orbot está em execução.</string>
+    <string name="power_user_mode_permission_msg">Por favor, permita que o Seal-VPN defina alarmes e lembretes para usar o modo de usuário avançado. Isso não definirá nenhum alarme no seu dispositivo. Essa permissão é necessária para que o sistema mantenha o Seal-VPNService em execução quando o Seal-VPN não estiver sendo usado como VPN em todo o sistema.</string>
+    <string name="request_notification_permission">Por favor, ative as notificações para o Seal-VPN</string>
+    <string name="request_notification_permission_msg">Sem ativar as notificações, o Seal-VPN não pode funcionar como uma VPN Tor nem usar o Modo Bondade.\n\nQuando ativadas, exibimos apenas uma notificação quando o Seal-VPN está em execução.</string>
     <string name="open_settings">Abra as configurações</string>
     <string name="error_no_password_set">Você precisa definir uma senha para o seu dispositivo Android para usar o recurso de tela de bloqueio</string>
-    <string name="device_lock_unsupported">A autenticação Orbot não é compatível com o seu dispositivo</string>
-    <string name="device_lock_security_update_needed">Você precisa baixar as atualizações de segurança do Android para o seu dispositivo para usar a autenticação Orbot</string>
+    <string name="device_lock_unsupported">A autenticação Seal-VPN não é compatível com o seu dispositivo</string>
+    <string name="device_lock_security_update_needed">Você precisa baixar as atualizações de segurança do Android para o seu dispositivo para usar a autenticação Seal-VPN</string>
     <string name="invalid_bridge_format">Formato de ponte inválido</string>
     <string name="error_asking_tor_for_bridges">Erro ao perguntar ao Tor como conectar</string>
     <string name="enter_bridge_address">Insira o endereço da ponte</string>
@@ -222,12 +210,11 @@
     <string name="unlock_app_msg" formatted="true">Por favor, desbloqueie seu dispositivo para usar %s</string>
     <string name="run_smart_connect_">Execute o Smart Connect para encontrar a melhor maneira</string>
     <string name="scan_qr_code">Escanear código QR</string>
-    <string name="orbot_vpn">Orbot VPN</string>
-    <string name="open_orbot_to_connect_to_tor">Abra o Orbot para se conectar ao Tor</string>
-    <string name="status_shutting_down">Orbot está desligando</string>
+    <string name="orbot_vpn">Seal-VPN VPN</string>
+    <string name="open_orbot_to_connect_to_tor">Abra o Seal-VPN para se conectar ao Tor</string>
+    <string name="status_shutting_down">Seal-VPN está desligando</string>
     <string name="connect_to_tor">Conectar ao Tor</string>
-    <string name="orbot_config_invalid">Configuração do Orbot inválida</string>
-    <string name="snowflake_proxy_client_connected_msg">%1$s O Modo Bondade ajudou alguém a contornar a censura %2$s</string>
+    <string name="orbot_config_invalid">Configuração do Seal-VPN inválida</string>
     <string name="log_notice_unable_to_update_onions">Não foi possível enviar os nomes dos arquivos onion</string>
     <string name="log_notice_updating_torrc">Atualizando a configuração personalizada do torrc…</string>
     <string name="note_snowflake_doesn_t_support_proxies">NOTA: O Snowflake não suporta proxies. As configurações de proxy serão ignoradas com bridges do Snowflake.</string>
@@ -235,13 +222,13 @@
     <string name="apps_updated_msg">Apps atualizados</string>
     <string name="title_safety">Seguro</string>
     <string name="setting_app_icon_title">Ícone do app</string>
-    <string name="setting_app_icon_description">Escolha como o Orbot aparecerá no seu dispositivo</string>
+    <string name="setting_app_icon_description">Escolha como o Seal-VPN aparecerá no seu dispositivo</string>
     <string name="setting_block_screenshot_title">Bloquear capturas de tela</string>
     <string name="setting_block_screenshot_description">Impede que qualquer pessoa tire capturas de tela deste aplicativo</string>
     <string name="setting_unlock_pass_title">Bloquear tela</string>
-    <string name="setting_unlock_pass_description">Para abrir o Orbot, você precisa do PIN, da senha ou do padrão de desbloqueio do seu dispositivo</string>
+    <string name="setting_unlock_pass_description">Para abrir o Seal-VPN, você precisa do PIN, da senha ou do padrão de desbloqueio do seu dispositivo</string>
     <string name="setting_unlock_with_biometrics_title">Utilizar biometria (opcional)</string>
-    <string name="setting_unlock_with_biometrics_description">Desbloqueie o Orbot com sua impressão digital ou reconhecimento facial, se configurado em seu dispositivo.</string>
+    <string name="setting_unlock_with_biometrics_description">Desbloqueie o Seal-VPN com sua impressão digital ou reconhecimento facial, se configurado em seu dispositivo.</string>
     <string name="status_connected_control_port">O serviço Tor foi iniciado</string>
     <string name="status_handshake">Conectando-se à entrada da rede Tor</string>
     <string name="status_handshake_done">Entrando na rede Tor</string>
@@ -268,20 +255,20 @@
     <string name="invalid_bridge_qr_code">Código QR da ponte inválido</string>
     <string name="you_already_have_these_bridges">Você já adicionou as pontes neste código QR</string>
     <string name="country_clear">Remover país</string>
-    <string name="unable_to_start_orbot_vpn_title">Não foi possível iniciar o Orbot VPN</string>
-    <string name="unable_to_start_legacy_vpn_error_msg">Existe um perfil VPN personalizado configurado para permanecer \"sempre ativo\". Desative-o antes de iniciar o Orbot.</string>
-    <string name="unable_to_start_other_vpn_app_error_msg">O aplicativo %1$s está configurado para ser uma VPN \"sempre ativa\". Desative-o antes de iniciar o Orbot.</string>
-    <string name="unable_to_start_unknown_reason_error_msg">A permissão de VPN foi negada ou outro aplicativo de VPN tem o recurso \"VPN sempre ativa\" habilitado. Você pode ignorar esta mensagem e reconectar-se caso tenha fechado a caixa de diálogo de solicitação de VPN anterior por engano. Usuários com conhecimento técnico podem usar outro aplicativo de VPN e o Tor como proxy SOCKS ativando o Modo de Usuário Avançado do Orbot.</string>
+    <string name="unable_to_start_orbot_vpn_title">Não foi possível iniciar o Seal-VPN VPN</string>
+    <string name="unable_to_start_legacy_vpn_error_msg">Existe um perfil VPN personalizado configurado para permanecer \"sempre ativo\". Desative-o antes de iniciar o Seal-VPN.</string>
+    <string name="unable_to_start_other_vpn_app_error_msg">O aplicativo %1$s está configurado para ser uma VPN \"sempre ativa\". Desative-o antes de iniciar o Seal-VPN.</string>
+    <string name="unable_to_start_unknown_reason_error_msg">A permissão de VPN foi negada ou outro aplicativo de VPN tem o recurso \"VPN sempre ativa\" habilitado. Você pode ignorar esta mensagem e reconectar-se caso tenha fechado a caixa de diálogo de solicitação de VPN anterior por engano. Usuários com conhecimento técnico podem usar outro aplicativo de VPN e o Tor como proxy SOCKS ativando o Modo de Usuário Avançado do Seal-VPN.</string>
     <string name="open_vpn_settings">Abra as configurações de VPN do Android</string>
     <string name="battery_optimization_title">Desativar otimizações de bateria</string>
-    <string name="battery_optimization_pref_msg">Configuração para alguns usuários que suspeitam que seus dispositivos estejam encerrando o Orbot prematuramente enquanto ele é executado em segundo plano.</string>
-    <string name="battery_optimization_dialog_msg">Alguns dispositivos Android podem encerrar o Orbot enquanto ele estiver sendo executado em segundo plano. Para a maioria dos usuários que desejam garantir que o Orbot permaneça conectado e funcionando, basta configurá-lo para funcionar como uma VPN \"Sempre Ativa\" nas configurações do sistema. No entanto, você ainda pode impedir que seu dispositivo execute otimizações de bateria no Orbot, se achar necessário.</string>
-    <string name="battery_optimization_dialog_msg_instructions">Na tela seguinte, selecione Orbot → Permitir uso em segundo plano → Sem restrições.</string>
+    <string name="battery_optimization_pref_msg">Configuração para alguns usuários que suspeitam que seus dispositivos estejam encerrando o Seal-VPN prematuramente enquanto ele é executado em segundo plano.</string>
+    <string name="battery_optimization_dialog_msg">Alguns dispositivos Android podem encerrar o Seal-VPN enquanto ele estiver sendo executado em segundo plano. Para a maioria dos usuários que desejam garantir que o Seal-VPN permaneça conectado e funcionando, basta configurá-lo para funcionar como uma VPN \"Sempre Ativa\" nas configurações do sistema. No entanto, você ainda pode impedir que seu dispositivo execute otimizações de bateria no Seal-VPN, se achar necessário.</string>
+    <string name="battery_optimization_dialog_msg_instructions">Na tela seguinte, selecione Seal-VPN → Permitir uso em segundo plano → Sem restrições.</string>
     <string name="battery_optimization_dialog_msg_disclaimer">Observe que, na maioria dos dispositivos, desativar as otimizações de bateria fará com que a bateria do seu dispositivo descarregue mais rapidamente do que o normal…</string>
     <string name="battery_optimizations_dialog_btn_disable">Abrir configurações de otimização de bateria</string>
-    <string name="battery_optimizations_dialog_msg_power_user">Alguns dispositivos Android podem encerrar o Orbot quando ele é executado em segundo plano no Modo de Usuário Avançado. Você sempre pode desativar/reativar as otimizações de bateria posteriormente nas configurações do Orbot…</string>
-    <string name="battery_optimizations_are_disabled">As otimizações de bateria estão atualmente desativadas para o Orbot…</string>
-    <string name="battery_optimizations_are_enabled">As otimizações de bateria estão ativas no Orbot. Essa é a configuração padrão e é adequada para a maioria dos usuários…</string>
+    <string name="battery_optimizations_dialog_msg_power_user">Alguns dispositivos Android podem encerrar o Seal-VPN quando ele é executado em segundo plano no Modo de Usuário Avançado. Você sempre pode desativar/reativar as otimizações de bateria posteriormente nas configurações do Seal-VPN…</string>
+    <string name="battery_optimizations_are_disabled">As otimizações de bateria estão atualmente desativadas para o Seal-VPN…</string>
+    <string name="battery_optimizations_are_enabled">As otimizações de bateria estão ativas no Seal-VPN. Essa é a configuração padrão e é adequada para a maioria dos usuários…</string>
     <string name="btn_connect_anyway">Conecte-se mesmo assim</string>
     <string name="btn_connect_anyway_stop_showing">Conecte e desative este aviso</string>
     <string name="pref_proxy_no_proxy">Sem proxy</string>

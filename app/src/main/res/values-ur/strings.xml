@@ -102,7 +102,7 @@
     <string name="restore_backup">بیک اپ بحال کریں</string>
     <string name="confirm_service_deletion">سروس حذف کرنے کی تصدیق کریں</string>
     <string name="service_type">سروس کی قسم</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">تبدیلیوں کو فعال کرنے کے لیے براہ کرم اوربوٹ کو دوبارہ شروع کریں</string>
+    <string name="please_restart_Seal-VPN_to_enable_the_changes">تبدیلیوں کو فعال کرنے کے لیے براہ کرم اوربوٹ کو دوبارہ شروع کریں</string>
     <string name="consider_disable_battery_optimizations">ہوسٹڈ سروسز چل رہی ہیں، بیٹری آپٹیمائزیشن کو غیر فعال کرنے پر غور کریں</string>
     <string name="consider_enable_battery_optimizations">کوئی ہوسٹڈ سروس نہیں چل رہی، بیٹری آپٹیمائزیشن کو فعال کرنے پر غور کریں</string>
     <string name="pref_isolate_dest">منزل کے پتے الگ کریں (Isolate)</string>
@@ -131,21 +131,11 @@
     <string name="custom_bridges">کسٹم برجز (Bridges)</string>
     <string name="bridge_snowflake_amp">سنو فلیک (طریقہ 2 - AMP) کا استعمال کرتے ہوئے دوسرے ٹور صارفین کے ذریعے جڑیں</string>
     <string name="bridge_snowflake_sqs">سنو فلیک (طریقہ 3 - SQS) کا استعمال کرتے ہوئے دوسرے ٹور صارفین کے ذریعے جڑیں</string>
-    <string name="snowflake_proxy_msg_title">کنکشن نوٹیفکیشن دکھائیں</string>
-    <string name="snowflake_proxy_msg_description">جب آپ کسی کو سنسرشپ سے بچنے میں مدد کریں تو ایک پیغام دکھائیں</string>
-    <string name="volunteer_mode">کائنڈنس موڈ</string>
     <string name="secure_your_connection_title">کنیکٹ ہونے کے لیے تیار</string>
     <string name="secure_your_connection_subtitle">ایپس کو نیٹ ورک کی نگرانی سے چھپائیں اور بلاک ہونے کی صورت میں رسائی حاصل کریں۔</string>
     <string name="btn_configure">جڑنے کا طریقہ منتخب کریں</string>
     <string name="btn_choose_apps">ایپس منتخب کریں</string>
     <string name="btn_change_exit">ایگزٹ (exit) تبدیل کریں</string>
-    <string name="kindness_mode_is_running">کائنڈنس موڈ چل رہا ہے</string>
-    <string name="kindness_mode_active_message" formatted="true">آپ نے %1$d لوگوں کی سنسرشپ کو روکنے میں مدد کی ہے</string>
-    <string name="kindness_mode_disabled">مہربانی کا موڈ غیر فعال ہے</string>
-    <string name="kindness_mode_starting">شروع ہو رہا ہے…</string>
-    <string name="kindness_mode_disabled_internet">لوگوں کو سنسر شپ کو روکنے میں مدد کرنے کے لیے انٹرنیٹ سے جڑیں</string>
-    <string name="kindness_mode_disabled_wifi">لوگوں کو سنسر شپ کو روکنے میں مدد کرنے کے لیے Wi-Fi سے منسلک ہوں</string>
-    <string name="kindness_mode_disabled_power">سنسرشپ کو روکنے میں لوگوں کی مدد کرنے کے لیے اپنے آلے کو پاور سے منسلک کریں</string>
     <string name="smart_connect">اسمارٹ کنیکٹ</string>
     <string name="direct_connect">براہ راست کنکشن</string>
     <string name="direct_connect_subtitle">ٹور سے جڑنے کا بہترین طریقہ۔ اگر ٹور بلاک نہیں ہے تو استعمال کریں۔</string>
@@ -173,8 +163,6 @@
     <string name="asking">پوچھ رہا ہے…</string>
     <string name="no_internet_title">انٹرنیٹ سے جڑیں</string>
     <string name="no_internet_subtitle">اوربوٹ استعمال کرنے کے لیے آپ کو انٹرنیٹ کنکشن کی ضرورت ہے۔</string>
-    <string name="kindness_config_detail">ترتیب دیں کہ آپ کا آلہ کس طرح اور کب دوسرے Tor صارفین کے لیے Snowflake پراکسی کے طور پر کام کر سکتا ہے۔</string>
-    <string name="menu_kindness">مہربانی</string>
     <string name="option_only_on_wifi">صرف وائی فائی پر</string>
     <string name="option_only_when_charging">صرف چارج کرتے وقت</string>
     <string name="setting_padding">پیڈنگ</string>
@@ -190,11 +178,11 @@
     <string name="app_icon_chooser_label_birdie">برڈی</string>
     <string name="app_icon_dialog_title" formatted="true">%1$s پر سوئچ کریں</string>
     <string name="app_icon_dialog_msg" formatted="true">%1$s پر سوئچ کرنے سے ایپ دوبارہ شروع ہو جائے گی</string>
-    <string name="camo_samsung_instructions">آپ کے Samsung Galaxy ڈیوائس پر، Orbot کی اطلاعات صرف سیٹنگز -&gt; نوٹیفیکیشنز -&gt; ایڈوانسڈ سیٹنگز کو کھول کر اور \"اطلاعات میں ایپ آئیکن دکھائیں\" کو غیر فعال کر کے آئیکنز کو تبدیل کریں گی۔ نوٹیفکیشن سیٹنگز کو کھولنے کے لیے یہاں کلک کریں۔</string>
+    <string name="camo_samsung_instructions">آپ کے Samsung Galaxy ڈیوائس پر، Seal-VPN کی اطلاعات صرف سیٹنگز -&gt; نوٹیفیکیشنز -&gt; ایڈوانسڈ سیٹنگز کو کھول کر اور \"اطلاعات میں ایپ آئیکن دکھائیں\" کو غیر فعال کر کے آئیکنز کو تبدیل کریں گی۔ نوٹیفکیشن سیٹنگز کو کھولنے کے لیے یہاں کلک کریں۔</string>
     <string name="power_user_mode_permission">پاور یوزر موڈ کے لیے الارم اور یاد دہانی کی اجازت درکار ہے</string>
-    <string name="power_user_mode_permission_msg">پاور یوزر موڈ استعمال کرنے کے لیے براہ کرم Orbot کو الارم اور یاد دہانیاں سیٹ کرنے کی اجازت دیں۔ یہ دراصل آپ کے آلے پر کوئی الارم سیٹ نہیں کرے گا۔ سسٹم کو OrbotService کو چلانے کے لیے اس اجازت کی ضرورت ہے جب Orbot کو سسٹم وائیڈ VPN کے طور پر استعمال نہ کیا جا رہا ہو۔</string>
+    <string name="power_user_mode_permission_msg">پاور یوزر موڈ استعمال کرنے کے لیے براہ کرم Seal-VPN کو الارم اور یاد دہانیاں سیٹ کرنے کی اجازت دیں۔ یہ دراصل آپ کے آلے پر کوئی الارم سیٹ نہیں کرے گا۔ سسٹم کو Seal-VPNService کو چلانے کے لیے اس اجازت کی ضرورت ہے جب Seal-VPN کو سسٹم وائیڈ VPN کے طور پر استعمال نہ کیا جا رہا ہو۔</string>
     <string name="request_notification_permission">براہ کرم اوربوٹ کے لیے اطلاعات کو فعال کریں</string>
-    <string name="request_notification_permission_msg">اطلاعات کو آن کیے بغیر Orbot Tor VPN کے طور پر کام نہیں کر سکتا یا Kindness Mode استعمال نہیں کر سکتا\n\nفعال ہونے پر، ہم صرف ایک اطلاع دکھاتے ہیں جب Orbot چل رہا ہو۔</string>
+    <string name="request_notification_permission_msg">اطلاعات کو آن کیے بغیر Seal-VPN Tor VPN کے طور پر کام نہیں کر سکتا یا Kindness Mode استعمال نہیں کر سکتا\n\nفعال ہونے پر، ہم صرف ایک اطلاع دکھاتے ہیں جب Seal-VPN چل رہا ہو۔</string>
     <string name="open_settings">ترتیبات کھولیں</string>
     <string name="error_no_password_set">لاک اسکرین کی خصوصیت استعمال کرنے کے لیے آپ کو اپنے Android ڈیوائس کے لیے پاس ورڈ سیٹ کرنا ہوگا</string>
     <string name="device_lock_unsupported">اوربوٹ کی توثیق آپ کے آلے پر تعاون یافتہ نہیں ہے</string>
@@ -214,15 +202,14 @@
     <string name="status_starting_up">اوربوٹ شروع ہو رہا ہے…</string>
     <string name="status_activated">ٹور نیٹ ورک سے جڑا ہوا ہے</string>
     <string name="status_disabled">اوربوٹ غیر فعال ہے</string>
-    <string name="open_orbot_to_connect_to_tor">Tor سے جڑنے کے لیے Orbot کھولیں</string>
-    <string name="status_shutting_down">Orbot بند ہو رہا ہے</string>
+    <string name="open_orbot_to_connect_to_tor">Tor سے جڑنے کے لیے Seal-VPN کھولیں</string>
+    <string name="status_shutting_down">Seal-VPN بند ہو رہا ہے</string>
     <string name="connect_to_tor">ٹور کے ساتھ منسلک ہوں</string>
     <string name="orbot_config_invalid">اوربوٹ کنفیگریشن غلط ہے</string>
     <string name="couldn_t_start_tor_process_">ٹور عمل شروع نہیں ہو سکا:</string>
     <string name="unable_to_start_tor">ٹور شروع کرنے سے قاصر:</string>
     <string name="kibibyte_per_second">KiB/s</string>
     <string name="mebibyte_per_second">MiB/s</string>
-    <string name="snowflake_proxy_client_connected_msg">%1$s مہربانی موڈ نے کسی کو سنسرشپ %2$s کو روکنے میں مدد کی</string>
     <string name="log_notice_unable_to_update_onions">onion کے نام اپ لوڈ کرنے سے قاصر</string>
     <string name="log_notice_updating_torrc">torrc کسٹم کنفیگریشن کو اپ ڈیٹ کیا جا رہا ہے…</string>
     <string name="note_snowflake_doesn_t_support_proxies">نوٹ: Snowflake پراکسی کو سپورٹ نہیں کرتا ہے۔ Snowflake bridges کے ساتھ پراکسی سیٹنگز کو نظر انداز کر دیا جائے گا۔</string>
@@ -230,13 +217,13 @@
     <string name="apps_updated_msg">ایپس اپ ڈیٹ ہو گئیں</string>
     <string name="title_safety">حفاظت</string>
     <string name="setting_app_icon_title">ایپ آئیکن</string>
-    <string name="setting_app_icon_description">منتخب کریں کہ آپ کے آلے پر Orbot کیسے ظاہر ہو</string>
+    <string name="setting_app_icon_description">منتخب کریں کہ آپ کے آلے پر Seal-VPN کیسے ظاہر ہو</string>
     <string name="setting_block_screenshot_title">اسکرین شاٹس بلاک</string>
     <string name="setting_block_screenshot_description">کسی کو بھی اس ایپ کے اسکرین شاٹس لینے سے روکتا ہے</string>
     <string name="setting_unlock_pass_title">لاک اسکرین</string>
     <string name="setting_unlock_pass_description">اربوٹ کھولنے کے لیے آپ کے آلے کا PIN، پاس ورڈ، یا سوائپ پیٹرن درکار ہے</string>
     <string name="setting_unlock_with_biometrics_title">بایومیٹرکس استعمال کریں (اختیاری)</string>
-    <string name="setting_unlock_with_biometrics_description">اگر آپ کے آلے پر سیٹ اپ ہو تو اپنے فنگر پرنٹ یا فیس آئی ڈی سے Orbot کو غیر مقفل کریں۔</string>
+    <string name="setting_unlock_with_biometrics_description">اگر آپ کے آلے پر سیٹ اپ ہو تو اپنے فنگر پرنٹ یا فیس آئی ڈی سے Seal-VPN کو غیر مقفل کریں۔</string>
     <string name="status_connected_control_port">ٹور سروس شروع ہو گئی ہے</string>
     <string name="status_handshake">ٹور نیٹ ورک کے داخلی راستے سے جڑ رہا ہے</string>
     <string name="status_handshake_done">ٹور نیٹ ورک میں داخل ہو رہا ہے</string>
@@ -259,9 +246,9 @@
     <string name="my_country_optional">میرا ملک (اختیاری)</string>
     <string name="limit_dns_tunnel_use">DNS ٹنل کے استعمال کو محدود کریں</string>
     <string name="dns_tunnel_usage_description">DNS سرنگیں رفتار سے زیادہ رسائی کو ترجیح دیتی ہیں اور سست محسوس کر سکتی ہیں۔ ہم انہیں صرف ضروری ایپس کے لیے فعال کرنے کی تجویز کرتے ہیں۔ ویڈیو سلسلہ بندی کی سفارش نہیں کی جاتی ہے۔</string>
-    <string name="unable_to_start_orbot_vpn_title">Orbot VPN شروع کرنے سے قاصر</string>
+    <string name="unable_to_start_orbot_vpn_title">Seal-VPN VPN شروع کرنے سے قاصر</string>
     <string name="unable_to_start_legacy_vpn_error_msg">ایک حسب ضرورت VPN پروفائل ہے جسے \"ہمیشہ آن\" VPN کے طور پر ترتیب دیا گیا ہے۔ براہ کرم اوربوٹ شروع کرنے سے پہلے اسے غیر فعال کر دیں۔</string>
     <string name="unable_to_start_other_vpn_app_error_msg">ایپ %1$s کو \"ہمیشہ آن\" VPN کے لیے کنفیگر کیا گیا ہے۔ براہ کرم اوربوٹ شروع کرنے سے پہلے اسے غیر فعال کر دیں۔</string>
-    <string name="unable_to_start_unknown_reason_error_msg">VPN کی اجازت مسترد کر دی گئی یا کسی اور VPN ایپ میں \"ہمیشہ آن VPN\" خصوصیت فعال ہے۔ اگر آپ غلطی سے پچھلے VPN درخواست کے ڈائیلاگ سے باہر ہو گئے تو آپ اسے برخاست کر سکتے ہیں اور دوبارہ جڑ سکتے ہیں۔ تکنیکی صارفین ایک اور VPN ایپ استعمال کر سکتے ہیں اور Orbot کے پاور یوزر موڈ کو فعال کر کے Tor کو SOCKS پراکسی کے طور پر استعمال کر سکتے ہیں۔</string>
+    <string name="unable_to_start_unknown_reason_error_msg">VPN کی اجازت مسترد کر دی گئی یا کسی اور VPN ایپ میں \"ہمیشہ آن VPN\" خصوصیت فعال ہے۔ اگر آپ غلطی سے پچھلے VPN درخواست کے ڈائیلاگ سے باہر ہو گئے تو آپ اسے برخاست کر سکتے ہیں اور دوبارہ جڑ سکتے ہیں۔ تکنیکی صارفین ایک اور VPN ایپ استعمال کر سکتے ہیں اور Seal-VPN کے پاور یوزر موڈ کو فعال کر کے Tor کو SOCKS پراکسی کے طور پر استعمال کر سکتے ہیں۔</string>
     <string name="open_vpn_settings">اینڈرائیڈ وی پی این کی ترتیبات کھولیں</string>
 </resources>

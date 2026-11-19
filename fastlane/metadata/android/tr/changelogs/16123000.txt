@@ -1,2 +1,0 @@
-* Köprü desteği için düzeltmeler yapıldı
-* Tor 0.4.1.5 sürümüne güncellendi

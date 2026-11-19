@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot este o aplicaţie gratuită de proxy care permite altor aplicaţii să folosească internetul în siguranţă. Orbot foloseşte Tor pentru a cripta traficul de internet după care îl ascunde printr-o serie de calculatoare din întreaga lume. Tor este un program gratuit si o reţea deschisă care te ajută să te aperi de monitorizarea reţelelor, lucru care ameninţă libertatea personală şi intimitatea, activităţi confidenţiale legate de afaceri si relaţii personale şi de analiza traficului.</string>
-    <string name="menu_settings">Setări Orbot</string>
+    <string name="app_name">Seal-VPN</string>
+    <string name="app_description">Seal-VPN este o aplicaţie gratuită de proxy care permite altor aplicaţii să folosească internetul în siguranţă. Seal-VPN foloseşte Tor pentru a cripta traficul de internet după care îl ascunde printr-o serie de calculatoare din întreaga lume. Tor este un program gratuit si o reţea deschisă care te ajută să te aperi de monitorizarea reţelelor, lucru care ameninţă libertatea personală şi intimitatea, activităţi confidenţiale legate de afaceri si relaţii personale şi de analiza traficului.</string>
+    <string name="menu_settings">Setări Seal-VPN</string>
     <string name="menu_log">log</string>
     <string name="menu_about">Despre</string>
     <string name="menu_exit">Ieşire</string>
     <!--Welcome Wizard strings (DJH)-->
     <!--END Welcome Wizard strings (DJH)-->
     <string name="pref_general_group">General</string>
-    <string name="pref_start_boot_title">Porneşte Orbot la boot-are</string>
-    <string name="pref_start_boot_summary">Porneste Orbot automat si conecteaza-te la Tor cand porneste dispozitivul</string>
+    <string name="pref_start_boot_title">Porneşte Seal-VPN la boot-are</string>
+    <string name="pref_start_boot_summary">Porneste Seal-VPN automat si conecteaza-te la Tor cand porneste dispozitivul</string>
     <!--New Wizard Strings-->
     <!--Title Screen-->
     <!--Warning screen-->
@@ -66,7 +66,7 @@
     <string name="hidden_services">Servicii ascunse</string>
     <string name="save">Salvează</string>
     <string name="name">Nume</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Vă rugăm reporniţi Orbot pentru a aplica modificările</string>
+    <string name="please_restart_Seal-VPN_to_enable_the_changes">Vă rugăm reporniţi Seal-VPN pentru a aplica modificările</string>
     <string name="disable">Dezactivează</string>
     <string name="enable">Activează</string>
     <string name="pref_open_proxy_on_all_interfaces_title">Deschideți Proxy pe toate interfețele</string>
@@ -98,7 +98,7 @@
     <string name="consider_disable_battery_optimizations">Serviciile găzduite rulează, luați în considerare dezactivarea optimizărilor bateriei</string>
     <string name="backup_service">Serviciul de backup (Atenție: Acest lucru ar putea expune configurația serviciului dvs. altor aplicații)</string>
     <string name="pref_isolate_port">Izolarea porturilor de destinație</string>
-    <string name="no_internet_subtitle">Aveți nevoie de o conexiune la internet pentru a utiliza Orbot.</string>
+    <string name="no_internet_subtitle">Aveți nevoie de o conexiune la internet pentru a utiliza Seal-VPN.</string>
     <string name="pref_prefer_ipv6">Preferați conexiunile IPv6</string>
     <string name="btn_configure">Alegeți cum să vă conectați</string>
     <string name="connect">Conectare</string>
@@ -116,14 +116,13 @@
     <string name="snowflake_amp">Snowflake AMP</string>
     <string name="asking">CERERE…</string>
     <string name="no_internet_title">Conectare la internet</string>
-    <string name="kindness_config_detail">Configurați cum și când dispozitivul dvs. poate acționa ca proxy Snowflake pentru alți utilizatori Tor.</string>
     <string name="confirm">Confirmați</string>
     <string name="v3_key_hash">x25519 Cheie privată în baza32</string>
     <string name="pref_reduced_circuit_padding">Circuit redus de umplere a circuitului</string>
     <string name="v3_delete_client_authorization_confirm">Ștergeți autorizația clientului</string>
     <string name="v3_backup_name_hint">Nume fișier de rezervă…</string>
     <string name="v3_import_auth_private">Importați .auth_private</string>
-    <string name="wizard_details_msg">Orbot este o aplicație cu sursă deschisă care conține Tor, IPtProxy (Lyrebird, Meek, Snowflake), hev-socks5-tunnel și LibEvent. Acesta oferă un tunel VPN, un proxy HTTP local (8118) și un proxy SOCKS (9050) în rețeaua Tor.</string>
+    <string name="wizard_details_msg">Seal-VPN este o aplicație cu sursă deschisă care conține Tor, IPtProxy (Lyrebird, Meek, Snowflake), hev-socks5-tunnel și LibEvent. Acesta oferă un tunel VPN, un proxy HTTP local (8118) și un proxy SOCKS (9050) în rețeaua Tor.</string>
     <string name="version">Versiunea:</string>
     <string name="license">Licență:</string>
     <string name="delete_service">Ștergeți serviciul</string>
@@ -145,33 +144,29 @@
     <string name="secure_your_connection_title">Gata de conectare</string>
     <string name="snowflake">Snowflake</string>
     <string name="log_copied">Jurnalul a fost copiat</string>
-    <string name="power_user_description">Pentru utilizatorii familiarizați cu Tor. Vă permite să porniți Orbot fără setarea VPN și afișează porturile SOCKS și HTTP deschise</string>
+    <string name="power_user_description">Pentru utilizatorii familiarizați cu Tor. Vă permite să porniți Seal-VPN fără setarea VPN și afișează porturile SOCKS și HTTP deschise</string>
     <string name="apps_suggested_title">Aplicații sugerate</string>
     <string name="apps_other_apps">Alte aplicații</string>
     <string name="not_sure">Nu sunteți siguri\?</string>
     <string name="ask_tor">Adresați-vă Tor</string>
     <string name="many_ways">Există mai multe modalități de a vă conecta la Tor. Unele pot funcționa mai bine decât altele pentru dumneavoastră.</string>
-    <string name="snowflake_proxy_msg_title">Afișați notificarea de conectare</string>
-    <string name="volunteer_mode">Modul Bunătate</string>
     <string name="power_user_mode">Mod utilizator expert</string>
-    <string name="app_suggested_subtitle">Orbot funcționează cel mai bine cu aplicațiile de mesagerie și social media.</string>
+    <string name="app_suggested_subtitle">Seal-VPN funcționează cel mai bine cu aplicațiile de mesagerie și social media.</string>
     <string name="setting_debug">Depanare</string>
     <string name="menu_more">Mai mult</string>
     <string name="secure_your_connection_subtitle">Ascundeți aplicațiile de la monitorizarea rețelei și obțineți acces atunci când sunt blocate.</string>
     <string name="connected_title">Conectată</string>
     <string name="next">Următorul</string>
-    <string name="snowflake_proxy_msg_description">Afișați un mesaj atunci când ajutați pe cineva să ocolească cenzura</string>
     <string name="setting_padding">Căptușeală</string>
     <string name="option_only_on_wifi">Doar pe Wi-Fi</string>
     <string name="option_only_when_charging">Numai la încărcare</string>
     <string name="btn_copy_log">Copiere jurnal</string>
-    <string name="menu_kindness">Bunătate</string>
-    <string name="root_warning">Orbot a detectat că dispozitivul dvs. este deblocat (root), ceea ce poate cauza probleme de securitate.</string>
+    <string name="root_warning">Seal-VPN a detectat că dispozitivul dvs. este deblocat (root), ceea ce poate cauza probleme de securitate.</string>
     <string name="pref_detect_root_summary">Avertizează la pornire dacă permisiunile root sunt activate pe acest dispozitiv</string>
     <string name="pref_detect_root_title">Detectare root</string>
     <string name="power_user_mode_permission">Permisiunea de alarmă și memento necesară pentru modul de utilizare Expert</string>
-    <string name="power_user_mode_permission_msg">Vă rugăm să permiteți Orbot să seteze alarme și memento-uri pentru a utiliza modul de utilizare Expert. Acest lucru nu va seta de fapt nici o alarmă pe dispozitiv. Această permisiune este necesară pentru ca sistemul să păstreze serviciul Orbot în funcțiune atunci când Orbot nu este folosit ca un VPN la nivel de sistem.</string>
-    <string name="error_no_password_set">Vă rugăm să vă securizați dispozitivul pentru a utiliza Autentificare Orbot</string>
+    <string name="power_user_mode_permission_msg">Vă rugăm să permiteți Seal-VPN să seteze alarme și memento-uri pentru a utiliza modul de utilizare Expert. Acest lucru nu va seta de fapt nici o alarmă pe dispozitiv. Această permisiune este necesară pentru ca sistemul să păstreze serviciul Seal-VPN în funcțiune atunci când Seal-VPN nu este folosit ca un VPN la nivel de sistem.</string>
+    <string name="error_no_password_set">Vă rugăm să vă securizați dispozitivul pentru a utiliza Autentificare Seal-VPN</string>
     <string name="unlock_app_msg" formatted="true">Vă rugăm să deblocați dispozitivul pentru a utiliza %s</string>
     <string name="bridge_snowflake_sqs">Conectați-vă prin intermediul altor utilizatori Tor folosind Snowflake (Metoda 3 - SQS)</string>
     <string name="snowflake_sqs">Snowflake SQS</string>
@@ -193,8 +188,8 @@
     <string name="app_icon_chooser_label_fit_grit">FitGrit</string>
     <string name="app_icon_chooser_label_birdie">Birdie</string>
     <string name="camo_samsung_instructions">Notificările modului de Camuflaj vor funcționa pe Samsung Galaxy numai prin deschiderea setărilor -&gt; Notificări -&gt; Setări avansate și dezactivarea \"Arată iconițe aplicații în notificări\". Click aici pentru a deschide Setarea notificării.</string>
-    <string name="device_lock_unsupported">Autentificarea Orbot nu este acceptată pe dispozitivul dvs.</string>
-    <string name="device_lock_security_update_needed">Trebuie să descărcați actualizări de securitate Android pentru dispozitivul dvs. pentru a utiliza Autentificare Orbot</string>
+    <string name="device_lock_unsupported">Autentificarea Seal-VPN nu este acceptată pe dispozitivul dvs.</string>
+    <string name="device_lock_security_update_needed">Trebuie să descărcați actualizări de securitate Android pentru dispozitivul dvs. pentru a utiliza Autentificare Seal-VPN</string>
     <string name="invalid_bridge_format">Format de punte invalid</string>
     <string name="error_asking_tor_for_bridges">Eroare la setarea modului de conectare Tor</string>
     <string name="enter_bridge_address">Introduceți adresa punții</string>
@@ -202,29 +197,21 @@
     <string name="built_in_bridges_obfs4_subtitle">Vă camuflează traficul. Evită unele moduri de blocare Tor. Bun dacă sunteți pe Wi-Fi public, dar într-o țară în care Tor nu este blocat.</string>
     <string name="run_smart_connect_">Rulați Conectarea Smart pentru a găsi cea mai bună cale</string>
     <string name="scan_qr_code">Scanare cod QR</string>
-    <string name="status_starting_up">Orbot porneste…</string>
+    <string name="status_starting_up">Seal-VPN porneste…</string>
     <string name="status_activated">Conectat la reteaua Tor</string>
-    <string name="status_disabled">Orbot este dezactivat</string>
+    <string name="status_disabled">Seal-VPN este dezactivat</string>
     <string name="couldn_t_start_tor_process_">Nu am putut porni procesul Tor:</string>
     <string name="unable_to_start_tor">Nu am reusit sa pornesc Tor:</string>
-    <string name="kindness_mode_is_running">Modul Bunătate rulează</string>
-    <string name="kindness_mode_active_message" formatted="true">Ai ajutat %1$d oamenii să eludeze cenzura</string>
-    <string name="kindness_mode_disabled">Modul Bunătate este dezactivat</string>
-    <string name="kindness_mode_starting">Pornire…</string>
-    <string name="kindness_mode_disabled_internet">Conectați-vă la internet pentru a ajuta oamenii să eludeze cenzura</string>
-    <string name="kindness_mode_disabled_wifi">Conectați-vă la Wi-Fi pentru a ajuta oamenii să eludeze cenzura</string>
-    <string name="kindness_mode_disabled_power">Conectați dispozitivul dvs. la încărcător pentru a ajuta oamenii să eludeze cenzura</string>
-    <string name="request_notification_permission">Vă rugăm să activați notificări pentru Orbot</string>
-    <string name="request_notification_permission_msg">Fără a activa notificările Orbot nu poate acționa ca un VPN Tor sau să utilizați modul Bunătate.\n\nAtunci când este activat, afișăm o singură notificare atunci când Orbot rulează.</string>
+    <string name="request_notification_permission">Vă rugăm să activați notificări pentru Seal-VPN</string>
+    <string name="request_notification_permission_msg">Fără a activa notificările Seal-VPN nu poate acționa ca un VPN Tor sau să utilizați modul Bunătate.\n\nAtunci când este activat, afișăm o singură notificare atunci când Seal-VPN rulează.</string>
     <string name="open_settings">Deschide setări</string>
-    <string name="orbot_vpn">Orbot VPN</string>
-    <string name="open_orbot_to_connect_to_tor">Deschideți Orbot pentru a vă conecta la Tor</string>
-    <string name="status_shutting_down">Orbot se închide</string>
+    <string name="orbot_vpn">Seal-VPN VPN</string>
+    <string name="open_orbot_to_connect_to_tor">Deschideți Seal-VPN pentru a vă conecta la Tor</string>
+    <string name="status_shutting_down">Seal-VPN se închide</string>
     <string name="connect_to_tor">Conectare la Tor</string>
-    <string name="orbot_config_invalid">Configurație Orbot Invalidă</string>
+    <string name="orbot_config_invalid">Configurație Seal-VPN Invalidă</string>
     <string name="kibibyte_per_second">KiO/s</string>
     <string name="mebibyte_per_second">MiO/s</string>
-    <string name="snowflake_proxy_client_connected_msg">Modul de bunătate %1$s a ajutat pe cineva să eludeze cenzura%2$s</string>
     <string name="log_notice_unable_to_update_onions">imposibilitatea de a încărca numele onion</string>
     <string name="log_notice_updating_torrc">Actualizarea configurației personalizate torrc…</string>
     <string name="note_snowflake_doesn_t_support_proxies">NOTĂ: Snowflake nu suportă proxy-uri. Setările proxy vor fi ignorate cu punțile Snowflake.</string>

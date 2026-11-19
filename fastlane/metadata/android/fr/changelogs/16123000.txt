@@ -1,2 +1,0 @@
-* correctifs pour la prise en charge des ponts
-* mise à jour vers tor 0.4.1.5

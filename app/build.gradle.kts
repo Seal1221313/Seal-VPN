@@ -38,7 +38,7 @@ configure<ApplicationExtension> {
     }
 
     defaultConfig {
-        applicationId = namespace
+        applicationId = "com.seal1221313.sealvpn"
         versionCode = orbotBaseVersionCode
         versionName = getVersionName().get()
         minSdk = 24
@@ -109,7 +109,7 @@ configure<ApplicationExtension> {
         }
         create("nightly") {
             dimension = "free"
-            applicationId = "org.torproject.android.nightly"
+            applicationId = "com.seal1221313.sealvpn.nightly"
             versionCode = (Date().time / 1000).toInt()
         }
     }

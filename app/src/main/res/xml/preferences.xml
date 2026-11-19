@@ -53,20 +53,6 @@
     </PreferenceScreen>
 
     <PreferenceScreen
-        android:key="category_kindness"
-        android:title="@string/volunteer_mode"
-        app:iconSpaceReserved="false">
-
-        <CheckBoxPreference
-            android:defaultValue="false"
-            android:key="pref_show_snowflake_proxy_msg"
-            android:summary="@string/snowflake_proxy_msg_description"
-            android:title="@string/snowflake_proxy_msg_title"
-            app:iconSpaceReserved="false" />
-
-    </PreferenceScreen>
-
-    <PreferenceScreen
         android:key="category_node_config"
         android:title="@string/pref_node_configuration"
         app:iconSpaceReserved="false"

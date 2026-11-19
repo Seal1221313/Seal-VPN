@@ -47,8 +47,6 @@
     <string name="project_home">திட்ட வீடு:</string>
     <string name="exclude_nodes">முனைகளை விலக்கு</string>
     <string name="enable_debug_log_to_output_must_use_adb_or_alogcat_to_view_">வெளியீட்டிற்கு பிழைத்திருத்த பதிவை இயக்கவும் (பார்க்க எடிபி அல்லது aLogcat ஐப் பயன்படுத்த வேண்டும்)</string>
-    <string name="snowflake_proxy_msg_title">இணைப்பு அறிவிப்பைக் காட்டு</string>
-    <string name="snowflake_proxy_msg_description">தணிக்கை செய்ய யாராவது உதவும்போது ஒரு செய்தியைக் காட்டுங்கள்</string>
     <string name="pref_proxy_type_title">வெளிச்செல்லும் பதிலாள் வகை</string>
     <string name="vpn_default_world">உலகளாவிய (ஆட்டோ)</string>
     <string name="v3_hosted_services">புரவலன் செய்யப்பட்ட வெங்காய சேவைகள்</string>
@@ -85,14 +83,13 @@
     <string name="pref_proxy_host_title">வெளிச்செல்லும் பதிலாள் புரவலன்</string>
     <string name="pref_proxy_host_summary">பதிலாள் சர்வர் ஓச்ட்பெயர்</string>
     <string name="third_party_software">3 வது-கட்சி-மென்பொருள்:</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">மாற்றங்களை இயக்க ஆர்போட்டை மறுதொடக்கம் செய்யுங்கள்</string>
+    <string name="please_restart_Seal-VPN_to_enable_the_changes">மாற்றங்களை இயக்க ஆர்போட்டை மறுதொடக்கம் செய்யுங்கள்</string>
     <string name="consider_disable_battery_optimizations">புரவலன் செய்யப்பட்ட சேவைகள் இயங்குகின்றன, பேட்டரி மேம்படுத்தல்களை முடக்குவதைக் கருத்தில் கொள்ளுங்கள்</string>
     <string name="pref_isolate_dest">இலக்கு முகவரிகளை தனிமைப்படுத்தவும்</string>
     <string name="pref_reduced_connection_padding_summary">ரிலே இணைப்புகளை விரைவில் மூடுகிறது மற்றும் தரவு மற்றும் பேட்டரி பயன்பாட்டைக் குறைக்க குறைந்த திணிப்பு பாக்கெட்டுகளை அனுப்புகிறது</string>
     <string name="pref_circuit_padding">சுற்று திணிப்பு</string>
     <string name="pref_circuit_padding_summary">சில வகையான போக்குவரத்து பகுப்பாய்விற்கு எதிராக பாதுகாக்க சர்க்யூட் பேடிங்கை இயக்கவும்</string>
     <string name="pref_prefer_ipv6">IPv6 இணைப்புகளை விரும்புங்கள்</string>
-    <string name="volunteer_mode_subtitle_desc">கருணை பயன்முறை உங்கள் சாதனம் மற்றவர்களுக்கு ஒரு பாலமாக இருக்க அனுமதிக்கிறது. இது தடுக்கப்பட்ட இடங்களில் டோர் பயன்படுத்த மக்களுக்கு உதவுகிறது.\n\n • இது உங்கள் பேட்டரியை வடிகட்டாது\n • இது உங்கள் இணையத்தை மெதுவாக்காது\n • இது வைஃபை மீது மட்டுமே இயங்க முடியும்\n • இதை எப்போது வேண்டுமானாலும் அணைக்கலாம்</string>
     <string name="smart_connect">அறிவுள்ள கனெக்ட்</string>
     <string name="btn_copy_log">நகல் பதிவு</string>
     <string name="pref_detect_root_summary">இந்த சாதனத்தில் ரூட் அனுமதிகள் இயக்கப்பட்டிருந்தால் தொடக்கத்தைப் பற்றி எச்சரிக்கவும்</string>
@@ -149,7 +146,6 @@
     <string name="pref_prefer_ipv6_summary">ஐபிவி 6 முகவரிகள் விரும்பப்படுகின்றன என்று வெளியேறுகிறது</string>
     <string name="user_services">பயனர் சேவைகள்</string>
     <string name="bridge_snowflake_amp">ச்னோஃப்ளேக்கைப் பயன்படுத்தி பிற டோர் பயனர்கள் மூலம் இணைக்கவும் (முறை 2 - ஆம்ப்)</string>
-    <string name="volunteer_mode">கருணை முறை</string>
     <string name="btn_choose_apps">பயன்பாடுகளைத் தேர்வுசெய்க</string>
     <string name="btn_change_exit">வெளியேறவும்</string>
     <string name="apps_suggested_title">பரிந்துரைக்கப்பட்ட பயன்பாடுகள்</string>
@@ -157,8 +153,6 @@
     <string name="log_copied">பதிவு நகலெடுக்கப்பட்டது</string>
     <string name="not_sure">நிச்சயமாக இல்லையா?</string>
     <string name="no_internet_subtitle">ஆர்போட்டைப் பயன்படுத்த உங்களுக்கு இணைய இணைப்பு தேவை.</string>
-    <string name="kindness_config_detail">உங்கள் சாதனம் மற்ற டோர் பயனர்களுக்கான ச்னோஃப்ளேக் ப்ராக்சியாக எவ்வாறு, எப்போது செயல்பட முடியும் என்பதை உள்ளமைக்கவும்.</string>
-    <string name="menu_kindness">கருணை</string>
     <string name="option_only_on_wifi">வைஃபை மட்டுமே</string>
     <string name="option_only_when_charging">கட்டணம் வசூலிக்கும்போது மட்டுமே</string>
     <string name="root_warning">ஆர்போட் உங்கள் சாதனம் வேரூன்றியிருப்பதைக் கண்டறிந்துள்ளது, இது பாதுகாப்பு சிக்கல்களை ஏற்படுத்தும்.</string>
@@ -185,13 +179,6 @@
     <string name="status_starting_up">ஆர்பாட் துவங்குகிறது…</string>
     <string name="status_activated">தோர் நெட்வொர்க் இணைக்கப்பட்ட</string>
     <string name="status_disabled">ஆர்பாட் நிறுத்தப்பட்டது</string>
-    <string name="kindness_mode_is_running">கருணை முறை இயங்குகிறது</string>
-    <string name="kindness_mode_active_message" formatted="true">தணிக்கையைத் தவிர்க்க %1$d நபர்களுக்கு நீங்கள் உதவியுள்ளீர்கள்</string>
-    <string name="kindness_mode_disabled">கருணை முறை செயலிழக்கப்படுகிறது</string>
-    <string name="kindness_mode_starting">தொடங்குகிறது…</string>
-    <string name="kindness_mode_disabled_internet">தணிக்கையைத் தவிர்க்க மக்களுக்கு உதவ இணையத்துடன் இணைக்கவும்</string>
-    <string name="kindness_mode_disabled_wifi">தணிக்கையைத் தவிர்க்க மக்களுக்கு உதவ வைஃபை உடன் இணைக்கவும்</string>
-    <string name="kindness_mode_disabled_power">தணிக்கை செய்ய மக்களுக்கு உதவ உங்கள் சாதனத்தை அதிகாரத்துடன் இணைக்கவும்</string>
     <string name="bridges_via_telegram">டெலிகிராம் வழியாக டோர் (obfs4) இலிருந்து பாலங்கள்</string>
     <string name="bridges_via_telegram_subtitle">டோர் கடுமையாகத் தடுக்கப்பட்டால் உங்களை இணைத்து வைத்திருக்க வாய்ப்புள்ளது. இந்த முறையைப் பயன்படுத்துவது டோர் போட் டெலிகிராம் சேனலைத் தொடங்கும். பாலம் முகவரிகளைப் பெற அரட்டையில் \'தொடங்கு\' அல்லது \'%1$s\' ஐ எழுதுங்கள்.</string>
     <string name="bridges_via_email">மின்னஞ்சல் வழியாக டோர் (obfs4) இலிருந்து பாலங்கள்</string>
@@ -199,7 +186,7 @@
     <string name="bridge_meek_azure_subtitle">உங்கள் போக்குவரத்தை மூடுகிறது. சில டோர் தடுப்புகளைச் சுற்றி வருகிறது. மிகவும் மெதுவாக இருக்கலாம்.</string>
     <string name="custom_bridges_subtitle">உங்கள் நம்பகமான நெட்வொர்க்குகள் மற்றும் அமைப்புகளுக்குள் யாராவது ஒரு பாலத்தை புரவலன் செய்கிறார்களா என்று கேளுங்கள். இல்லையென்றால், ஒரு நண்பர் உங்களுக்காக பாலங்களைப் பெறலாம்.</string>
     <string name="custom_bridges_description">நீங்கள் கீழே பெறும் பாலம் முகவரிகளை ஒட்டவும். அல்லது அவற்றைச் சேர்க்க QR குறியீட்டை வருடு செய்யுங்கள். நண்பர்கள் உங்களுக்கான பாலங்களை %1$s இல் பெறலாம்.</string>
-    <string name="camo_samsung_instructions">உங்கள் Samsung விண்மீன் மண்டலம்/விண்மீன் கூட்டம்/விண்மீன் திரள் சாதனத்தில், Orbot இன் அறிவிப்புகள் அமைப்புகள் -&gt; அறிவிப்புகள் -&gt; மேம்பட்ட அமைப்புகளைத் திறந்து \"அறிவிப்புகளில் பயன்பாட்டு ஐகானைக் காட்டு\" என்பதை முடக்குவதன் மூலம் மட்டுமே ஐகான்களை மாற்றும். அறிவிப்பு அமைப்புகளைத் திறக்க இங்கே சொடுக்கு செய்யவும்.</string>
+    <string name="camo_samsung_instructions">உங்கள் Samsung விண்மீன் மண்டலம்/விண்மீன் கூட்டம்/விண்மீன் திரள் சாதனத்தில், Seal-VPN இன் அறிவிப்புகள் அமைப்புகள் -&gt; அறிவிப்புகள் -&gt; மேம்பட்ட அமைப்புகளைத் திறந்து \"அறிவிப்புகளில் பயன்பாட்டு ஐகானைக் காட்டு\" என்பதை முடக்குவதன் மூலம் மட்டுமே ஐகான்களை மாற்றும். அறிவிப்பு அமைப்புகளைத் திறக்க இங்கே சொடுக்கு செய்யவும்.</string>
     <string name="request_notification_permission">ஆர்போட்டிற்கான அறிவிப்புகளை இயக்கவும்</string>
     <string name="request_notification_permission_msg">அறிவிப்புகளை இயக்காமல் ஆர்போட் ஒரு டோர் வி.பி.என் ஆக செயல்பட முடியாது அல்லது கருணை பயன்முறையைப் பயன்படுத்த முடியாது. \n\nஇயக்கப்பட்டால், ஆர்போட் இயங்கும்போது மட்டுமே ஒரு அறிவிப்பைக் காண்பிப்போம்.</string>
     <string name="open_settings">திறந்த அமைப்புகள்</string>
@@ -208,7 +195,7 @@
     <string name="built_in_bridges_obfs4_subtitle">உங்கள் போக்குவரத்தை மூடுகிறது. சில டோர் தடுப்புகளைச் சுற்றி வருகிறது. நீங்கள் பொது வைஃபை வைத்திருந்தால் நல்லது, ஆனால் டோர் தடுக்கப்படாத ஒரு நாட்டில்.</string>
     <string name="run_smart_connect_">சிறந்த வழியைக் கண்டுபிடிக்க அறிவுள்ள கனெக்டை இயக்கவும்</string>
     <string name="scan_qr_code">QR குறியீட்டை வருடு செய்யுங்கள்</string>
-    <string name="orbot_vpn">Orbot vpn</string>
+    <string name="orbot_vpn">Seal-VPN vpn</string>
     <string name="open_orbot_to_connect_to_tor">டோர் உடன் இணைக்க ஆர்போட் திற</string>
     <string name="status_shutting_down">ஆர்போட் மூடப்படுகிறது</string>
     <string name="connect_to_tor">டோர் உடன் இணை</string>
@@ -217,7 +204,6 @@
     <string name="unable_to_start_tor">டோர் தொடங்க முடியவில்லை:</string>
     <string name="kibibyte_per_second">கிப் / கள்</string>
     <string name="mebibyte_per_second">Mib/s</string>
-    <string name="snowflake_proxy_client_connected_msg">%1$s கருணை முறை தணிக்கை %2$s ஐத் தவிர்க்க உதவியது</string>
     <string name="log_notice_unable_to_update_onions">வெங்காய பெயர்களைப் பதிவேற்ற முடியவில்லை</string>
     <string name="log_notice_updating_torrc">டோர்க் தனிப்பயன் உள்ளமைவைப் புதுப்பித்தல்…</string>
     <string name="set_transport">போக்குவரத்தை அமை</string>
@@ -261,19 +247,19 @@
     <string name="invalid_bridge_qr_code">தவறான பாலம் QR குறியீடு</string>
     <string name="you_already_have_these_bridges">இந்த QR குறியீட்டில் ஏற்கனவே பிரிட்ச்களைச் சேர்த்துள்ளீர்கள்</string>
     <string name="country_clear">நாட்டை அகற்று</string>
-    <string name="unable_to_start_orbot_vpn_title">Orbot VPN ஐ தொடங்க முடியவில்லை</string>
+    <string name="unable_to_start_orbot_vpn_title">Seal-VPN VPN ஐ தொடங்க முடியவில்லை</string>
     <string name="unable_to_start_legacy_vpn_error_msg">தனிப்பயன் VPN சுயவிவரம் \"எப்போதும் ஆன்\" VPN ஆக உள்ளமைக்கப்பட்டுள்ளது. ஆர்போட்டைத் தொடங்கும் முன் அதை முடக்கவும்.</string>
     <string name="unable_to_start_other_vpn_app_error_msg">%1$s ஆப்ச் \"எப்போதும் ஆன்\" VPN ஆக உள்ளமைக்கப்பட்டுள்ளது. ஆர்போட்டைத் தொடங்கும் முன் அதை முடக்கவும்.</string>
-    <string name="unable_to_start_unknown_reason_error_msg">VPN இசைவு மறுக்கப்பட்டது அல்லது மற்றொரு VPN பயன்பாட்டில் \"Always-on VPN\" நற்பொருத்தம் இயக்கப்பட்டுள்ளது. முந்தைய VPN கோரிக்கை உரையாடலில் இருந்து தவறுதலாக வெளியேறினால், இதை நிராகரித்து மீண்டும் இணைக்கலாம். தொழில்நுட்ப பயனர்கள் மற்றொரு VPN பயன்பாட்டைப் பயன்படுத்தலாம் மற்றும் Orbot இன் ஆற்றல் பயனர் பயன்முறையை இயக்குவதன் மூலம் Tor ஐ SOCKS ப்ராக்சியாகப் பயன்படுத்தலாம்.</string>
+    <string name="unable_to_start_unknown_reason_error_msg">VPN இசைவு மறுக்கப்பட்டது அல்லது மற்றொரு VPN பயன்பாட்டில் \"Always-on VPN\" நற்பொருத்தம் இயக்கப்பட்டுள்ளது. முந்தைய VPN கோரிக்கை உரையாடலில் இருந்து தவறுதலாக வெளியேறினால், இதை நிராகரித்து மீண்டும் இணைக்கலாம். தொழில்நுட்ப பயனர்கள் மற்றொரு VPN பயன்பாட்டைப் பயன்படுத்தலாம் மற்றும் Seal-VPN இன் ஆற்றல் பயனர் பயன்முறையை இயக்குவதன் மூலம் Tor ஐ SOCKS ப்ராக்சியாகப் பயன்படுத்தலாம்.</string>
     <string name="open_vpn_settings">Android VPN அமைப்புகளைத் திறக்கவும்</string>
     <string name="battery_optimization_title">பேட்டரி மேம்படுத்தல்களை முடக்கு</string>
     <string name="battery_optimization_pref_msg">சில பயனர்கள் தங்கள் சாதனம் பின்னணியில் இயங்கும் போது ஆர்போட்டை முன்கூட்டியே கொல்வதாக சந்தேகிக்கும் அமைப்பு.</string>
     <string name="battery_optimization_dialog_msg">ஆர்போட் பின்னணியில் இயங்கும்போது சில ஆண்ட்ராய்டு சாதனங்கள் அதைக் கொல்லக்கூடும். ஆர்போட் இணைக்கப்பட்டு இயங்குவதை உறுதிசெய்ய விரும்பும் பெரும்பாலான பயனர்களுக்கு, கணினி அமைப்புகளில் ஆர்போட்டை \"எப்போதும் ஆன்\" VPN ஆகச் செயல்பட வைப்பது போதுமானது. இருப்பினும், ஆர்போட்டில் பேட்டரி மேம்படுத்தல்களைச் செய்வதிலிருந்து உங்கள் சாதனத்தைத் தடுக்க நீங்கள் அதைத் தொடரலாம்.</string>
-    <string name="battery_optimization_dialog_msg_instructions">அடுத்த திரையில் Orbot → Allow background usage → Unrestricted என்பதைத் தேர்ந்தெடுக்கவும்.</string>
+    <string name="battery_optimization_dialog_msg_instructions">அடுத்த திரையில் Seal-VPN → Allow background usage → Unrestricted என்பதைத் தேர்ந்தெடுக்கவும்.</string>
     <string name="battery_optimization_dialog_msg_disclaimer">பெரும்பாலான சாதனங்களில், பேட்டரி மேம்படுத்தல்களை முடக்குவது உங்கள் சாதனத்தின் பேட்டரியை வழக்கத்தை விட வேகமாக வெளியேற்றும் என்பதை நினைவில் கொள்ளவும்…</string>
     <string name="battery_optimizations_dialog_btn_disable">பேட்டரி மேம்படுத்தல் அமைப்புகளைத் திறக்கவும்</string>
     <string name="battery_optimizations_dialog_msg_power_user">சக்தி பயனர் பயன்முறையில் பின்னணி சேவையாக இயங்கும்போது சில ஆண்ட்ராய்டு சாதனங்கள் ஆர்போட்டை நிறுத்தலாம். ஆர்போட்டின் அமைப்புகளுக்குள்ளேயே பேட்டரி மேம்படுத்தல்களை எப்போது வேண்டுமானாலும் முடக்க/மீண்டும் இயக்க முடிவு செய்யலாம்…</string>
-    <string name="battery_optimizations_are_disabled">தற்போது Orbotக்கு பேட்டரி மேம்படுத்தல்கள் முடக்கப்பட்டுள்ளன…</string>
+    <string name="battery_optimizations_are_disabled">தற்போது Seal-VPNக்கு பேட்டரி மேம்படுத்தல்கள் முடக்கப்பட்டுள்ளன…</string>
     <string name="battery_optimizations_are_enabled">ஆர்போட்டிற்கான பேட்டரி மேம்படுத்தல்கள் தற்போது செயலில் உள்ளன. இது இயல்புநிலை மற்றும் பெரும்பாலான பயனர்களுக்கு நியாயமானது…</string>
     <string name="btn_connect_anyway">எப்படியும் இணைக்கவும்</string>
     <string name="btn_connect_anyway_stop_showing">இந்த எச்சரிக்கையை இணைத்து அணைக்கவும்</string>

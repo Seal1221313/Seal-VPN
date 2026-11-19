@@ -90,7 +90,7 @@
     <string name="restore_backup">Backupa’s ki’ mneejxũ</string>
     <string name="confirm_service_deletion">Miptasx mjĩinxi\'s khũkhkan.</string>
     <string name="service_type">Fxiy fxiy selpisa</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Ki’ mthak Orbota’s yu’pthe’jnxitx nvxihtwa’</string>
+    <string name="please_restart_Seal-VPN_to_enable_the_changes">Ki’ mthak Seal-VPNa’s yu’pthe’jnxitx nvxihtwa’</string>
     <string name="disable">Mfxĩçxha</string>
     <string name="enable">Nvxi’jth</string>
     <string name="consider_disable_battery_optimizations">Mjĩina ũssa’ ayte u’pta’; thegune’ga çaam ktũ’se\'s kçxhãçxha\'jnxi\'s fxĩçxhawẽçxa’</string>
@@ -117,10 +117,7 @@
     <!--BridgeWizardActivity-->
     <string name="custom_bridges">Idx weh.</string>
     <string name="bridge_snowflake_amp">Tora’s kseelpi’j yaseyak maçh, na’s kseelpi’jcxa Snowflake (Método 2 - AMP)</string>
-    <string name="snowflake_proxy_msg_title">Miikthegu’ açhcxa’ kaajiyu’jnxis</string>
-    <string name="snowflake_proxy_msg_description">Teeçx yuwe ktheguju’, idx Snowflake vxitetx kaajxkhewũ’ya pu’çxte</string>
     <!--new UX-->
-    <string name="volunteer_mode">Modo Kindness</string>
     <string name="secure_your_connection_title">Açhwa’ ewyã’ja’</string>
     <string name="secure_your_connection_subtitle">Msũuth Appetx paathegkameen. jĩiçxa’ me’ka kaajxkhewũ’jnximee ũste.</string>
     <string name="connected_title">Kitxanxi ũsa’</string>
@@ -137,23 +134,22 @@
     <string name="connect">Maçh</string>
     <string name="next">Vxite</string>
     <string name="power_user_mode">Meh kseelpi’jya jiisa</string>
-    <string name="power_user_description">Tora’s kseelpi’jya jiya’jsatxi’. Nvxitu’k VPN phewu’jmee Orbota’s pu’txkan ki kaavxa’jak SOCKS vxite HTTP vxitx phadenxi ũssatx </string>
+    <string name="power_user_description">Tora’s kseelpi’jya jiya’jsatxi’. Nvxitu’k VPN phewu’jmee Seal-VPNa’s pu’txkan ki kaavxa’jak SOCKS vxite HTTP vxitx phadenxi ũssatx </string>
     <string name="app_suggested_subtitle">ORBOTa’ jxthaakwe ewa’ vxite App çaam wessu</string>
     <string name="apps_suggested_title">Vxite App thegwa’</string>
     <string name="apps_other_apps">Vxite App</string>
-    <string name="orbot_vpn">Orbot VPN </string>
-    <string name="status_starting_up">Orbota’ takhna ũsa’…</string>
+    <string name="orbot_vpn">Seal-VPN VPN </string>
+    <string name="status_starting_up">Seal-VPNa’ takhna ũsa’…</string>
     <string name="status_activated">Tor Networkte txitxanxi ũsa’</string>
-    <string name="status_disabled">Orbota’ fxĩçxhanxi ũsa’ </string>
-    <string name="open_orbot_to_connect_to_tor">Orbota’s phade Torte txitxaya’pacxa</string>
-    <string name="status_shutting_down">Orbota’ aphnxi ũsa’ </string>
+    <string name="status_disabled">Seal-VPNa’ fxĩçxhanxi ũsa’ </string>
+    <string name="open_orbot_to_connect_to_tor">Seal-VPNa’s phade Torte txitxaya’pacxa</string>
+    <string name="status_shutting_down">Seal-VPNa’ aphnxi ũsa’ </string>
     <string name="connect_to_tor">Torte mtxiitxaa </string>
-    <string name="orbot_config_invalid">Orbot phewu’jnxi’ ewmee’</string>
+    <string name="orbot_config_invalid">Seal-VPN phewu’jnxi’ ewmee’</string>
     <string name="couldn_t_start_tor_process_">Tora’ takhya’ ewuume’</string>
     <string name="unable_to_start_tor">Tor takhya’ ewuume’</string>
     <string name="kibibyte_per_second">KiB/s</string>
     <string name="mebibyte_per_second">MiB/s</string>
-    <string name="snowflake_proxy_client_connected_msg">%1$sIdx snowflake proxi pu’çxhku maasume kaajxkhẽwu’jxa%2$s</string>
     <string name="log_notice_unable_to_update_onions">Spulxa yase kaateka’jya ewuumeen</string>
     <string name="log_notice_updating_torrc">Torrc Khpuusee’jnxi’s phewu’jna…</string>
     <string name="set_transport">Set Transport</string>

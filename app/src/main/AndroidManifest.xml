@@ -22,7 +22,6 @@
 
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED" />
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_REMOTE_MESSAGING" />
 
 
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
@@ -41,8 +40,7 @@
 
     <!--
     usesCleartextTraffic is needed for SSDP multicast local router discovery (which is an unencrypted
-    HTTP-style protocol) and for UPnP IGD requests to map ports for Snowflake Proxy, (which are also
-    unencrypted HTTP-style requests).
+    HTTP-style protocol) 
      -->
     <application
         android:name=".OrbotApp"
@@ -105,22 +103,6 @@
                 <action android:name="android.intent.action.QUICKBOOT_POWERON" />
             </intent-filter>
         </receiver>
-
-        <service
-            android:name=".ui.kindness.SnowflakeProxyService"
-            android:enabled="true"
-            android:foregroundServiceType="remoteMessaging"
-            android:stopWithTask="false" />
-
-        <service
-            android:name=".ui.kindness.TestTorForSnowflakeProxyService"
-            android:enabled="true"
-            android:stopWithTask="true" />
-
-        <service
-            android:name=".ui.kindness.KindnessWatchdogJob"
-            android:exported="false"
-            android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <service
             android:name=".service.OrbotService"

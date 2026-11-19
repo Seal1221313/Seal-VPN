@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Tepoztlatlatquitl proxy ahmotlazotli  Orbot, mitzmaca netlacaneconiliztli. Orbot tlamanitiliz Tor pampa nahuati ichtaca amatlacuiloli  nochi tepoztlapohualoni in tlalticpac. Tor ca tlanemacuatextli ihuan metlatl tlapouhqui inin quipalehui huicpa pihpiyaliztli, ihuan quicuitlauh tlacaxoxouhcayotl ihuan tlacaconemiliztli ica hueyi altepetl. </string>
+    <string name="app_name">Seal-VPN</string>
+    <string name="app_description">Tepoztlatlatquitl proxy ahmotlazotli  Seal-VPN, mitzmaca netlacaneconiliztli. Seal-VPN tlamanitiliz Tor pampa nahuati ichtaca amatlacuiloli  nochi tepoztlapohualoni in tlalticpac. Tor ca tlanemacuatextli ihuan metlatl tlapouhqui inin quipalehui huicpa pihpiyaliztli, ihuan quicuitlauh tlacaxoxouhcayotl ihuan tlacaconemiliztli ica hueyi altepetl. </string>
     <string name="menu_settings">Yectlalia tlamantli</string>
     <string name="menu_log">Log</string>
     <string name="menu_about">Itechpa</string>
     <string name="menu_exit">Exit</string>
-    <string name="wizard_details_msg">Aquinzazo cualli tequitl pan inin tepoztlatlatquitl Orbot quipia Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks y LibEvent. Nanmechmaca ce VPN, ce proxy HTTP Connect local (HTTPS zan tzalantli 8118) ihuan ce proxy SOCKS (9050) ipan matlatl Tor.</string>
+    <string name="wizard_details_msg">Aquinzazo cualli tequitl pan inin tepoztlatlatquitl Seal-VPN quipia Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks y LibEvent. Nanmechmaca ce VPN, ce proxy HTTP Connect local (HTTPS zan tzalantli 8118) ihuan ce proxy SOCKS (9050) ipan matlatl Tor.</string>
     <string name="pref_general_group">Ipanokayotl</string>
-    <string name="pref_start_boot_title">Xipehua Orbot ipan Boot</string>
-    <string name="pref_start_boot_summary">Xipehua Orbot ihuan xictencui Tor ihcuac motepoznonotza Android ye moachtohuiztica</string>
+    <string name="pref_start_boot_title">Xipehua Seal-VPN ipan Boot</string>
+    <string name="pref_start_boot_summary">Xipehua Seal-VPN ihuan xictencui Tor ihcuac motepoznonotza Android ye moachtohuiztica</string>
     <string name="pref_node_configuration">Mocentilia tencuitliltetl</string>
     <string name="pref_node_configuration_summary">Inin mocentilis ca acoquitzaliztli ihuan ihnintin huel chihuazqueh  tiquipoloz moichtatoca</string>
     <string name="pref_entrance_node">Calacoayan tencuitliltetl</string>
@@ -93,7 +93,7 @@ atl oquitlapatic</string>
 atl oquitlapatic</string>
     <string name="confirm_service_deletion">Quineltia itlamiliz in tequitl</string>
     <string name="service_type">Itlayehyecol in tequitl</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Nimitztlatlauhtia, occepa quipehuaz Orbot inic quixiptlayotilia in patlaliztli</string>
+    <string name="please_restart_Seal-VPN_to_enable_the_changes">Nimitztlatlauhtia, occepa quipehuaz Seal-VPN inic quixiptlayotilia in patlaliztli</string>
     <string name="disable">Ahmo quichihua</string>
     <string name="enable">Quema tlacaquini</string>
     <string name="consider_disable_battery_optimizations">Tequitl oquinpix ipan chihualiztli; tiquinyolnonotzaz tiquintlacuilia in cualtequitl in batería</string>
@@ -120,10 +120,7 @@ atl oquitlapatic</string>
     <!--BridgeWizardActivity-->
     <string name="custom_bridges">Neuhyantica cuauhpanco</string>
     <string name="bridge_snowflake_amp">Xiccelili itechpa occequintin itlacahuan Tor ma ticchihuaz tecepayahuitl (Method 2 - AMP)</string>
-    <string name="snowflake_proxy_msg_title">Quimachtia in tenotzalo in centilili</string>
-    <string name="snowflake_proxy_msg_description">Quimachtia ce tenotzalo ihcuac motecepayahuiuh quipalehuia ac quicholoa in tetlatzacuiliztli</string>
     <!--new UX-->
-    <string name="volunteer_mode">Cualyotl tequtitl</string>
     <string name="secure_your_connection_title">Ye cualli inic quicentia</string>
     <string name="secure_your_connection_subtitle">Xicnetlatia apps tlein quitlapiya in matlatl ihuan quipia calaquiliztli ihcuac ye otlatzacuilic</string>
     <string name="connected_title">Tencuitica</string>
@@ -141,22 +138,21 @@ atl oquitlapatic</string>
     <string name="next">Occe</string>
     <string name="power_user_mode">Tlamatini yuhcayotl</string>
     <string name="power_user_description">Inic tlapouhqui tlein quimati Tor. Huel quilhui tlein pehuaz Orbort yehce ahmo mochihua in quipatlaz VPN ihuan quimachti in acaltecoyan SOCKS ihuan otlapouhqueh HTTP</string>
-    <string name="app_suggested_subtitle">Orbot  tequipano cenca cualli ica amatlacuilotepoztlatlatquitl ihuan tlacanamimatlatl</string>
+    <string name="app_suggested_subtitle">Seal-VPN  tequipano cenca cualli ica amatlacuilotepoztlatlatquitl ihuan tlacanamimatlatl</string>
     <string name="apps_suggested_title">Yolitectia tepoztlatlatquitl</string>
     <string name="apps_other_apps">Occe tepoztlatlatquitl</string>
-    <string name="orbot_vpn">Orbot VPN</string>
-    <string name="status_starting_up">Orbot pehualtica …</string>
+    <string name="orbot_vpn">Seal-VPN VPN</string>
+    <string name="status_starting_up">Seal-VPN pehualtica …</string>
     <string name="status_activated">Tencuitica matlatl Tor Network</string>
-    <string name="status_disabled">Orbot ahmo tequitica</string>
-    <string name="open_orbot_to_connect_to_tor">Xictlapoz Orbot pampa xictencuiz Tor</string>
-    <string name="status_shutting_down">Orbot tlaltzacuatica</string>
+    <string name="status_disabled">Seal-VPN ahmo tequitica</string>
+    <string name="open_orbot_to_connect_to_tor">Xictlapoz Seal-VPN pampa xictencuiz Tor</string>
+    <string name="status_shutting_down">Seal-VPN tlaltzacuatica</string>
     <string name="connect_to_tor">Xictencuiz Tor</string>
-    <string name="orbot_config_invalid">Ahmo melahuac mocentilis Orbot</string>
+    <string name="orbot_config_invalid">Ahmo melahuac mocentilis Seal-VPN</string>
     <string name="couldn_t_start_tor_process_">Ahmo huel opehua Tor</string>
     <string name="unable_to_start_tor">Ahmo opehua Tor</string>
     <string name="kibibyte_per_second">KiB/s</string>
     <string name="mebibyte_per_second">MiB/s</string>
-    <string name="snowflake_proxy_client_connected_msg">%1$sMocepayahuiproxy otepalehui oquitzicuini ahmo huelmati%2$s</string>
     <string name="log_notice_unable_to_update_onions">Ahmo huel xictlecahuiz xonacatl itocalhuan</string>
     <string name="log_notice_updating_torrc">Mocentiliz torrc quenime mitzpactia, papatica.</string>
     <string name="set_transport">Set Transport</string>

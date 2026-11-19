@@ -10,7 +10,6 @@ import android.os.Build
 import android.provider.Settings
 import android.util.Log
 import androidx.core.content.ContextCompat
-import org.torproject.android.ui.kindness.SnowflakeProxyService
 import java.net.InetSocketAddress
 import java.net.Socket
 
@@ -30,40 +29,7 @@ object NetworkUtils {
         }
     }
 
-    fun isNetworkAvailableForKindnessMode(context: Context): Boolean {
-        val connectivityManager =
-            context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
-        val network = connectivityManager.activeNetwork ?: return false
-        val capabilities = connectivityManager.getNetworkCapabilities(network) ?: return false
-        if (capabilities.hasTransport(NetworkCapabilities.TRANSPORT_VPN) && !Prefs.useVpn()) {
-            Log.wtf(SnowflakeProxyService.TAG, "some other VPN is running!")
-            return false
-        }
-        val transports = arrayListOf(NetworkCapabilities.TRANSPORT_WIFI)
-        if (!Prefs.limitSnowflakeProxyingWifi())
-            transports.addAll(
-                listOf(
-                    NetworkCapabilities.TRANSPORT_CELLULAR,
-                    NetworkCapabilities.TRANSPORT_ETHERNET
-                )
-            )
-        transports.forEach { transport ->
-            if (capabilities.hasTransport(transport)) {
-                Log.d(
-                    SnowflakeProxyService.TAG,
-                    "Found Viable Network Transport: $transport " +
-                            "(Cellular=${NetworkCapabilities.TRANSPORT_CELLULAR}, " +
-                            "Wifi=${NetworkCapabilities.TRANSPORT_WIFI}, " +
-                            "Ethernet=${NetworkCapabilities.TRANSPORT_ETHERNET})"
-                )
-                return true
-            }
-        }
-        Log.d(SnowflakeProxyService.TAG, "No Viable Network Transports Found...")
-        return false
-    }
-
-    /** Used for kindness mode connection test, returns true *if and only if* Orbot is the registered
+    /** Returns true *if and only if* Orbot is the registered
      * VPN app. We can't use Prefs.useVpn() since this only tells us if Orbot is the registered VPN
      * app when Tor is on. When it's off, we don't know which, if any VPN, is configured.
      *

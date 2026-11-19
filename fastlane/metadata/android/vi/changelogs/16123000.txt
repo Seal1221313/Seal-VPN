@@ -1,2 +1,0 @@
-* các bản sửa lỗi liên quan đến hỗ trợ Cầu nối
-* đã cập nhật lên phiên bản Tor 0.4.1.5

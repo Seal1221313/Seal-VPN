@@ -22,24 +22,13 @@ object Prefs {
     private const val PREF_START_ON_BOOT = "pref_start_boot"
     const val PREF_OPEN_PROXY_ON_ALL_INTERFACES = "pref_open_proxy_on_all_interfaces"
     private const val PREF_USE_VPN = "pref_vpn"
-    private const val PREF_LAST_SNOWFLAKE_QUALITY_CHECK = "pref_last_snowflake_quality_check"
     private const val PREF_EXIT_NODES = "pref_exit_nodes"
-    private const val PREF_BE_A_SNOWFLAKE = "pref_be_a_snowflake"
-    private const val PREF_SHOW_SNOWFLAKE_MSG = "pref_show_snowflake_proxy_msg"
-    const val PREF_BE_A_SNOWFLAKE_LIMIT_WIFI = "pref_be_a_snowflake_limit_wifi"
-    const val PREF_BE_A_SNOWFLAKE_LIMIT_CHARGING = "pref_be_a_snowflake_limit_charing"
-    const val PREF_LAST_SNOWFLAKE_NAT_TYPE = "pref_snowflake_last_nat"
-    const val PREF_LAST_SNOWFLAKE_ACTIVE = "pref_is_snowflake_running"
-    private const val PREF_SNOWFLAKE_UPNP_PORTS = "pref_snowflake_upnp_ports"
 
     private const val PREF_USE_SMART_CONNECT = "pref_use_smart_connect"
     private const val PREF_SMART_CONNECT_TIMEOUT = "pref_smart_connect_timeout"
 
     private const val PREF_POWER_USER_MODE = "pref_power_user"
 
-    private const val PREF_SNOWFLAKES_SERVED_COUNT = "pref_snowflakes_served"
-    private const val PREF_SNOWFLAKES_SERVED_COUNT_WEEKLY = "pref_snowflakes_served_weekly"
-    private const val PREF_SNOWFLAKES_SERVED_WEEK_TIMESTAMP = "pref_snowflakes_served_week"
 
     private const val PREF_CURRENT_VERSION = "pref_current_version"
 
@@ -131,10 +120,6 @@ object Prefs {
         set(value) {
             cr?.let {
                 it.putPref(PREF_BRIDGE_COUNTRY, value)
-                if (Regionalization.isKindnessModeDisabledForCountry()) {
-                    beSnowflakeProxy = false
-                    snowflakeNeedsQualityCheck = true
-                }
             }
         }
 
@@ -145,32 +130,6 @@ object Prefs {
 
     fun detectRoot(): Boolean {
         return cr?.getPrefBoolean(PREF_DETECT_ROOT, true) ?: true
-    }
-
-    var beSnowflakeProxy: Boolean
-        get() = cr?.getPrefBoolean(PREF_BE_A_SNOWFLAKE) ?: false
-        set(value) = cr?.putPref(PREF_BE_A_SNOWFLAKE, value) ?: Unit
-
-    fun showSnowflakeProxyToast(): Boolean {
-        return cr?.getPrefBoolean(PREF_SHOW_SNOWFLAKE_MSG) ?: false
-    }
-
-    fun setBeSnowflakeProxyLimitWifi(beSnowflakeProxy: Boolean) {
-        cr?.putPref(PREF_BE_A_SNOWFLAKE_LIMIT_WIFI, beSnowflakeProxy)
-    }
-
-    fun setBeSnowflakeProxyLimitCharging(beSnowflakeProxy: Boolean) {
-        cr?.putPref(PREF_BE_A_SNOWFLAKE_LIMIT_CHARGING, beSnowflakeProxy)
-    }
-
-    // https://github.com/guardianproject/orbot-android/issues/1798
-    // this *should* be true, we want snowflake to be Wi-Fi only
-    fun limitSnowflakeProxyingWifi(): Boolean {
-        return cr?.getPrefBoolean(PREF_BE_A_SNOWFLAKE_LIMIT_WIFI, true) ?: true
-    }
-
-    fun limitSnowflakeProxyingCharging(): Boolean {
-        return cr?.getPrefBoolean(PREF_BE_A_SNOWFLAKE_LIMIT_CHARGING) ?: false
     }
 
     @JvmStatic
@@ -208,20 +167,6 @@ object Prefs {
         cr?.putPref(PREF_USE_VPN, value)
     }
 
-    var snowflakeNeedsQualityCheck: Boolean
-        get() {
-            val last = cr?.getPrefLong(PREF_LAST_SNOWFLAKE_QUALITY_CHECK) ?: 0
-
-            // A new quality check should be done every 24 hours.
-            return last <= System.currentTimeMillis() - 24 * 60 * 60 * 1000
-        }
-        set(value) {
-            cr?.putPref(
-                PREF_LAST_SNOWFLAKE_QUALITY_CHECK,
-                if (value) 0 else System.currentTimeMillis()
-            )
-        }
-
     fun startOnBoot(): Boolean {
         return cr?.getPrefBoolean(PREF_START_ON_BOOT, true) ?: true
     }
@@ -231,43 +176,6 @@ object Prefs {
         get() = cr?.getPrefString(PREF_EXIT_NODES)
         set(country) = cr?.putPref(PREF_EXIT_NODES, country) ?: Unit
 
-    var lastSnowflakeNatType: String
-        get() = cr?.getPrefString(PREF_LAST_SNOWFLAKE_NAT_TYPE) ?: IPtProxy.IPtProxy.NATUnknown
-        set(natType) = cr?.putPref(PREF_LAST_SNOWFLAKE_NAT_TYPE, natType) ?: Unit
-
-    var snowflakeProxyRunning: Boolean
-        get() = cr?.getPrefBoolean(PREF_LAST_SNOWFLAKE_ACTIVE) ?: false
-        set(isRunning) = cr?.putPref(PREF_LAST_SNOWFLAKE_ACTIVE, isRunning) ?: Unit
-
-    // see https://github.com/guardianproject/orbot-android/issues/1795
-    var snowflakeUpnpPorts: String
-        get() = cr?.getPrefString(PREF_SNOWFLAKE_UPNP_PORTS) ?: ""
-        set(value) = cr?.putPref(PREF_SNOWFLAKE_UPNP_PORTS, value) ?: Unit
-
-    val snowflakesServed: Int
-        get() = cr?.getPrefInt(PREF_SNOWFLAKES_SERVED_COUNT) ?: 0
-
-    val snowflakesServedWeekly: Int
-        get() {
-            refreshWeeklyServedIfNeeded()
-            return cr?.getPrefInt(PREF_SNOWFLAKES_SERVED_COUNT_WEEKLY) ?: 0
-        }
-
-    fun addSnowflakeServed() {
-        refreshWeeklyServedIfNeeded()
-        cr?.putPref(PREF_SNOWFLAKES_SERVED_COUNT, snowflakesServed + 1)
-        cr?.putPref(PREF_SNOWFLAKES_SERVED_COUNT_WEEKLY, snowflakesServedWeekly + 1)
-    }
-
-    fun refreshWeeklyServedIfNeeded(clearAllWeeklyOverride: Boolean = false) {
-        val week = System.currentTimeMillis().milliseconds.inWholeDays.div(7).toInt()
-        if (clearAllWeeklyOverride || (cr?.getPrefInt(PREF_SNOWFLAKES_SERVED_WEEK_TIMESTAMP)
-                ?: 0) != week
-        ) {
-            cr?.putPref(PREF_SNOWFLAKES_SERVED_COUNT_WEEKLY, 0)
-            cr?.putPref(PREF_SNOWFLAKES_SERVED_WEEK_TIMESTAMP, week)
-        }
-    }
 
     @JvmStatic
     var transport: Transport

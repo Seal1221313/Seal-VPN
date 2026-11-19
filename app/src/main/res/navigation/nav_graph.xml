@@ -65,11 +65,6 @@
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
     </fragment>
-    <fragment
-        android:id="@+id/kindnessFragment"
-        android:name="org.torproject.android.ui.kindness.KindnessFragment"
-        android:label="fragment_kindness"
-        tools:layout="@layout/fragment_kindness" />
 
     <fragment
         android:id="@+id/settingsFragment"

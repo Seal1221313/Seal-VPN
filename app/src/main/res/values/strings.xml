@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?><!--suppress GrazieInspection -->
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot is a free proxy app that empowers other apps to use the internet more securely. Orbot uses Tor to encrypt your Internet traffic and then hides it by bouncing through a series of computers around the world. Tor is free software and an open network that helps you defend against a form of network surveillance that threatens personal freedom and privacy, confidential business activities and relationships, and state security known as traffic analysis.</string>
-    <string name="menu_settings">Orbot Settings</string>
+    <string name="app_name">Seal-VPN</string>
+    <string name="app_description">Seal-VPN is a free proxy app that empowers other apps to use the internet more securely. Seal-VPN uses Tor to encrypt your Internet traffic and then hides it by bouncing through a series of computers around the world. Tor is free software and an open network that helps you defend against a form of network surveillance that threatens personal freedom and privacy, confidential business activities and relationships, and state security known as traffic analysis.</string>
+    <string name="menu_settings">Seal-VPN Settings</string>
     <string name="system_vpn_settings">Android VPN Settings</string>
     <string name="menu_log">Log</string>
     <string name="menu_about">About</string>
     <string name="menu_exit">Exit</string>
-    <string name="wizard_details_msg">Orbot is an open-source application that contains Tor, IPtProxy (Lyrebird, Meek, Snowflake), hev-socks5-tunnel and LibEvent. It provides a VPN tunnel, a local HTTP Connect proxy (HTTPS only on port 8118) and a SOCKS proxy (9050) into the Tor network.</string>
+    <string name="wizard_details_msg">Seal-VPN is a fork of Orbot. It uses Tor, IPtProxy (Lyrebird, Meek, Snowflake client), hev-socks5-tunnel and LibEvent to provide a VPN tunnel, a local HTTP Connect proxy (port 8118) and a SOCKS proxy (port 9050) into the Tor network.</string>
+    <string name="fork_notice">This is a fork of Orbot by Nathan Freitas, The Guardian Project and contributors, built on Tor from The Tor Project. Original copyright and license are retained.</string>
+    <string name="fork_original_project">Original project (Orbot):</string>
     <string name="pref_general_group">General</string>
-    <string name="pref_start_boot_title">Start Orbot on Boot</string>
-    <string name="pref_start_boot_summary">Automatically start Orbot and connect Tor when your Android device boots</string>
+    <string name="pref_start_boot_title">Start Seal-VPN on Boot</string>
+    <string name="pref_start_boot_summary">Automatically start Seal-VPN and connect Tor when your Android device boots</string>
     <string name="pref_node_configuration">Node Configuration</string>
     <string name="pref_node_configuration_summary">These are advanced settings that can reduce your anonymity</string>
     <string name="pref_entrance_node">Entrance Nodes</string>
@@ -45,7 +47,8 @@
     <string name="ports_reachable_behind_a_restrictive_firewall">Ports reachable behind a restrictive firewall</string>
     <string name="enter_ports">Enter Ports</string>
     <string name="enable_debug_log_to_output_must_use_adb_or_alogcat_to_view_">Enable debug log to output (must use adb or aLogcat to view)</string>
-    <string name="project_home">Project Home:</string>
+    <string name="project_home">Fork:</string>
+    <string name="seal_vpn_github" translatable="false">https://github.com/Seal1221313/Seal-VPN</string>
     <string name="orbot_url" translatable="false">https://orbot.app/</string>
     <string name="orbot_github" translatable="false">https://github.com/guardianproject/orbot/</string>
     <string name="tor_url" translatable="false">Tor v%s: https://www.torproject.org</string>
@@ -59,7 +62,7 @@
     <string name="newnym">You\'ve switched to a new Tor identity!</string>
     <string name="pref_open_proxy_on_all_interfaces_title">Open Proxy on All Interfaces</string>
     <string name="pref_open_proxy_on_all_interfaces_summary">Allow Wi-Fi peers, tethered devices and anyone else who can connect to your IP, to access Tor</string>
-    <string name="open_proxy_needs_local_network_permission">On Android 17 and higher, Orbot needs the Allow Access to Nearby Devices permission to open the proxy on all interfaces.</string>
+    <string name="open_proxy_needs_local_network_permission">On Android 17 and higher, Seal-VPN needs the Allow Access to Nearby Devices permission to open the proxy on all interfaces.</string>
     <string name="pref_socks_title">Tor SOCKS</string>
     <string name="pref_socks_summary">Port that Tor offers its SOCKS proxy on (default: 9050 or 0 to disable)</string>
     <string name="pref_socks_dialog">SOCKS Port Config</string>
@@ -101,7 +104,7 @@
     <string name="restore_backup">Restore Backup</string>
     <string name="confirm_service_deletion">Confirm service deletion</string>
     <string name="service_type">Service type</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Please restart Orbot to enable the changes</string>
+    <string name="please_restart_Seal-VPN_to_enable_the_changes">Please restart Seal-VPN to enable the changes</string>
     <string name="onion" translatable="false">.onion</string>
     <string name="disable">Disable</string>
     <string name="enable">Enable</string>
@@ -136,9 +139,6 @@
 
     <string name="bridge_snowflake_amp">Connect through other Tor users using Snowflake (Method 2 - AMP)</string>
     <string name="bridge_snowflake_sqs">Connect through other Tor users using Snowflake (Method 3 - SQS)</string>
-    <string name="snowflake_proxy_msg_title">Show Connection Notification</string>
-    <string name="snowflake_proxy_msg_description">Show a message when you help someone circumvent censorship</string>
-    <string name="volunteer_mode">Kindness Mode</string>
     <string name="secure_your_connection_title">Ready to connect</string>
     <string name="secure_your_connection_subtitle">Hide apps from network monitoring and get access when they are blocked.</string>
     <string name="connected_title">Connected</string>
@@ -148,17 +148,6 @@
     <string name="btn_change_exit">Change exit</string>
     <string name="btn_refresh">Refresh Connection</string>
     <string name="globe" translatable="false">🌎</string>
-    <string name="volunteer_mode_title">Welcome to Kindness Mode</string>
-    <string name="volunteer_mode_weekly_label">This Week</string>
-    <string name="volunteer_mode_alltime_label">Total</string>
-    <string name="volunteer_mode_subtitle_desc">Kindness Mode turns your device into a Snowflake Proxy on the Tor network — a bridge to help others connect.</string>
-    <string name="kindness_mode_is_running">Kindness Mode is Running</string>
-    <string name="kindness_mode_active_message" formatted="true">You\'ve helped %1$d people circumvent censorship</string>
-    <string name="kindness_mode_disabled">Kindness Mode is Deactivated</string>
-    <string name="kindness_mode_starting">Starting…</string>
-    <string name="kindness_mode_disabled_internet">Connect to the Internet to help people circumvent censorship</string>
-    <string name="kindness_mode_disabled_wifi">Connect to Wi-Fi to help people circumvent censorship</string>
-    <string name="kindness_mode_disabled_power">Connect your device to power to help people circumvent censorship</string>
 
     <string name="smart_connect">Smart Connect</string>
     <string name="direct_connect">Direct Connection</string>
@@ -178,12 +167,12 @@
     <string name="next">Next</string>
     <string name="custom_bridges_description">Paste the bridge addresses you receive below. Or scan the QR code to add them. Friends can get bridges for you at %1$s.</string>
     <string name="power_user_mode">Power User Mode</string>
-    <string name="power_user_description">For users familiar with Tor. Allows you to start Orbot without the VPN setting and shows open SOCKS and HTTP ports</string>
+    <string name="power_user_description">For users familiar with Tor. Allows you to start Seal-VPN without the VPN setting and shows open SOCKS and HTTP ports</string>
     <string name="action_learn_more">Learn More</string>
     <string name="Enabled">Enabled</string>
     <string name="Disabled">Disabled</string>
     <string name="Paused">Paused</string>
-    <string name="app_suggested_subtitle">Orbot works best with messaging and social media apps.</string>
+    <string name="app_suggested_subtitle">Seal-VPN works best with messaging and social media apps.</string>
     <string name="apps_suggested_title">Suggested Apps</string>
     <string name="apps_other_apps">Other Apps</string>
     <string name="btn_copy_log">Copy Log</string>
@@ -193,24 +182,9 @@
     <string name="many_ways">There are many ways to reach Tor. Some may work better than others for you.</string>
     <string name="asking">ASKING…</string>
     <string name="no_internet_title">Connect to internet</string>
-    <string name="no_internet_subtitle">You need an internet connection to use Orbot.</string>
-    <string name="kindness_usage_limit">Usage Limits</string>
-    <string name="kindness_usage_limits_status_on">on</string>
-    <string name="kindness_usage_limits_status_off">off</string>
-    <string name="kindness_proxy_quality">Proxy Quality</string>
-    <string name="kindness_proxy_quality_unknown">unknown</string>
-    <string name="kindness_proxy_quality_restricted">restricted</string>
-    <string name="kindness_proxy_quality_unrestricted">unrestricted</string>
-    <string name="kindness_quality_upgrade_title">Upgrade your Snowflake Proxy</string>
-    <string name="kindness_quality_upgrade_line1">Your proxy can be more powerful when kindness mode is running on Wi-Fi.</string>
-    <string name="kindness_quality_upgrade_line2">To upgrade, enable UPnP on your Wi-Fi router for this device.</string>
-    <string name="kindness_quality_upgrade_need_local_network">On Android 17 and higher, you must also grant the Allow Access to Nearby Devices Permission for Orbot to access your router.</string>
-    <string name="kindness_quality_upgrade_perm_granted">The Access Nearby Devices Permission has been granted on this device.</string>
+    <string name="no_internet_subtitle">You need an internet connection to use Seal-VPN.</string>
     <string name="grant_permission">Grant Permission</string>
     <string name="set_permission_in_settings">Set Permission in Settings</string>
-    <string name="kindness_your_impact">Your Impact in Numbers</string>
-    <string name="kindness_config_detail">Configure when and how your device can act as a Snowflake proxy for other Tor users.</string>
-    <string name="menu_kindness">Kindness</string>
     <string name="menu_more">More</string>
     <string name="option_only_on_wifi">Only on Wifi</string>
     <string name="option_only_when_charging">Only when charging</string>
@@ -218,14 +192,8 @@
     <string name="setting_debug">Debug</string>
 
 
-    <string name="testing_explanation_approved">You are a great candidate for becoming a Snowflake Proxy on the Tor network.</string>
-    <string name="testing_continue">Continue</string>
-    <string name="testing_explanation_declined">You cannot be a useful Snowflake Proxy at this time. If you keep seeing this message, try again on a different network.</string>
-    <string name="testing_explanation_other_vpn">Kindness Mode can not be activated when using a VPN. The only exception is Orbot\'s VPN feature. To become a Snowflake Proxy you must either remove your VPN or switch to using Orbot.</string>
-    <string name="testing_explanation_other_vpn_bubble">Open System VPN Settings…</string>
-    <string name="testing_explanation_no_net">Connect to the Internet to see if you\'re a good candidate for Kindness Mode</string>
 
-    <string name="root_warning">Orbot has detected your device is rooted, which can cause security issues.</string>
+    <string name="root_warning">Seal-VPN has detected your device is rooted, which can cause security issues.</string>
     <string name="pref_detect_root_summary">Warn on startup if root permissions are enabled on this device</string>
     <string name="pref_detect_root_title">Root Detection</string>
 
@@ -239,18 +207,18 @@
 
     <string name="app_icon_dialog_title" formatted="true">Switch to %1$s</string>
     <string name="app_icon_dialog_msg" formatted="true">Switching to %1$s will restart the app</string>
-    <string name="camo_samsung_instructions">On Your Samsung Galaxy device, Orbot\'s notifications will only switch icons by opening Settings -> Notifications -> Advanced Settings and disabling \"Show app icon in notifications\". Click here to open Notification Settings.</string>
+    <string name="camo_samsung_instructions">On Your Samsung Galaxy device, Seal-VPN\'s notifications will only switch icons by opening Settings -> Notifications -> Advanced Settings and disabling \"Show app icon in notifications\". Click here to open Notification Settings.</string>
 
     <string name="power_user_mode_permission">Alarms &amp; Reminders Permission Needed for Power User Mode</string>
-    <string name="power_user_mode_permission_msg">Please allow Orbot to set alarms and reminders in order to use power user mode. This won\'t actually set any alarms on your device. This permission is needed to have the system keep OrbotService running when Orbot is not being used as a system-wide VPN.</string>
+    <string name="power_user_mode_permission_msg">Please allow Seal-VPN to set alarms and reminders in order to use power user mode. This won\'t actually set any alarms on your device. This permission is needed to have the system keep Seal-VPNService running when Seal-VPN is not being used as a system-wide VPN.</string>
 
-    <string name="request_notification_permission">Please enable notifications for Orbot</string>
-    <string name="request_notification_permission_msg">Without turning on notifications Orbot can\'t act as a Tor VPN or use Kindness Mode.\n\nWhen enabled, we only show a single notification when Orbot is running.</string>
+    <string name="request_notification_permission">Please enable notifications for Seal-VPN</string>
+    <string name="request_notification_permission_msg">Without turning on notifications Seal-VPN can\'t act as a Tor VPN or use Kindness Mode.\n\nWhen enabled, we only show a single notification when Seal-VPN is running.</string>
     <string name="open_settings">Open Settings</string>
 
     <string name="error_no_password_set">You need to set a password for your Android device in order to use the Lock Screen feature</string>
-    <string name="device_lock_unsupported">Orbot Authentication is not supported on your device</string>
-    <string name="device_lock_security_update_needed">You must download Android security updates for your device in order to use Orbot Authentication</string>
+    <string name="device_lock_unsupported">Seal-VPN Authentication is not supported on your device</string>
+    <string name="device_lock_security_update_needed">You must download Android security updates for your device in order to use Seal-VPN Authentication</string>
     <string name="invalid_bridge_format">Invalid bridge format</string>
     <string name="error_asking_tor_for_bridges">Error asking Tor how to connect</string>
     <string name="enter_bridge_address">Enter bridge address</string>
@@ -264,14 +232,14 @@
     <string name="invalid_bridge_qr_code">Invalid Bridge QR Code</string>
     <string name="you_already_have_these_bridges">You\'ve already added the bridges in this QR Code</string>
 
-    <string name="orbot_vpn">Orbot VPN</string>
-    <string name="status_starting_up">Orbot is Starting&#8230;</string>
+    <string name="orbot_vpn">Seal-VPN VPN</string>
+    <string name="status_starting_up">Seal-VPN is Starting&#8230;</string>
     <string name="status_activated">Connected to the Tor Network</string>
-    <string name="status_disabled">Orbot is Deactivated</string>
-    <string name="open_orbot_to_connect_to_tor">Open Orbot to Connect to Tor</string>
-    <string name="status_shutting_down">Orbot is Shutting Down</string>
+    <string name="status_disabled">Seal-VPN is Deactivated</string>
+    <string name="open_orbot_to_connect_to_tor">Open Seal-VPN to Connect to Tor</string>
+    <string name="status_shutting_down">Seal-VPN is Shutting Down</string>
     <string name="connect_to_tor">Connect to Tor</string>
-    <string name="orbot_config_invalid">Orbot Configuration Invalid</string>
+    <string name="orbot_config_invalid">Seal-VPN Configuration Invalid</string>
 
     <string name="couldn_t_start_tor_process_">Couldn\'t start Tor process: </string>
     <string name="unable_to_start_tor">Unable to start Tor:</string>
@@ -279,7 +247,6 @@
     <string name="kibibyte_per_second">KiB/s</string>
     <string name="mebibyte_per_second">MiB/s</string>
 
-    <string name="snowflake_proxy_client_connected_msg">%1$s Kindness Mode helped someone circumvent censorship %2$s</string>
 
     <string name="log_notice_unable_to_update_onions">unable to upload onion names</string>
     <string name="log_notice_updating_torrc">Updating torrc custom configuration…</string>
@@ -290,13 +257,13 @@
 
     <string name="title_safety">Safety</string>
     <string name="setting_app_icon_title">App Icon</string>
-    <string name="setting_app_icon_description">Choose how Orbot appears on your device</string>
+    <string name="setting_app_icon_description">Choose how Seal-VPN appears on your device</string>
     <string name="setting_block_screenshot_title">Block Screenshots</string>
     <string name="setting_block_screenshot_description">Prevents anyone from taking screenshots of this app</string>
     <string name="setting_unlock_pass_title">Lock Screen</string>
-    <string name="setting_unlock_pass_description">Require your device\'s PIN, password, or swipe pattern to open Orbot</string>
+    <string name="setting_unlock_pass_description">Require your device\'s PIN, password, or swipe pattern to open Seal-VPN</string>
     <string name="setting_unlock_with_biometrics_title">Use Biometrics (optional)</string>
-    <string name="setting_unlock_with_biometrics_description">Unlock Orbot with your fingerprint or Face ID if setup on your device.</string>
+    <string name="setting_unlock_with_biometrics_description">Unlock Seal-VPN with your fingerprint or Face ID if setup on your device.</string>
     <string name="status_connected_control_port">Tor service has started</string>
     <string name="status_handshake">Connecting to Tor network entrance</string>
     <string name="status_handshake_done">Entering the Tor network</string>
@@ -323,41 +290,32 @@
     <string name="limit_dns_tunnel_use">Limit DNS Tunnel Use</string>
     <string name="dns_tunnel_usage_description">DNS tunnels prioritize access over speed and may feel slower. We recommend enabling them only for essential apps. Video streaming is not recommended.</string>
 
-    <string name="unable_to_start_orbot_vpn_title">Unable to start Orbot VPN</string>
-    <string name="unable_to_start_legacy_vpn_error_msg">There is a Custom VPN Profile configured to be an \"Always-on\" VPN. Please disable it before starting Orbot.</string>
-    <string name="unable_to_start_other_vpn_app_error_msg">The app %1$s is configured to be an \"Always-on\" VPN. Please disable it before starting Orbot.</string>
-    <string name="unable_to_start_unknown_reason_error_msg">The VPN permission was denied or another VPN app has the \"Always-on VPN\" feature enabled. You can dismiss this and reconnect if you exited the previous VPN Request dialog by mistake. Technical users can use another VPN app and use Tor as a SOCKS Proxy by enabling Orbot\'s Power User Mode.</string>
+    <string name="unable_to_start_orbot_vpn_title">Unable to start Seal-VPN VPN</string>
+    <string name="unable_to_start_legacy_vpn_error_msg">There is a Custom VPN Profile configured to be an \"Always-on\" VPN. Please disable it before starting Seal-VPN.</string>
+    <string name="unable_to_start_other_vpn_app_error_msg">The app %1$s is configured to be an \"Always-on\" VPN. Please disable it before starting Seal-VPN.</string>
+    <string name="unable_to_start_unknown_reason_error_msg">The VPN permission was denied or another VPN app has the \"Always-on VPN\" feature enabled. You can dismiss this and reconnect if you exited the previous VPN Request dialog by mistake. Technical users can use another VPN app and use Tor as a SOCKS Proxy by enabling Seal-VPN\'s Power User Mode.</string>
     <string name="open_vpn_settings">Open Android VPN Settings</string>
 
-    <string name="kindness_mode_disclaimer_bridge">Do not use Kindness Mode if you live in a highly censored country.</string>
-    <string name="kindness_mode_unsupported_country">You selected %s as your country, but unfortunately Kindness Mode can\'t help people connect to Tor in this region. If you believe you\'re seeing this message by mistake, you can clear your country and test to see if you\'re eligible to be a Snowflake Proxy</string>
 
     <string name="battery_optimization_title">Disable Battery Optimizations</string>
-    <string name="battery_optimization_pref_msg">Setting for some users that suspect their device is prematurely killing Orbot while it runs in the background.</string>
-    <string name="battery_optimization_dialog_msg">Certain Android devices may kill Orbot as it runs in the background. For most users who want to make sure Orbot stays connected and running, it\'s sufficient to set Orbot to function as an \"Always-on\" VPN in the system settings. However, you may still proceed to prevent your device from performing any battery optimizations on Orbot if you feel it to be necessary.</string>
-    <string name="battery_optimization_dialog_msg_instructions">On the next screen select Orbot → Allow background usage → Unrestricted.</string>
+    <string name="battery_optimization_pref_msg">Setting for some users that suspect their device is prematurely killing Seal-VPN while it runs in the background.</string>
+    <string name="battery_optimization_dialog_msg">Certain Android devices may kill Seal-VPN as it runs in the background. For most users who want to make sure Seal-VPN stays connected and running, it\'s sufficient to set Seal-VPN to function as an \"Always-on\" VPN in the system settings. However, you may still proceed to prevent your device from performing any battery optimizations on Seal-VPN if you feel it to be necessary.</string>
+    <string name="battery_optimization_dialog_msg_instructions">On the next screen select Seal-VPN → Allow background usage → Unrestricted.</string>
     <string name="battery_optimization_dialog_msg_disclaimer">Note that for most devices, disabling battery optimizations will drain your device\'s battery faster than normal…</string>
     <string name="battery_optimizations_dialog_btn_disable">Open Battery Optimization Settings</string>
-    <string name="battery_optimizations_dialog_msg_power_user">Certain Android devices may terminate Orbot when it runs as a background service in Power User Mode. You can always decide to disable/re-enable battery optimizations at a later point from within Orbot\'s settings…</string>
-    <string name="battery_optimizations_are_disabled">Battery Optimizations are currently disabled for Orbot…</string>
-    <string name="battery_optimizations_are_enabled">Battery Optimizations are currently active for Orbot. This is the default and is reasonable for most users…</string>
+    <string name="battery_optimizations_dialog_msg_power_user">Certain Android devices may terminate Seal-VPN when it runs as a background service in Power User Mode. You can always decide to disable/re-enable battery optimizations at a later point from within Seal-VPN\'s settings…</string>
+    <string name="battery_optimizations_are_disabled">Battery Optimizations are currently disabled for Seal-VPN…</string>
+    <string name="battery_optimizations_are_enabled">Battery Optimizations are currently active for Seal-VPN. This is the default and is reasonable for most users…</string>
     <string name="btn_connect_anyway">Connect Anyway</string>
     <string name="btn_connect_anyway_stop_showing">Connect and Turn Off This Warning</string>
     <string name="private_dns">Private DNS</string>
     <string name="private_dns_strict">Strict Private DNS Enabled…</string>
-    <string name="private_dns_explanation">Using Strict Private DNS with a specific resolver will leak which websites and onion services you visit outside Orbot\'s VPN. Please set your Private DNS to be Automatic.</string>
-    <string name="activate_kindness_mode">Activate Kindness Mode</string>
-    <string name="running_kindness_mode_on_android">Running Kindness Mode on Android</string>
-    <string name="kindness_mode_runs_when_the_device_is_connected_to_wifi">Kindness mode runs when the device is connected to Wi-Fi.</string>
+    <string name="private_dns_explanation">Using Strict Private DNS with a specific resolver will leak which websites and onion services you visit outside Seal-VPN\'s VPN. Please set your Private DNS to be Automatic.</string>
     <string name="you_can_change_the_settings_anytime">You can change the settings anytime.</string>
-    <string name="we_recommend_charging_the_device_when_running_kindness_mode">We recommend charging the device when running Kindness Mode.</string>
-    <string name="turn_off_kindness_mode_when_you_use_another_vpn_on_this_device">Turn off Kindness Mode when you use another VPN on this device.</string>
     <string name="test_connection">Test Connection</string>
-    <string name="orbot_will_test_your_connection_to_determine_if_you_can_be_a_snowflake_proxy_for_others">Orbot will test your connection to determine if you can be a Snowflake Proxy for others.</string>
     <string name="the_test_will_try_to_connect_directly_to_the_tor_network">The test will try to connect directly to the Tor network.</string>
     <string name="if_you_are_using_tor_bridges_they_will_temporarily_be_disconnected">If you are using Tor bridges, they will temporarily be disconnected.</string>
     <string name="i_acknowledge_i_have_read_the_above">I acknowledge I have read the above.</string>
-    <string name="testing_connection">Testing Connection</string>
     <string name="please_wait_while_we_check_to_see_if_you_can_run_an_effective_proxy">Please wait while we check to see if you can run an effective proxy…</string>
     <string name="stop_test">Stop Test</string>
     <string name="approved">Approved</string>

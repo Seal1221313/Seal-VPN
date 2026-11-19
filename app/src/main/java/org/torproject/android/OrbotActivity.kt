@@ -32,7 +32,6 @@ import org.torproject.android.ui.connect.ConnectViewModel
 import org.torproject.android.ui.connect.RequestPostNotificationPermission
 import org.torproject.android.ui.core.BaseActivity
 import org.torproject.android.ui.core.DeviceAuthenticationPrompt
-import org.torproject.android.ui.kindness.SnowflakeProxyService
 import org.torproject.android.util.Prefs
 import org.torproject.android.util.sendIntentToService
 import org.torproject.android.util.showToast
@@ -109,7 +108,7 @@ class OrbotActivity : BaseActivity() {
         val bottomNavigationContainer = findViewById<View>(R.id.bottomNavContainer)
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
-            if (destination.id == R.id.connectFragment || destination.id == R.id.moreFragment || destination.id == R.id.kindnessFragment) {
+            if (destination.id == R.id.connectFragment || destination.id == R.id.moreFragment) {
                 bottomNavigationContainer.visibility = View.VISIBLE
             } else {
                 bottomNavigationContainer.visibility = View.GONE
@@ -142,9 +141,6 @@ class OrbotActivity : BaseActivity() {
                     R.id.connectFragment ->
                         navController.navigate(R.id.connectFragment, null, navOptions)
 
-                    R.id.kindnessFragment ->
-                        navController.navigate(R.id.kindnessFragment, null, navOptions)
-
                     R.id.moreFragment ->
                         navController.navigate(R.id.moreFragment, null, navOptions)
                 }
@@ -175,7 +171,7 @@ class OrbotActivity : BaseActivity() {
             navController.currentBackStackEntry?.let {
                 when (it.destination.id) {
                     R.id.connectFragment -> finish()
-                    R.id.kindnessFragment, R.id.moreFragment -> {
+                    R.id.moreFragment -> {
                         bottomNavigationView.selectedItemId = R.id.connectFragment
                     }
 
@@ -236,11 +232,6 @@ class OrbotActivity : BaseActivity() {
          * 2. OrbotService replies back to OrbotActivity with its status, regardless of step 1
          */
         sendIntentToService(OrbotService.SIGNAL_ACTIVE)
-
-
-        if (Prefs.beSnowflakeProxy) {
-            SnowflakeProxyService.startSnowflakeProxyForegroundService(this)
-        }
 
         lastNavMenuIndex = bottomNavigationView.selectedItemId
     }

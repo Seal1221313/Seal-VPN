@@ -1,3 +1,0 @@
-- Artık desteklenmediği için Meek "Cloud" köprü seçeneği kaldırıldı
-- Onion V3 hizmeti desteğinde daha fazla iyileştirme yapıldı
-- #441 için, uygulama temelli VPN seçiminde uygulama araması düzeltildi

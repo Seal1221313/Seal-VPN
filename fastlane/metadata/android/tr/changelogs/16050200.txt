@@ -1,1 +1,0 @@
-Arka plan hizmetinin başlatılmasıyla ilgili çökme düzeltildi

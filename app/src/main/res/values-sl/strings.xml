@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
+    <string name="app_name">Seal-VPN</string>
     <string name="menu_settings">Nastavitve</string>
     <string name="menu_log">Dnevnik</string>
     <string name="menu_about">O programu</string>
@@ -34,17 +34,16 @@
     <string name="disable">Onemogočite</string>
     <string name="pref_circuit_padding">Oblazinjenje vezja</string>
     <string name="pref_disable_ipv4_summary">Sporoča izhodom, naj se ne povezujejo z naslovi IPv4</string>
-    <string name="wizard_details_msg">Orbot je odprtokodna aplikacija, ki vsebuje Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks in LibEvent. Zagotavlja predor VPN, lokalni posrednik HTTP Connect (samo HTTPS na vratih 8118) in posrednik SOCKS (9050) v omrežje Tor.</string>
+    <string name="wizard_details_msg">Seal-VPN je odprtokodna aplikacija, ki vsebuje Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks in LibEvent. Zagotavlja predor VPN, lokalni posrednik HTTP Connect (samo HTTPS na vratih 8118) in posrednik SOCKS (9050) v omrežje Tor.</string>
     <string name="secure_your_connection_title">Pripravljen na povezavo</string>
     <string name="secure_your_connection_subtitle">Skrijte aplikacije pred nadzorom omrežja in pridobite dostop, ko so blokirane.</string>
     <string name="connected_title">Povezano</string>
     <string name="btn_configure">Izberi kako se povezati</string>
-    <string name="volunteer_mode">Način prijaznosti</string>
     <string name="trying_to_connect_title">Povezovanje …</string>
     <string name="btn_choose_apps">Izberite aplikacije</string>
     <string name="btn_change_exit">Sprememba izhoda</string>
     <string name="btn_refresh">Osvežitev</string>
-    <string name="pref_start_boot_summary">Samodejno zaženite Orbot in povežite Tor, ko se naprava s sistemom Android zažene</string>
+    <string name="pref_start_boot_summary">Samodejno zaženite Seal-VPN in povežite Tor, ko se naprava s sistemom Android zažene</string>
     <string name="pref_entrance_node">Vstopna vozlišča</string>
     <string name="pref_entrance_node_dialog">Vstopite v vstopna vozlišča</string>
     <string name="pref_proxy_title">Odhodni omrežni posrednik (izbirno)</string>
@@ -63,7 +62,6 @@
     <string name="enter_ports">Vnesite vrata</string>
     <string name="project_home">Projekt Domov:</string>
     <string name="custom_bridges">Mostovi po meri</string>
-    <string name="snowflake_proxy_msg_title">Prikaži obvestilo o povezavi</string>
     <string name="pref_node_configuration">Konfiguracija vozlišča</string>
     <string name="strict_nodes_description">Nastavitve Izključi vozlišča obravnavajte kot zahtevo za izgradnjo vseh vezij. To lahko prekine funkcionalnost, če z vašimi nastavitvami Exclude Nodes ni mogoče ustvariti nobenega vezja.</string>
     <string name="pref_socks_title">Tor SOCKS</string>
@@ -115,9 +113,8 @@
     <string name="user_services">Storitve za uporabnike</string>
     <string name="app_services">Storitve aplikacij</string>
     <string name="bridge_snowflake_amp">Povežite se prek drugih uporabnikov omrežja Tor z uporabo storitve Snowflake (metoda 2)</string>
-    <string name="snowflake_proxy_msg_description">Pokaži sporočilo, ko pomagaš nekomu zaobiti cenzuro</string>
-    <string name="app_description">Orbot je brezplačna proksi aplikacija, ki drugim aplikacijam omogoča varnejšo uporabo interneta. Orbot uporablja Tor za šifriranje vašega internetnega prometa, nato pa ga skrije tako, da ga preusmeri skozi več računalnikov po vsem svetu. Tor je brezplačna programska oprema in odprto omrežje, ki vam pomaga pri obrambi pred obliko nadzora omrežja, ki ogroža osebno svobodo in zasebnost, zaupne poslovne dejavnosti in odnose ter državno varnost, znano kot analiza prometa.</string>
-    <string name="pref_start_boot_title">Zagon programa Orbot ob zagonu</string>
+    <string name="app_description">Seal-VPN je brezplačna proksi aplikacija, ki drugim aplikacijam omogoča varnejšo uporabo interneta. Seal-VPN uporablja Tor za šifriranje vašega internetnega prometa, nato pa ga skrije tako, da ga preusmeri skozi več računalnikov po vsem svetu. Tor je brezplačna programska oprema in odprto omrežje, ki vam pomaga pri obrambi pred obliko nadzora omrežja, ki ogroža osebno svobodo in zasebnost, zaupne poslovne dejavnosti in odnose ter državno varnost, znano kot analiza prometa.</string>
+    <string name="pref_start_boot_title">Zagon programa Seal-VPN ob zagonu</string>
     <string name="pref_node_configuration_summary">To so napredne nastavitve, ki lahko zmanjšajo vašo anonimnost</string>
     <string name="pref_proxy_host_title">Gostitelj izhodnega posredniškega strežnika</string>
     <string name="pref_proxy_password_title">Odhodni proxy Geslo</string>
@@ -129,7 +126,7 @@
     <string name="local_port">Lokalno pristanišče</string>
     <string name="backup_port_exist">Napaka: Storitev Onion že uporablja vrata %s</string>
     <string name="confirm_service_deletion">Potrditev izbrisa storitve</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Ponovno zaženite Orbot, da omogočite spremembe</string>
+    <string name="please_restart_Seal-VPN_to_enable_the_changes">Ponovno zaženite Seal-VPN, da omogočite spremembe</string>
     <string name="pref_reduced_circuit_padding">Zmanjšano oblazinjenje vezja</string>
     <string name="pref_reduced_connection_padding">Zmanjšano oblazinjenje povezave</string>
     <string name="consider_disable_battery_optimizations">Gostovane storitve tečejo, razmislite o onemogočanju optimizacij baterije</string>
@@ -143,21 +140,19 @@
     <string name="not_sure">Niste prepričani\?</string>
     <string name="ask_tor">Vprašajte Tor</string>
     <string name="asking">SPRAŠEVANJE …</string>
-    <string name="no_internet_subtitle">Za uporabo Orbota potrebujete internetno povezavo.</string>
-    <string name="power_user_description">Za uporabnike, ki poznajo Tor. Omogoča zagon Orbota brez nastavitve VPN in prikazuje odprta vrata SOCKS in HTTP</string>
+    <string name="no_internet_subtitle">Za uporabo Seal-VPNa potrebujete internetno povezavo.</string>
+    <string name="power_user_description">Za uporabnike, ki poznajo Tor. Omogoča zagon Seal-VPNa brez nastavitve VPN in prikazuje odprta vrata SOCKS in HTTP</string>
     <string name="power_user_mode">Napredni uporabniški način</string>
     <string name="setting_padding">Oblazinjenje</string>
-    <string name="menu_kindness">Prijaznost</string>
     <string name="option_only_when_charging">Samo ko se polni</string>
     <string name="option_only_on_wifi">Samo na Wi-Fi-ju</string>
     <string name="pref_isolate_port_summary">Uporabite drugo vezje za vsaka ciljna vrata</string>
     <string name="pref_isolate_protocol_summary">Uporabite drugo vezje za vsak povezovalni protokol</string>
     <string name="log_copied">Dnevnik kopiran</string>
     <string name="no_internet_title">Povežite se z internetom</string>
-    <string name="kindness_config_detail">Konfigurirajte, kako in kdaj lahko vaša naprava deluje kot proksi snežinka za druge uporabnike Tora.</string>
-    <string name="root_warning">Orbot je zaznal, da je vaša naprava korenirana, kar lahko povzroči varnostne težave.</string>
+    <string name="root_warning">Seal-VPN je zaznal, da je vaša naprava korenirana, kar lahko povzroči varnostne težave.</string>
     <string name="direct_connect">Neposredna povezava s Torom</string>
-    <string name="app_suggested_subtitle">Orbot najbolje deluje z aplikacijami za sporočanje in družbena omrežja.</string>
+    <string name="app_suggested_subtitle">Seal-VPN najbolje deluje z aplikacijami za sporočanje in družbena omrežja.</string>
     <string name="apps_suggested_title">Predlagane aplikacije</string>
     <string name="apps_other_apps">Ostale aplikacije</string>
     <string name="btn_copy_log">Kopiraj dnevnik</string>
@@ -167,8 +162,8 @@
     <string name="direct_connect_subtitle">Najboljši način povezave s Torom. Uporabite če Tor ni blokiran.</string>
     <string name="snowflake_amp">Snežinka (AMP)</string>
     <string name="snowflake_subtitle">Povezuje se prek Torovih prostovoljcev. Zaobide nekaj Torovih preprek.</string>
-    <string name="status_starting_up">Orbot se zaganja…</string>
+    <string name="status_starting_up">Seal-VPN se zaganja…</string>
     <string name="status_activated">Povezan v omrežje Tor</string>
-    <string name="status_disabled">Orbot ni aktiviran</string>
+    <string name="status_disabled">Seal-VPN ni aktiviran</string>
     <string name="set_transport">Nastavi transport</string>
 </resources>

@@ -49,10 +49,32 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:autoLink="web"
-            android:text="@string/orbot_url"
+            android:text="@string/seal_vpn_github"
             android:textColor="@android:color/white"
             android:textColorLink="@android:color/white" />
 
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:text="@string/fork_notice"
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/white" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:text="@string/fork_original_project"
+            android:textColor="@color/panel_card_image"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:text="@string/orbot_url"
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/white" />
 
         <TextView
             android:layout_width="fill_parent"

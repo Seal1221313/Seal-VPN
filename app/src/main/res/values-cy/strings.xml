@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
+    <string name="app_name">Seal-VPN</string>
     <string name="menu_settings">Gosodiadau</string>
     <string name="menu_log">Log</string>
     <string name="menu_about">Amdanom ni</string>
@@ -31,20 +31,20 @@
     <string name="menu_more">Mwy</string>
     <string name="next">Nesaf</string>
     <string name="enable">Galluogi</string>
-    <string name="app_description">Mae Orbot yn ap dirprwy rhad ac am ddim sy\'n grymuso apiau eraill i ddefnyddio\'r rhyngrwyd yn fwy diogel. Mae Orbot yn defnyddio Tor i amgryptio eich traffig Rhyngrwyd ac yna\'n ei guddio trwy bownsio trwy gyfres o gyfrifiaduron ledled y byd. Mae Tor yn feddalwedd am ddim ac yn rhwydwaith agored sy\'n eich helpu i amddiffyn yn erbyn math o wyliadwriaeth rhwydwaith sy\'n bygwth rhyddid personol a phreifatrwydd, gweithgareddau busnes cyfrinachol a pherthnasoedd, a diogelwch y wladwriaeth a elwir yn ddadansoddiad traffig.</string>
+    <string name="app_description">Mae Seal-VPN yn ap dirprwy rhad ac am ddim sy\'n grymuso apiau eraill i ddefnyddio\'r rhyngrwyd yn fwy diogel. Mae Seal-VPN yn defnyddio Tor i amgryptio eich traffig Rhyngrwyd ac yna\'n ei guddio trwy bownsio trwy gyfres o gyfrifiaduron ledled y byd. Mae Tor yn feddalwedd am ddim ac yn rhwydwaith agored sy\'n eich helpu i amddiffyn yn erbyn math o wyliadwriaeth rhwydwaith sy\'n bygwth rhyddid personol a phreifatrwydd, gweithgareddau busnes cyfrinachol a pherthnasoedd, a diogelwch y wladwriaeth a elwir yn ddadansoddiad traffig.</string>
     <string name="pref_proxy_host_summary">Enw gwesteiwr Gweinydd Dirprwy</string>
     <string name="pref_proxy_port_summary">Porth Gweinydd dirprwyol</string>
     <string name="pref_proxy_port_title">Porthladd Procsi Allan</string>
     <string name="pref_node_configuration_summary">Mae\'r rhain yn osodiadau datblygedig a all leihau eich anhysbysrwydd</string>
-    <string name="wizard_details_msg">Mae Orbot yn gymhwysiad ffynhonnell agored sy\'n cynnwys Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks a LibEvent. Mae\'n darparu twnnel VPN, dirprwy HTTP Connect lleol (HTTPS yn unig ar borthladd 8118) a dirprwy SOCKS (9050) i mewn i rwydwaith Tor.</string>
+    <string name="wizard_details_msg">Mae Seal-VPN yn gymhwysiad ffynhonnell agored sy\'n cynnwys Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks a LibEvent. Mae\'n darparu twnnel VPN, dirprwy HTTP Connect lleol (HTTPS yn unig ar borthladd 8118) a dirprwy SOCKS (9050) i mewn i rwydwaith Tor.</string>
     <string name="fingerprints_nicks_countries_and_addresses_for_the_last_hop">Olion bysedd, nicks, gwledydd a chyfeiriadau ar gyfer y hop olaf</string>
     <string name="pref_entrance_node_summary">Olion bysedd, nicks, gwledydd a chyfeiriadau ar gyfer y hop gyntaf</string>
     <string name="pref_proxy_type_title">Math Dirprwy Allannol</string>
-    <string name="pref_start_boot_summary">Dechreuwch Orbot yn awtomatig a chysylltwch Tor pan fydd eich dyfais Android yn cychwyn</string>
+    <string name="pref_start_boot_summary">Dechreuwch Seal-VPN yn awtomatig a chysylltwch Tor pan fydd eich dyfais Android yn cychwyn</string>
     <string name="pref_proxy_type_summary">Protocol i\'w ddefnyddio ar gyfer gweinydd dirprwyol</string>
     <string name="pref_proxy_title">Dirprwy Rhwydwaith Allanol (Dewisol)</string>
     <string name="pref_proxy_host_title">Gwesteiwr Procsi Allan</string>
-    <string name="pref_start_boot_title">Dechreuwch Orbot ar Boot</string>
+    <string name="pref_start_boot_title">Dechreuwch Seal-VPN ar Boot</string>
     <string name="pref_proxy_username_summary">Enw defnyddiwr dirprwy (Dewisol)</string>
     <string name="pref_proxy_username_title">Enw Defnyddiwr Procsi Allan</string>
     <string name="pref_proxy_password_title">Cyfrinair Procsi Allan</string>
@@ -83,7 +83,6 @@
     <string name="pref_torrc_summary">ARBENIGWYR YN UNIG: rhowch linellau ffurfweddu torrc uniongyrchol</string>
     <string name="vpn_default_world">Byd-eang (Awto)</string>
     <string name="pref_isolate_port_summary">Defnyddiwch gylched wahanol ar gyfer pob porthladd cyrchfan</string>
-    <string name="snowflake_proxy_msg_title">Dangos Hysbysiad Cysylltiad</string>
     <string name="pref_isolate_dest">Ynysu cyfeiriadau cyrchfan</string>
     <string name="pref_isolate_protocol">Ynysu protocolau cleientiaid</string>
     <string name="secure_your_connection_subtitle">Cuddio apps rhag monitro rhwydwaith a chael mynediad pan fyddant yn cael eu rhwystro.</string>
@@ -108,14 +107,13 @@
     <string name="pref_dnsport_title">Porth DNS Tor</string>
     <string name="pref_reduced_circuit_padding">Padin cylched llai</string>
     <string name="pref_torrc_dialog">Torrc Custom</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Ailgychwynnwch Orbot i alluogi\'r newidiadau</string>
+    <string name="please_restart_Seal-VPN_to_enable_the_changes">Ailgychwynnwch Seal-VPN i alluogi\'r newidiadau</string>
     <string name="v3_client_auth_activity_title">Awdurdodi Cleient</string>
     <string name="btn_change_exit">Newid allanfa</string>
     <string name="backup_port_exist">Gwall: Mae gwasanaeth Onion eisoes yn defnyddio porth %s</string>
     <string name="backup_service">Gwasanaeth Wrth Gefn <i>(Rhybudd: Gallai Hyn Datguddio Ffurfweddiad Eich Gwasanaeth i Apiau Eraill)</i></string>
     <string name="service_type">Math o wasanaeth</string>
     <string name="pref_connection_padding">Padin cysylltiad</string>
-    <string name="snowflake_proxy_msg_description">Dangoswch neges pan fyddwch chi\'n helpu rhywun i osgoi sensoriaeth</string>
     <string name="user_services">Gwasanaethau defnyddwyr</string>
     <string name="v3_backup_key_warning">Rhybudd: Gallai hyn ddatgelu eich allwedd i apiau eraill</string>
     <string name="connected_title">Wedi\'i gysylltu</string>
@@ -124,7 +122,6 @@
     <string name="pref_isolate_protocol_summary">Defnyddiwch gylched wahanol ar gyfer pob protocol cysylltu</string>
     <string name="confirm_service_deletion">Cadarnhau dileu gwasanaeth</string>
     <string name="bridge_snowflake_amp">Cysylltwch trwy ddefnyddwyr Tor eraill gan ddefnyddio Snowflake (Dull 2 - AMP)</string>
-    <string name="volunteer_mode">Modd Caredigrwydd</string>
     <string name="secure_your_connection_title">Yn barod i gysylltu</string>
     <string name="v3_delete_client_authorization_confirm">Dileu Awdurdodiad Cleient</string>
     <string name="pref_http_summary">Porth y mae Tor yn cynnig ei ddirprwy HTTP arno (diofyn: 8118 neu 0 i\'w analluogi)</string>
@@ -133,7 +130,7 @@
     <string name="backup_restored">Copi wrth gefn wedi\'i adfer</string>
     <string name="v3_onion">Parth .onion</string>
     <string name="v3_key_hash">x25519 Allwedd Breifat yn Sylfaen32</string>
-    <string name="status_starting_up">Mae Orbot yn cychwyn…</string>
+    <string name="status_starting_up">Mae Seal-VPN yn cychwyn…</string>
     <string name="status_activated">Wedi cysylltu â rhwydwaith Tor</string>
     <string name="set_transport">Gosod Trafnidiaeth</string>
 </resources>

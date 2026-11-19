@@ -21,9 +21,6 @@ object Regionalization {
         return String(Character.toChars(firstChar)) + String(Character.toChars(secondChar))
     }
 
-    fun isKindnessModeDisabledForCountry(countryCode: String? = Prefs.bridgeCountry): Boolean =
-        listOf(AFGHANISTAN, IRAN).contains(countryCode?.uppercase())
-
     val countriesForExitNodeUi: List<String> = listOf(
         GERMANY, AUSTRIA, SWEDEN,
         SWITZERLAND, ICELAND, CANADA,
