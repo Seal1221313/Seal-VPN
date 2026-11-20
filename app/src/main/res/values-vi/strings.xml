@@ -59,7 +59,7 @@
     <string name="pref_torrc_dialog">Torrc tùy chỉnh</string>
     <string name="save">Lưu</string>
     <string name="name">Tên</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Vui lòng khởi động lại Seal-VPN để áp dụng thay đổi</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Vui lòng khởi động lại Seal-VPN để áp dụng thay đổi</string>
     <string name="disable">Tắt</string>
     <string name="enable">Cho phép</string>
     <string name="pref_http_dialog">Thiết lập cổng HTTP</string>

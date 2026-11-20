@@ -58,7 +58,7 @@
     <string name="hidden_services">Slēptie pakalpojumi</string>
     <string name="save">Saglabāt</string>
     <string name="name">Vārds</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Lūdzu pārstartējiet Seal-VPN, lai iespējotu izmaiņas</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Lūdzu pārstartējiet Seal-VPN, lai iespējotu izmaiņas</string>
     <string name="disable">Atspējot</string>
     <string name="confirm">Apstipriniet</string>
     <string name="version">Versija:</string>

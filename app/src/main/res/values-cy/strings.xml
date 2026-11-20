@@ -107,7 +107,7 @@
     <string name="pref_dnsport_title">Porth DNS Tor</string>
     <string name="pref_reduced_circuit_padding">Padin cylched llai</string>
     <string name="pref_torrc_dialog">Torrc Custom</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Ailgychwynnwch Seal-VPN i alluogi\'r newidiadau</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Ailgychwynnwch Seal-VPN i alluogi\'r newidiadau</string>
     <string name="v3_client_auth_activity_title">Awdurdodi Cleient</string>
     <string name="btn_change_exit">Newid allanfa</string>
     <string name="backup_port_exist">Gwall: Mae gwasanaeth Onion eisoes yn defnyddio porth %s</string>

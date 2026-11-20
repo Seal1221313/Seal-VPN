@@ -91,7 +91,7 @@
     <string name="restore_backup">Athchóirigh Cúltaca</string>
     <string name="confirm_service_deletion">Deimhnigh scriosadh seirbhíse</string>
     <string name="service_type">Cineál seirbhíse</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Atosaigh Seal-VPN le do thoil chun na hathruithe a chumasú</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Atosaigh Seal-VPN le do thoil chun na hathruithe a chumasú</string>
     <string name="disable">Díchumasaigh</string>
     <string name="enable">Cumasaigh</string>
     <string name="consider_disable_battery_optimizations">Seirbhísí óstáilte ag rith, smaoinigh ar uasmhéaduithe ceallraí a dhíchumasú</string>

@@ -78,7 +78,7 @@
     <string name="restore_backup">Sicherung wiederherstellen</string>
     <string name="confirm_service_deletion">Löschen des Dienstes bestätigen</string>
     <string name="service_type">Dienst-Typ</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Bitte Seal-VPN zum Aktivieren der Änderungen neu starten</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Bitte Seal-VPN zum Aktivieren der Änderungen neu starten</string>
     <string name="disable">Deaktivieren</string>
     <string name="enable">Aktivieren</string>
     <string name="consider_disable_battery_optimizations">Laufende Host-Dienste, erwäge die Deaktivierung der Akku-Optimierung</string>

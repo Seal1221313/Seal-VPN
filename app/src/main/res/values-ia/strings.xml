@@ -86,7 +86,7 @@
     <string name="confirm_service_deletion">Confirma le deletion del servicio</string>
     <string name="pref_disable_ipv4">Disactivar le connexiones IPv4</string>
     <string name="confirm">Confirmar</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Reinitia Seal-VPN pro activar le cambiamentos</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Reinitia Seal-VPN pro activar le cambiamentos</string>
     <string name="project_home">Sito web del projecto:</string>
     <string name="set_transport">Definir le transporto</string>
 </resources>

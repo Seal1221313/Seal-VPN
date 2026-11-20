@@ -90,7 +90,7 @@
     <string name="restore_backup">Backupa’s ki’ mneejxũ</string>
     <string name="confirm_service_deletion">Miptasx mjĩinxi\'s khũkhkan.</string>
     <string name="service_type">Fxiy fxiy selpisa</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Ki’ mthak Seal-VPNa’s yu’pthe’jnxitx nvxihtwa’</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Ki’ mthak Seal-VPNa’s yu’pthe’jnxitx nvxihtwa’</string>
     <string name="disable">Mfxĩçxha</string>
     <string name="enable">Nvxi’jth</string>
     <string name="consider_disable_battery_optimizations">Mjĩina ũssa’ ayte u’pta’; thegune’ga çaam ktũ’se\'s kçxhãçxha\'jnxi\'s fxĩçxhawẽçxa’</string>

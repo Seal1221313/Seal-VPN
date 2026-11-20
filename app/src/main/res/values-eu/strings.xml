@@ -70,7 +70,7 @@
     <string name="restore_backup">Berrezarri babeskopia</string>
     <string name="confirm_service_deletion">Berretsi zerbitzua ezabatzea</string>
     <string name="service_type">Zerbitzu mota</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Mesedez berrabiarazi Seal-VPN aldaketak aktibatzeko</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Mesedez berrabiarazi Seal-VPN aldaketak aktibatzeko</string>
     <string name="disable">Desgaitu</string>
     <string name="enable">Gaitu</string>
     <string name="consider_disable_battery_optimizations">Aztertu bateria optimizazioak desgaitzea</string>

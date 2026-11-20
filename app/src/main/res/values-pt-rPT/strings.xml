@@ -70,7 +70,7 @@
     <string name="newnym">Mudou para uma nova identidade do Tor!</string>
     <string name="reachable_ports">Portas alcançáveis</string>
     <string name="full_device_vpn">VPN Para Todo o Aparelho</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Por favor reinicie Seal-VPN para ativar as mundanças</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Por favor reinicie Seal-VPN para ativar as mundanças</string>
     <string name="service_type">Tipo do Serviço</string>
     <string name="confirm_service_deletion">Confirmar a remoção do serviço</string>
     <string name="restore_backup">Restaurar Backup</string>

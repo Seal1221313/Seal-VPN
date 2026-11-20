@@ -78,7 +78,7 @@
     <string name="restore_backup">Jark\'aqat waraqäw jakatatayaña</string>
     <string name="confirm_service_deletion">Lurañanakax pichsutäniwa</string>
     <string name="service_type">Kunayman lurañanaka</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Mayjt\'ayatanak aqtayañatakix Seal-VPN mayamp qhantt\'ayam, amp suma</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Mayjt\'ayatanak aqtayañatakix Seal-VPN mayamp qhantt\'ayam, amp suma</string>
     <string name="disable">Jiwt\'ayaña</string>
     <string name="enable">Aqtayaña</string>
     <string name="consider_disable_battery_optimizations">Imat sirwisyunakax sarantaskiwa, ch\'amanchir pist\'ki ukjax q\'alt\'añkam aqaskañapatakik amuyt\'am</string>

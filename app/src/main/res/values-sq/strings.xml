@@ -70,7 +70,7 @@
     <string name="version">Version:</string>
     <string name="license">Licencë:</string>
     <string name="pref_dnsport_dialog">Formësim Porte DNS</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Që të hyjnë në fuqi ndryshimet, ju lutemi, rinisni Seal-VPN-in</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Që të hyjnë në fuqi ndryshimet, ju lutemi, rinisni Seal-VPN-in</string>
     <string name="pref_prefer_ipv6">Parapëlqe lidhje IPv6</string>
     <string name="custom_bridges">Ura Vetjake</string>
     <string name="newnym">Kaluat te një identitet i ri Tor!</string>

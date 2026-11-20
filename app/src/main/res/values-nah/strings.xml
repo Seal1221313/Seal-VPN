@@ -93,7 +93,7 @@ atl oquitlapatic</string>
 atl oquitlapatic</string>
     <string name="confirm_service_deletion">Quineltia itlamiliz in tequitl</string>
     <string name="service_type">Itlayehyecol in tequitl</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Nimitztlatlauhtia, occepa quipehuaz Seal-VPN inic quixiptlayotilia in patlaliztli</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Nimitztlatlauhtia, occepa quipehuaz Seal-VPN inic quixiptlayotilia in patlaliztli</string>
     <string name="disable">Ahmo quichihua</string>
     <string name="enable">Quema tlacaquini</string>
     <string name="consider_disable_battery_optimizations">Tequitl oquinpix ipan chihualiztli; tiquinyolnonotzaz tiquintlacuilia in cualtequitl in batería</string>

@@ -70,7 +70,7 @@
     <string name="restore_backup">Врати резервна копија</string>
     <string name="confirm_service_deletion">Потврди бришење на услугата</string>
     <string name="service_type">Тип на услуга</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Ве молиме стартувајте го повторно Seal-VPN за да се овозможат промените</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Ве молиме стартувајте го повторно Seal-VPN за да се овозможат промените</string>
     <string name="disable">Оневозможи</string>
     <string name="enable">Овозможи</string>
     <string name="consider_disable_battery_optimizations">Размислете за оневозможување на оптимизациите на батеријата</string>

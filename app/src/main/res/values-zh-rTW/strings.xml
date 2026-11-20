@@ -70,7 +70,7 @@
     <string name="restore_backup">還原備份</string>
     <string name="confirm_service_deletion">確認服務刪除</string>
     <string name="service_type">服務類型</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">請重新啟動 Seal-VPN 以套用變更</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">請重新啟動 Seal-VPN 以套用變更</string>
     <string name="disable">關閉</string>
     <string name="enable">啟用</string>
     <string name="consider_disable_battery_optimizations">託管服務正在運行，請考慮停用電池優化</string>

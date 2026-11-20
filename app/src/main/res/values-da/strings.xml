@@ -113,7 +113,7 @@
     <string name="restore_backup">Gendan sikkerhedskopi</string>
     <string name="confirm_service_deletion">Bekræft sletning af tjeneste</string>
     <string name="service_type">Type af tjeneste</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Genstart venligst Seal-VPN for at aktivere ændringerne</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Genstart venligst Seal-VPN for at aktivere ændringerne</string>
     <string name="pref_isolate_dest">Isolere destinationsadresser</string>
     <string name="pref_isolate_dest_summary">Brug et andet kredsløb for hver destinationsadresse</string>
     <string name="pref_reduced_connection_padding">Reduceret forbindelsespolstring</string>

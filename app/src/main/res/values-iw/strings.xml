@@ -74,7 +74,7 @@
     <string name="restore_backup">שחזור גיבוי</string>
     <string name="confirm_service_deletion">אישור מחיקת שירות</string>
     <string name="service_type">סוג שירות</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">נא להפעיל את Seal-VPN מחדש כדי להפעיל את השינויים</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">נא להפעיל את Seal-VPN מחדש כדי להפעיל את השינויים</string>
     <string name="enable">הפעלה</string>
     <string name="pref_isolate_dest">בידוד כתובות יעד</string>
     <string name="pref_isolate_dest_summary">להשתמש במעגל שונה לכל כתובת יעד</string>

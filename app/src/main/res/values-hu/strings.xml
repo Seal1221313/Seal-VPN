@@ -70,7 +70,7 @@
     <string name="restore_backup">Mentés visszaállítása</string>
     <string name="confirm_service_deletion">Szolgáltatás törlés jóváhagyása</string>
     <string name="service_type">Szolgáltatás típus</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Kérlek indítsd újra az Seal-VPN-ot a változások engedélyezéséhez</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Kérlek indítsd újra az Seal-VPN-ot a változások engedélyezéséhez</string>
     <string name="disable">Kikapcsol</string>
     <string name="enable">Engedélyezés</string>
     <string name="consider_disable_battery_optimizations">Vegye fontolóra az akkumulátor optimalizálás tiltását</string>

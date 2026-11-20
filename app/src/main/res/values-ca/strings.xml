@@ -70,7 +70,7 @@
     <string name="restore_backup">Restaura una còpia de seguretat</string>
     <string name="confirm_service_deletion">Confirma la supressió del servei</string>
     <string name="service_type">Tipus de servei</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Reinicieu l\'Seal-VPN per a aplicar els canvis</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Reinicieu l\'Seal-VPN per a aplicar els canvis</string>
     <string name="disable">Desactiva</string>
     <string name="enable">Activa</string>
     <string name="consider_disable_battery_optimizations">Serveis hostatjats en execució, considereu desactivar les optimitzacions de bateria</string>

@@ -58,7 +58,7 @@
     <string name="hidden_services">Onion-palvelut</string>
     <string name="save">Tallenna</string>
     <string name="name">Nimi</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Käynnistä Seal-VPN uudelleen muutosten käyttöönottamiseksi.</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Käynnistä Seal-VPN uudelleen muutosten käyttöönottamiseksi.</string>
     <string name="disable">Poista käytöstä</string>
     <string name="enable">Ota käyttöön</string>
     <string name="wizard_details_msg">Seal-VPN-sovellus on avointa lähdekoodia ja se sisältää seuraavat: Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks ja LibEvent. Se tarjoaa VPN-tunnelin, paikallisen HTTP Connect -välityspalvelimen (HTTPS vain portissa 8118) ja SOCKS-välityspalvelimen (9050) Tor-verkkoon.</string>

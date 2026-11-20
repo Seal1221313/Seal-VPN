@@ -70,7 +70,7 @@
     <string name="restore_backup">Επαναφορά αντιγράφου ασφαλείας</string>
     <string name="confirm_service_deletion">Επιβεβαίωση διαγραφής υπηρεσίας</string>
     <string name="service_type">Τύπος υπηρεσίας</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Παρακαλούμε επανεκκινήστε το Seal-VPN για να ενεργοποιήσετε τις αλλαγές</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Παρακαλούμε επανεκκινήστε το Seal-VPN για να ενεργοποιήσετε τις αλλαγές</string>
     <string name="disable">Απενεργοποίηση</string>
     <string name="enable">Ενεργοποίηση</string>
     <string name="consider_disable_battery_optimizations">Εκτελούνται φιλοξενούμενες υπηρεσίες, εξετάστε το ενδεχόμενο απενεργοποίησης των βελτιστοποιήσεων μπαταρίας</string>

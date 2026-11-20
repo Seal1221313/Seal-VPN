@@ -67,7 +67,7 @@
     <string name="restore_backup">Gjenopprett sikkerhetskopi</string>
     <string name="confirm_service_deletion">Bekreft sletting av tjeneste</string>
     <string name="service_type">Tjenestetype</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Gjør omstart av Seal-VPN før endringer trer i kraft</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Gjør omstart av Seal-VPN før endringer trer i kraft</string>
     <string name="disable">Skru av</string>
     <string name="enable">Slå på</string>
     <string name="full_device_vpn">VPN for hele enheten</string>

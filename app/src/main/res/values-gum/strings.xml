@@ -92,7 +92,7 @@
     <string name="restore_backup">Wamsrɵl mera esekailan katɵpurɵ wetɵtraik</string>
     <string name="confirm_service_deletion">Chi maramelan kertraik kɵn chipik</string>
     <string name="service_type">Kan maramelai kan utɵ</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Seal-VPNwan katɵ pɵlpasrin karu, chi tɵ yunɵmariklan esekantrei</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Seal-VPNwan katɵ pɵlpasrin karu, chi tɵ yunɵmariklan esekantrei</string>
     <string name="disable">Kuechip</string>
     <string name="enable">Pilɵkɵp</string>
     <string name="consider_disable_battery_optimizations">Martrei pasrikpe marɵp pasran, naktsi esekapikwei tamaramelan yunemartrappe tap isu</string>

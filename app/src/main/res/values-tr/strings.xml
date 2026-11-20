@@ -70,7 +70,7 @@
     <string name="restore_backup">Yedeği geri yükle</string>
     <string name="confirm_service_deletion">Hizmeti silmeyi onayla</string>
     <string name="service_type">Hizmet türü</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Değişiklikleri etkinleştirmek için Seal-VPN uygulamasını yeniden başlatın</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Değişiklikleri etkinleştirmek için Seal-VPN uygulamasını yeniden başlatın</string>
     <string name="disable">Kapat</string>
     <string name="enable">Aç</string>
     <string name="consider_disable_battery_optimizations">Sunucu hizmetleri çalışıyor. Pil iyileştirmelerini kapatmayı değerlendirin</string>

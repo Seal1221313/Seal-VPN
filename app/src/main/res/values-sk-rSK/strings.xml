@@ -88,7 +88,7 @@
     <string name="backup_saved_at_external_storage">Zálohovanie uložené v externom úložisku</string>
     <string name="backup_restored">Obnovená záloha</string>
     <string name="restore_backup">Obnovenie zálohovania</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Reštartujte Seal-VPN, aby sa zmeny povolili</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Reštartujte Seal-VPN, aby sa zmeny povolili</string>
     <string name="disable">Zakázať</string>
     <string name="enable">Povoliť</string>
     <string name="pref_connection_padding">Vypĺňanie pripojenia</string>

@@ -70,7 +70,7 @@
     <string name="restore_backup">คืนค่าข้อมูลสำรอง</string>
     <string name="confirm_service_deletion">ยืนยันการลบบริการ</string>
     <string name="service_type">ประเภทของบริการ</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">กรุณาเริ่ม Seal-VPN ใหม่เพื่อให้การเปลี่ยนแปลงใช้งานได้</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">กรุณาเริ่ม Seal-VPN ใหม่เพื่อให้การเปลี่ยนแปลงใช้งานได้</string>
     <string name="disable">ปิดการใช้งาน</string>
     <string name="enable">เปิดใช้งาน</string>
     <string name="consider_disable_battery_optimizations">พิจารณาปิดการใช้งานการปรับแบตเตอรี่ให้เหมาะสมที่สุด</string>

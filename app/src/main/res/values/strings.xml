@@ -104,7 +104,7 @@
     <string name="restore_backup">Restore Backup</string>
     <string name="confirm_service_deletion">Confirm service deletion</string>
     <string name="service_type">Service type</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Please restart Seal-VPN to enable the changes</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Please restart Seal-VPN to enable the changes</string>
     <string name="onion" translatable="false">.onion</string>
     <string name="disable">Disable</string>
     <string name="enable">Enable</string>

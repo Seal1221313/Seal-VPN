@@ -57,7 +57,7 @@
     <string name="pref_torrc_dialog">Xüsusi Torrc</string>
     <string name="save">Saxla</string>
     <string name="name">Ad</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Dəyişiklikləri aktivləşdirmək üçün zəhmət olmasa Seal-VPN-u yenidən başladın</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Dəyişiklikləri aktivləşdirmək üçün zəhmət olmasa Seal-VPN-u yenidən başladın</string>
     <string name="disable">Qapat</string>
     <string name="enable">Aktivləşdir</string>
     <string name="version">Versiya:</string>

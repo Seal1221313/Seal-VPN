@@ -57,7 +57,7 @@
     <string name="pref_torrc_dialog">Vlastní Torrs</string>
     <string name="save">Uložit</string>
     <string name="name">Jméno</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Pro projevení změn restartujte Seal-VPN</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Pro projevení změn restartujte Seal-VPN</string>
     <string name="menu_new_identity">Nová identita</string>
     <string name="hidden_services">Služby Onion</string>
     <string name="version">Verze:</string>

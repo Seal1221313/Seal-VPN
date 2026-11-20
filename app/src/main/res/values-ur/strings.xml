@@ -102,7 +102,7 @@
     <string name="restore_backup">بیک اپ بحال کریں</string>
     <string name="confirm_service_deletion">سروس حذف کرنے کی تصدیق کریں</string>
     <string name="service_type">سروس کی قسم</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">تبدیلیوں کو فعال کرنے کے لیے براہ کرم اوربوٹ کو دوبارہ شروع کریں</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">تبدیلیوں کو فعال کرنے کے لیے براہ کرم اوربوٹ کو دوبارہ شروع کریں</string>
     <string name="consider_disable_battery_optimizations">ہوسٹڈ سروسز چل رہی ہیں، بیٹری آپٹیمائزیشن کو غیر فعال کرنے پر غور کریں</string>
     <string name="consider_enable_battery_optimizations">کوئی ہوسٹڈ سروس نہیں چل رہی، بیٹری آپٹیمائزیشن کو فعال کرنے پر غور کریں</string>
     <string name="pref_isolate_dest">منزل کے پتے الگ کریں (Isolate)</string>

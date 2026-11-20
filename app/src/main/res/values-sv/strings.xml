@@ -70,7 +70,7 @@
     <string name="restore_backup">Återställ säkerhetskopia</string>
     <string name="confirm_service_deletion">Bekräfta borttagning av tjänst</string>
     <string name="service_type">Typ av tjänst</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Vänligen starta om Seal-VPN för att aktivera ändringarna</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Vänligen starta om Seal-VPN för att aktivera ändringarna</string>
     <string name="disable">Inaktivera</string>
     <string name="enable">Aktivera</string>
     <string name="consider_disable_battery_optimizations">Värdtjänster körs – överväg att inaktivera batterioptimering</string>

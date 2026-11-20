@@ -91,7 +91,7 @@
     <string name="pref_entrance_node">Įėjimo mazgai</string>
     <string name="pref_node_configuration">Mazgo konfigūracija</string>
     <string name="confirm">Patvirtinti</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Paleiskite „Seal-VPN“ iš naujo, kad įgalintumėte pakeitimus</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Paleiskite „Seal-VPN“ iš naujo, kad įgalintumėte pakeitimus</string>
     <string name="pref_torrc_summary">TIK EKSPERTAMS: įveskite tiesiogines torrc konfigūracijos eilutes</string>
     <string name="newnym">Jūs perėjote prie naujos „Tor“ tapatybės!</string>
     <string name="v3_backup_key_warning">Įspėjimas: Tai gali atskleisti jūsų raktą kitoms programėlėms</string>

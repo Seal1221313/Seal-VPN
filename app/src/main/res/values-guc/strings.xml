@@ -90,7 +90,7 @@
     <string name="restore_backup">anoutünajatü süyakuakat tü seguridakat</string>
     <string name="confirm_service_deletion">apirüinjat sujütchajaya tü süpülajatükat</string>
     <string name="service_type">jetsü tü süpülajatka</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">pülejera süchukua Seal-VPN süpüla sujutalüin tü shiratiakat.</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">pülejera süchukua Seal-VPN süpüla sujutalüin tü shiratiakat.</string>
     <string name="disable">pakatüin</string>
     <string name="enable">alaatiria</string>
     <string name="consider_disable_battery_optimizations">süpülajana anaterüshi sünain shiyatain; esü süpüla pakatüin süpüla katchinjatüin tü bateriakat</string>

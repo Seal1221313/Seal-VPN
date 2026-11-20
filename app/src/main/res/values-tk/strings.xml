@@ -32,7 +32,7 @@
     <string name="backup_saved_at_external_storage">Ätiýaçlyk nusgasy daşky ammarda saklanýar</string>
     <string name="backup_restored">Ätiýaçlyk dikeldildi</string>
     <string name="service_type">Hyzmat görnüşi</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Üýtgeşmeleriň güýje girmegi üçin Seal-VPN-y täzeden açyň</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Üýtgeşmeleriň güýje girmegi üçin Seal-VPN-y täzeden açyň</string>
     <string name="consider_disable_battery_optimizations">Işleýän hyzmatlar, batareýa optimizasiýany öçürmegi göz öňünde tutuň</string>
     <string name="pref_isolate_dest_summary">Her niýetlenen salgy üçin dürli aýlanşyk ulanyň</string>
     <string name="pref_isolate_protocol_summary">Her birleşdiriji protokol üçin başga aýlanşyk ulanyň</string>

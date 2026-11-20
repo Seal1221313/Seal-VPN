@@ -78,7 +78,7 @@
     <string name="restore_backup">बैकअप वापस लाएं</string>
     <string name="confirm_service_deletion">सेवा पक्का मिटाएं</string>
     <string name="service_type">सेवा टाइप</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">बदलाव लगाने के लिए ऑरबॉट वापस शुरू करें</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">बदलाव लगाने के लिए ऑरबॉट वापस शुरू करें</string>
     <string name="disable">बंद</string>
     <string name="enable">चालू</string>
     <string name="consider_disable_battery_optimizations">होस्ट किए गए सेवाएं चल रहे, बैट्री ऑप्टमाइज़ेशन बंद करने पे सोचें</string>

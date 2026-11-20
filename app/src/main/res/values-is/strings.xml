@@ -70,7 +70,7 @@
     <string name="restore_backup">Endurheimta úr öryggisafriti</string>
     <string name="confirm_service_deletion">Staðfestu eyðingu á þjónustu</string>
     <string name="service_type">Tegund þjónustu</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Endurræstu Seal-VPN til að breytingarnar taki gildi</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Endurræstu Seal-VPN til að breytingarnar taki gildi</string>
     <string name="disable">Gera óvirkt</string>
     <string name="enable">Virkja</string>
     <string name="consider_disable_battery_optimizations">Hýstar þjónustur í gangi, íhugaðu að gera bestun fyrir rafhlöðu óvirka</string>

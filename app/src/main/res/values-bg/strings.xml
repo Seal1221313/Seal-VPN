@@ -58,7 +58,7 @@
     <string name="hidden_services">Услуги на Onion</string>
     <string name="save">Запазване</string>
     <string name="name">Име</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">За да влязат в сила промените рестартирайте Seal-VPN</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">За да влязат в сила промените рестартирайте Seal-VPN</string>
     <string name="disable">Изключване</string>
     <string name="enable">Включване</string>
     <string name="version">Издание:</string>

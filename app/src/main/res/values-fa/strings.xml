@@ -70,7 +70,7 @@
     <string name="restore_backup">بازگردانی پشتیبان‌گیری</string>
     <string name="confirm_service_deletion">حذف خدمت را تأیید کنید</string>
     <string name="service_type">نوع خدمت</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">برای فعال‌سازی تغییرات، Seal-VPN را راه‌اندازی مجدد کنید</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">برای فعال‌سازی تغییرات، Seal-VPN را راه‌اندازی مجدد کنید</string>
     <string name="disable">غیرفعال‌سازی</string>
     <string name="enable">فعال‌سازی</string>
     <string name="consider_disable_battery_optimizations">خدمات میزبانی‌شده درحال اجرا هستند، غیرفعال‌سازی بهینه‌سازی‌های باتری را در نظر بگیرید</string>

@@ -60,7 +60,7 @@
     <string name="local_port">Lokalne porty</string>
     <string name="name">Nazwa</string>
     <string name="copy_address_to_clipboard">Skopiuj adres do schowka</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Proszę zrestartować Seal-VPN, aby zmiany mogły wejść w życie</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Proszę zrestartować Seal-VPN, aby zmiany mogły wejść w życie</string>
     <string name="disable">Wyłącz</string>
     <string name="enable">Włącz</string>
     <string name="pref_open_proxy_on_all_interfaces_title">Otwórz serwer proxy na wszystkich interfejsach</string>

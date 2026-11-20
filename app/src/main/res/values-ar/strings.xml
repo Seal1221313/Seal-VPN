@@ -77,7 +77,7 @@
     <string name="restore_backup">استعد النُسخة الاحتياطية</string>
     <string name="confirm_service_deletion">أكّد حذف الخدمة</string>
     <string name="service_type">نوع الخدمة</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">الرجاء إعادة تشغيل أوربوت لتفعيل التعديلات</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">الرجاء إعادة تشغيل أوربوت لتفعيل التعديلات</string>
     <string name="disable">عطِّل</string>
     <string name="enable">فعِّل</string>
     <string name="consider_disable_battery_optimizations">الخدمات المستضافة قيد التشغيل، ضع في اعتبارك تعطيل تحسينات البطارية</string>

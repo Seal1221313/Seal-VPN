@@ -70,7 +70,7 @@
     <string name="restore_backup">Восстановить из копии</string>
     <string name="confirm_service_deletion">Подтверждение удаления службы</string>
     <string name="service_type">Тип службы</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Перезапустите Seal-VPN для вступления изменения в силу</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Перезапустите Seal-VPN для вступления изменения в силу</string>
     <string name="disable">Отключить</string>
     <string name="enable">Включить</string>
     <string name="consider_disable_battery_optimizations">Работают размещённые службы, рассмотрите возможность отключения оптимизации батареи</string>

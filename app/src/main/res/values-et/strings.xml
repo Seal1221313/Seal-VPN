@@ -102,7 +102,7 @@
     <string name="restore_backup">Taastada varukoopia</string>
     <string name="confirm_service_deletion">Kinnita teenuse kustutamine</string>
     <string name="service_type">Teenuse tüüp</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Palun taaskäivitage Seal-VPN muudatuste lubamiseks</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Palun taaskäivitage Seal-VPN muudatuste lubamiseks</string>
     <string name="consider_disable_battery_optimizations">Hostitud teenused töötavad, kaaluge aku optimeerimise väljalülitamist</string>
     <string name="pref_isolate_dest_summary">Kasutage iga sihtkoha aadressi jaoks erinevat vooluahelat</string>
     <string name="pref_connection_padding">Ühenduse polsterdamine</string>

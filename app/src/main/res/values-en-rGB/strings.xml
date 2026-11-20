@@ -66,7 +66,7 @@
     <string name="vpn_default_world">Global (Auto)</string>
     <string name="hidden_services">Onion Services</string>
     <string name="consider_disable_battery_optimizations">Hosted services running, consider disabling battery optimisations</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Please restart Seal-VPN to enable the changes</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Please restart Seal-VPN to enable the changes</string>
     <string name="consider_enable_battery_optimizations">No hosted services running, consider enabling battery optimisations</string>
     <string name="pref_isolate_dest">Isolate destination addresses</string>
     <string name="confirm_service_deletion">Confirm service deletion</string>

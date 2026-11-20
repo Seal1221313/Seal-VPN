@@ -70,7 +70,7 @@
     <string name="restore_backup">バックアップを復旧</string>
     <string name="confirm_service_deletion">サービス削除を確認</string>
     <string name="service_type">サービスの種類</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">変更を有効にするには Seal-VPN を再起動してください</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">変更を有効にするには Seal-VPN を再起動してください</string>
     <string name="disable">無効</string>
     <string name="enable">有効</string>
     <string name="consider_disable_battery_optimizations">ホストサービス実行中、電池最適化の無効化を検討する</string>

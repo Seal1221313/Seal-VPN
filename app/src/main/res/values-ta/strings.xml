@@ -83,7 +83,7 @@
     <string name="pref_proxy_host_title">வெளிச்செல்லும் பதிலாள் புரவலன்</string>
     <string name="pref_proxy_host_summary">பதிலாள் சர்வர் ஓச்ட்பெயர்</string>
     <string name="third_party_software">3 வது-கட்சி-மென்பொருள்:</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">மாற்றங்களை இயக்க ஆர்போட்டை மறுதொடக்கம் செய்யுங்கள்</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">மாற்றங்களை இயக்க ஆர்போட்டை மறுதொடக்கம் செய்யுங்கள்</string>
     <string name="consider_disable_battery_optimizations">புரவலன் செய்யப்பட்ட சேவைகள் இயங்குகின்றன, பேட்டரி மேம்படுத்தல்களை முடக்குவதைக் கருத்தில் கொள்ளுங்கள்</string>
     <string name="pref_isolate_dest">இலக்கு முகவரிகளை தனிமைப்படுத்தவும்</string>
     <string name="pref_reduced_connection_padding_summary">ரிலே இணைப்புகளை விரைவில் மூடுகிறது மற்றும் தரவு மற்றும் பேட்டரி பயன்பாட்டைக் குறைக்க குறைந்த திணிப்பு பாக்கெட்டுகளை அனுப்புகிறது</string>

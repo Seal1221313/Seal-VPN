@@ -78,7 +78,7 @@
     <string name="restore_backup">Back-up herstellen</string>
     <string name="confirm_service_deletion">Bevestig verwijderen van dienst</string>
     <string name="service_type">Diensttype</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">Herstart Seal-VPN om de wijzigingen in te schakelen</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Herstart Seal-VPN om de wijzigingen in te schakelen</string>
     <string name="disable">Uitschakelen</string>
     <string name="enable">Inschakelen</string>
     <string name="consider_disable_battery_optimizations">Hosted services actief, overweeg batterijoptimalisaties uit te schakelen</string>

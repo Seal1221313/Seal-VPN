@@ -57,7 +57,7 @@
     <string name="pref_torrc_dialog">나만의 Torrc</string>
     <string name="save">저장</string>
     <string name="name">Name</string>
-    <string name="please_restart_Seal-VPN_to_enable_the_changes">변경을 완료하려면 Seal-VPN을 재시작하세요</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">변경을 완료하려면 Seal-VPN을 재시작하세요</string>
     <string name="disable">비활성화</string>
     <string name="enable">활성화</string>
     <string name="connected_title">연결됨</string>
