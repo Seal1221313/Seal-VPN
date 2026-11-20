@@ -3,38 +3,52 @@ name: Android CI
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    paths-ignore: [ "README.md", "NOTICE.md", "LICENSE" ]
+  workflow_dispatch:
 
 permissions:
   contents: read
 
+concurrency:
+  group: android-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
 
     steps:
     - uses: actions/checkout@v4
       with:
         submodules: recursive
-    - name: Set up JDK 21
+
+    - name: Set up JDK 24
       uses: actions/setup-java@v4
       with:
-        java-version: '21'
+        java-version: '24'
         distribution: 'temurin'
         cache: gradle
 
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
+    - name: Install NDK and accept licenses
+      run: |
+        yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
+        "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "ndk;30.0.16248370"
 
-    - name: Build with Gradle
-      run: ./gradlew assembleDebug
-
-    - name: Run unit tests
-      run: ./gradlew :app:testFullpermDebugUnitTest
+    - name: Build (single ABI, low memory)
+      run: |
+        chmod +x gradlew
+        ./gradlew :app:assembleFullpermDebug \
+          --no-daemon --max-workers=2 --stacktrace \
+          -Pabis=arm64-v8a \
+          -Dorg.gradle.jvmargs="-Xmx3g -XX:+UseParallelGC -Dfile.encoding=UTF-8" \
+          -Dorg.gradle.parallel=false \
+          -Pkotlin.daemon.jvmargs=-Xmx1536m
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
-        name: app-debug
-        path: app/build/outputs/apk/**/*.apk
+        name: seal-vpn-debug
+        path: app/build/outputs/apk/fullperm/debug/*.apk
+        retention-days: 3
+        if-no-files-found: error

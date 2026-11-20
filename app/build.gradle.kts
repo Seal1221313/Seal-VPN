@@ -51,10 +51,11 @@ configure<ApplicationExtension> {
         abi {
             isEnable = true
             reset()
-            // includes *every* ABI, x86 is only useful when *emulating* API 24 devices
-            // include("x86", "armeabi-v7a", "x86_64", "arm64-v8a")
-            include("arm64-v8a", "armeabi-v7a", "x86_64")
-            isUniversalApk = true
+            // CI passes -Pabis=arm64-v8a to build a single small APK
+            val abis = (providers.gradleProperty("abis").orNull ?: "arm64-v8a,armeabi-v7a,x86_64")
+                .split(",")
+            include(*abis.toTypedArray())
+            isUniversalApk = abis.size > 1
         }
     }
 
