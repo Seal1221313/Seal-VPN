@@ -117,6 +117,11 @@ class AppManagerFragment : Fragment(), View.OnClickListener {
                         it.replaceFirstChar { c -> if (c.isLowerCase()) c.uppercase() else c.toString() }
                     }
         }
+        binding.cbInvert.isChecked = Prefs.splitInvert
+        binding.cbInvert.setOnCheckedChangeListener { _, checked ->
+            Prefs.splitInvert = checked
+            appSelectionChanged = true
+        }
         return binding.root
     }
 

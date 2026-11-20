@@ -12,6 +12,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import org.torproject.android.OrbotActivity
 import org.torproject.android.R
+import org.torproject.android.ui.Panic
 import org.torproject.android.databinding.FragmentMoreBinding
 import org.torproject.android.service.OrbotConstants
 import org.torproject.android.service.OrbotService
@@ -101,6 +102,9 @@ class MoreFragment : Fragment() {
                 LogBottomSheet.show(
                     parentFragmentManager
                 )
+            },
+            OrbotMenuAction(R.string.btn_panic, R.drawable.ic_panic) {
+                Panic.trigger(requireContext())
             },
             OrbotMenuAction(R.string.v3_hosted_services, R.drawable.ic_menu_onion) {
                 startActivity(Intent(requireActivity(), OnionServiceActivity::class.java))

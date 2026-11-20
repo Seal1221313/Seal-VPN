@@ -32,6 +32,7 @@ import android.system.OsConstants;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
+import org.torproject.android.util.Prefs;
 import androidx.annotation.Nullable;
 
 import org.torproject.android.service.Notifications;
@@ -56,6 +57,8 @@ public class OrbotVpnManager {
     private DataOutputStream fos;
 
     private static final int DELAY_FD_LISTEN_MS = 5000;
+
+    public static volatile Boolean sLockdownEnabled = null;
 
     public OrbotVpnManager(@NonNull OrbotService service) {
         mService = service;
@@ -97,6 +100,7 @@ public class OrbotVpnManager {
     }
 
     private void stopVPN() {
+        sLockdownEnabled = null;
         if (mInterface == null) return;
         try {
             Log.d(TAG, "closing interface, destroying VPN interface");
@@ -212,6 +216,18 @@ public class OrbotVpnManager {
         var apps = TorifiedApp.getApps(mService);
         var individualAppsWereSelected = false;
         var isLockdownMode = isVpnLockdown(mService);
+        sLockdownEnabled = isLockdownMode;
+
+        if (Prefs.getSplitInvert()) {
+            disallowQuietly(builder, mService.getPackageName());
+            for (String packageName : BYPASS_VPN_PACKAGES) disallowQuietly(builder, packageName);
+            for (TorifiedApp app : apps) {
+                if (app.isTorified() && !app.getPackageName().equals(mService.getPackageName()))
+                    disallowQuietly(builder, app.getPackageName());
+            }
+            Log.i(TAG, "inverted split tunneling, isLockdownMode=" + isLockdownMode);
+            return;
+        }
 
         for (TorifiedApp app : apps) {
             if (app.isTorified() && (!app.getPackageName().equals(mService.getPackageName()))) {
@@ -237,6 +253,13 @@ public class OrbotVpnManager {
             // disallow tor apps to avoid tor over tor, Orbot doesn't need to concern itself with them
             for (String packageName : BYPASS_VPN_PACKAGES)
                 builder.addDisallowedApplication(packageName);
+        }
+    }
+
+    private static void disallowQuietly(VpnService.Builder builder, String packageName) {
+        try {
+            builder.addDisallowedApplication(packageName);
+        } catch (NameNotFoundException ignored) {
         }
     }
 

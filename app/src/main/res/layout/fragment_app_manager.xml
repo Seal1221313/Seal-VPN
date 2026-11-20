@@ -20,6 +20,18 @@
             app:navigationIcon="?attr/homeAsUpIndicator"
             tools:title="@string/btn_choose_apps" />
 
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cbInvert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:fontFamily="monospace"
+            android:text="@string/split_invert_summary"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:buttonTint="@color/accent" />
+
 
     </com.google.android.material.appbar.AppBarLayout>
 

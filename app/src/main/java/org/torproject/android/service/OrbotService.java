@@ -206,6 +206,7 @@ public class OrbotService extends VpnService implements TorControlCommands {
 
     @Override
     public void onDestroy() {
+        sInstance = null;
         try {
             unregisterReceiver(mActionBroadcastReceiver);
             Prefs.putUseVpn(false);
@@ -213,6 +214,47 @@ public class OrbotService extends VpnService implements TorControlCommands {
             //not registered yet
         }
         super.onDestroy();
+    }
+
+    private static volatile OrbotService sInstance;
+
+    @Nullable
+    public static java.util.List<String> fetchCircuitPath() {
+        var service = sInstance;
+        if (service == null || service.conn == null) return null;
+        try {
+            String status = service.conn.getInfo("circuit-status");
+            if (status == null) return null;
+            for (String line : status.split("\n")) {
+                if (!line.contains(" BUILT ") || !line.contains("PURPOSE=GENERAL")) continue;
+                if (line.contains("IS_INTERNAL") || line.contains("ONEHOP_TUNNEL")) continue;
+                String[] parts = line.trim().split(" ");
+                if (parts.length < 3) continue;
+                var hops = new ArrayList<String>();
+                for (String hop : parts[2].split(",")) {
+                    String fp = hop.startsWith("$") ? hop.substring(1) : hop;
+                    String nick = "";
+                    int idx = fp.indexOf('~');
+                    if (idx < 0) idx = fp.indexOf('=');
+                    if (idx > 0) {
+                        nick = fp.substring(idx + 1);
+                        fp = fp.substring(0, idx);
+                    }
+                    String tag = "[??]";
+                    try {
+                        String[] ns = service.conn.getInfo("ns/id/" + fp).split(" ");
+                        String cc = service.conn.getInfo("ip-to-country/" + ns[6]).toUpperCase(Locale.US);
+                        if (!cc.isEmpty() && !cc.equals("??")) tag = "[" + cc + "]";
+                    } catch (Exception ignored) {
+                    }
+                    hops.add(tag + " " + nick);
+                }
+                return hops;
+            }
+        } catch (Exception e) {
+            Log.d("OrbotService", "circuit lookup failed", e);
+        }
+        return null;
     }
 
     protected void stopTorAsync(boolean showNotification) {
@@ -333,6 +375,7 @@ public class OrbotService extends VpnService implements TorControlCommands {
                 }
 
                 mVpnManager = new OrbotVpnManager(this);
+                sInstance = this;
             } catch (Exception e) {
                 Log.e(TAG, "Error setting up Orbot", e);
                 logNotice(getString(R.string.couldn_t_start_tor_process_) + " " + e.getClass().getSimpleName());
@@ -837,7 +880,8 @@ public class OrbotService extends VpnService implements TorControlCommands {
                         break;
                     mCurrentStatus = newStatus;
                     if (STATUS_OFF.equals(mCurrentStatus)) {
-                        showToolbarNotification(getString(R.string.open_orbot_to_connect_to_tor), NOTIFY_ID, R.drawable.ic_stat_tor);
+                        var trafficBlocked = mVpnManager != null && mVpnManager.isStarted();
+                        showToolbarNotification(getString(trafficBlocked ? R.string.kill_switch_active : R.string.open_orbot_to_connect_to_tor), NOTIFY_ID, R.drawable.ic_stat_tor);
                     }
 
                     // Make sure, Smart Connect finishes successfully, even when, for some reason,

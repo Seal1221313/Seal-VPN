@@ -32,6 +32,8 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import org.torproject.android.R
 import org.torproject.android.Regionalization
+import org.torproject.android.service.vpn.OrbotVpnManager
+import org.torproject.android.ui.more.DiagnosticsBottomSheet
 import org.torproject.android.databinding.FragmentConnectBinding
 import org.torproject.android.service.OrbotConstants
 import org.torproject.android.service.OrbotService
@@ -342,6 +344,11 @@ class ConnectFragment : Fragment(),
 
     fun refreshMenuList(context: Context) {
         updateLocationCard()
+        val ksStatus = when (OrbotVpnManager.sLockdownEnabled) {
+            true -> context.getString(R.string.kill_switch_on)
+            false -> context.getString(R.string.kill_switch_off)
+            null -> context.getString(R.string.kill_switch_hint)
+        }
 
         val connectStr =
             if (Prefs.smartConnect) R.string.smart_connect else when (Prefs.transport) {
@@ -370,8 +377,11 @@ class ConnectFragment : Fragment(),
                 OrbotMenuAction(
                     R.string.btn_kill_switch,
                     R.drawable.lock_24px,
-                    statusString = context.getString(R.string.kill_switch_hint)
-                ) { openVpnSettings() })
+                    statusString = ksStatus
+                ) { openVpnSettings() },
+                OrbotMenuAction(R.string.btn_diagnostics, R.drawable.ic_shield) {
+                    DiagnosticsBottomSheet.show(parentFragmentManager)
+                })
         if (!Prefs.isPowerUserMode) listItems.add(
             0,
             OrbotMenuAction(R.string.btn_choose_apps, R.drawable.ic_choose_apps) {

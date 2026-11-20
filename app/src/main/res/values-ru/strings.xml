@@ -249,4 +249,16 @@
     <string name="btn_kill_switch">Kill switch</string>
     <string name="kill_switch_hint">Открывает системные настройки VPN: включите «Постоянный VPN» и «Блокировать соединения без VPN»</string>
     <string name="bridge_webtunnel">WebTunnel</string>
+    <string name="kill_switch_on">Вкл.: системная блокировка активна</string>
+    <string name="kill_switch_off">Выкл.: нажмите, чтобы включить системную блокировку</string>
+    <string name="kill_switch_active">Tor остановлен. Трафик заблокирован, пока не переподключитесь или не отключитесь.</string>
+    <string name="btn_diagnostics">Тест утечек</string>
+    <string name="diagnostics_title">Тест утечек и цепочка</string>
+    <string name="diagnostics_rerun">Повторить</string>
+    <string name="diagnostics_open_browser">Открыть в браузере</string>
+    <string name="diagnostics_not_connected">Не подключено</string>
+    <string name="diagnostics_running">Проверка...</string>
+    <string name="diagnostics_note">DEVICE IP запрашивается вне Tor для сравнения. Чтобы проверить другие приложения, откройте страницу в браузере, который идёт через туннель.</string>
+    <string name="btn_panic">Паника</string>
+    <string name="split_invert_summary">Режим обхода: выбранные приложения идут мимо Tor, остальное через него</string>
 </resources>

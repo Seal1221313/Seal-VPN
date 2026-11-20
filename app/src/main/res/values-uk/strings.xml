@@ -291,4 +291,16 @@
     <string name="btn_kill_switch">Kill switch</string>
     <string name="kill_switch_hint">Відкриває системні налаштування VPN: увімкніть «Постійний VPN» і «Блокувати з\'єднання без VPN»</string>
     <string name="bridge_webtunnel">WebTunnel</string>
+    <string name="kill_switch_on">Увімк.: системне блокування активне</string>
+    <string name="kill_switch_off">Вимк.: торкніться, щоб увімкнути системне блокування</string>
+    <string name="kill_switch_active">Tor зупинено. Трафік заблоковано, доки не перепідключитесь або не відключитесь.</string>
+    <string name="btn_diagnostics">Тест витоків</string>
+    <string name="diagnostics_title">Тест витоків і ланцюжок</string>
+    <string name="diagnostics_rerun">Повторити</string>
+    <string name="diagnostics_open_browser">Відкрити в браузері</string>
+    <string name="diagnostics_not_connected">Не підключено</string>
+    <string name="diagnostics_running">Перевірка...</string>
+    <string name="diagnostics_note">DEVICE IP запитується поза Tor для порівняння. Щоб перевірити інші застосунки, відкрийте сторінку в браузері, який іде через тунель.</string>
+    <string name="btn_panic">Паніка</string>
+    <string name="split_invert_summary">Режим обходу: вибрані застосунки минають Tor, решта йде через нього</string>
 </resources>

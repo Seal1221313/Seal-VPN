@@ -369,6 +369,13 @@ object Prefs {
     val disableIpv4: Boolean
         get() = cr?.getPrefBoolean(PREF_DISABLE_IPV4) ?: false
 
+    const val PREF_SPLIT_INVERT = "pref_split_invert"
+
+    @JvmStatic
+    var splitInvert: Boolean
+        get() = cr?.getPrefBoolean(PREF_SPLIT_INVERT) ?: false
+        set(value) = cr?.putPref(PREF_SPLIT_INVERT, value) ?: Unit
+
     var torifiedApps: String
         get() = cr?.getPrefString(OrbotConstants.PREFS_KEY_TORIFIED) ?: ""
         set(value) = cr?.putPref(OrbotConstants.PREFS_KEY_TORIFIED, value) ?: Unit

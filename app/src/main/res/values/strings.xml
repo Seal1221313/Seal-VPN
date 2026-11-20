@@ -326,4 +326,16 @@
     <string name="btn_kill_switch">Kill switch</string>
     <string name="kill_switch_hint">Opens system VPN settings: turn on Always-on VPN and Block connections without VPN</string>
     <string name="bridge_webtunnel">WebTunnel</string>
+    <string name="kill_switch_on">On: system lockdown active</string>
+    <string name="kill_switch_off">Off: tap to enable system lockdown</string>
+    <string name="kill_switch_active">Tor stopped. Traffic stays blocked until you reconnect or disconnect.</string>
+    <string name="btn_diagnostics">Leak test</string>
+    <string name="diagnostics_title">Leak test and circuit</string>
+    <string name="diagnostics_rerun">Run again</string>
+    <string name="diagnostics_open_browser">Open in browser</string>
+    <string name="diagnostics_not_connected">Not connected</string>
+    <string name="diagnostics_running">Running checks...</string>
+    <string name="diagnostics_note">DEVICE IP is requested outside Tor for comparison. To test other apps, open the page in a browser that goes through the tunnel.</string>
+    <string name="btn_panic">Panic</string>
+    <string name="split_invert_summary">Bypass mode: selected apps skip Tor, everything else goes through it</string>
 </resources>
