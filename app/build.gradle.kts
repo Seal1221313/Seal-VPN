@@ -38,7 +38,7 @@ configure<ApplicationExtension> {
     }
 
     defaultConfig {
-        applicationId = "com.seal1221313.sealvpn"
+        applicationId = "com.sealvpn.app"
         versionCode = orbotBaseVersionCode
         versionName = getVersionName().get()
         minSdk = 24
@@ -109,7 +109,7 @@ configure<ApplicationExtension> {
         }
         create("nightly") {
             dimension = "free"
-            applicationId = "com.seal1221313.sealvpn.nightly"
+            applicationId = "com.sealvpn.app.nightly"
             versionCode = (Date().time / 1000).toInt()
         }
     }
